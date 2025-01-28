@@ -12,7 +12,14 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      screens: {
+        'xl': {'max': '1400px'},
+        'md': {'max': '780px'},
+        'sm': {'max': '480px'},
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 } satisfies Config;
