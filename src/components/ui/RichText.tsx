@@ -1,4 +1,4 @@
-import { formatDescription } from '@/lib/textFormatter';
+import { formatDescription } from '../../lib/textFormatter';
 
 interface RichTextProps {
   content: string;

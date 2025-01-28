@@ -9,6 +9,7 @@ export interface Book {
       other?: Array<{
         name: string;
         url: string;
+        geography: string | 'all';
       }>;
     };
     samplePdfUrl: string;

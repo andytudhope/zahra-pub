@@ -1,4 +1,4 @@
-import { Book, Category, Categories } from '@/types';
+import { Book, Category, Categories } from '../types';
 
 export const categories: Categories = {
   'islam': {
@@ -45,15 +45,18 @@ export const books: Book[] = [
       other: [
         {
           name: "Barnes & Noble",
-          url: "https://www.barnesandnoble.com/w/elements-of-islam-shaykh-fadhlalla-haeri/1000382122"
+          url: "https://www.barnesandnoble.com/w/elements-of-islam-shaykh-fadhlalla-haeri/1000382122",
+          geography: "US"
         },
         {
             name: "Takealot",
-            url: "https://www.takealot.com/the-elements-of-islam/PLID68923347"
+            url: "https://www.takealot.com/the-elements-of-islam/PLID68923347",
+            geography: "ZA"
         },
         {
             name: "Waterstones",
-            url: "https://www.waterstones.com/book/the-elements-of-islam/shaykh-fadhlalla-haeri/9781919897059"
+            url: "https://www.waterstones.com/book/the-elements-of-islam/shaykh-fadhlalla-haeri/9781919897059",
+            geography: "UK"
         }
       ]
     },
@@ -69,81 +72,99 @@ export const books: Book[] = [
       amazon: "http://www.amazon.com/dp/B0CW1JQCQ2",
       other: [
         {
-            name: "Angus and Robertson (Australia)",
-            url: "https://www.angusrobertson.com.au/books/the-quran-shaykh-fadhlalla-haeri/p/9781776490110"
+            name: "Angus and Robertson",
+            url: "https://www.angusrobertson.com.au/books/the-quran-shaykh-fadhlalla-haeri/p/9781776490110",
+            geography: "AU"
         },
         {
           name: "Barnes & Noble",
-          url: "https://www.barnesandnoble.com/w/the-quran-shaykh-fadhlalla-haeri/1144971602"
+          url: "https://www.barnesandnoble.com/w/the-quran-shaykh-fadhlalla-haeri/1144971602",
+          geography: "US"
         },
         {
-            name: "Bol (Netherlands)",
-            url: "https://www.bol.com/be/nl/p/the-qur-an/9300000174603444/"
+            name: "Bol",
+            url: "https://www.bol.com/be/nl/p/the-qur-an/9300000174603444/",
+            geography: "NL"
         },
         {
             name: "Bookshop",
-            url: "https://bookshop.org/book/9781776490110"
+            url: "https://bookshop.org/book/9781776490110",
+            geography: "all"
         },
         {
             name: "Book Bug",
-            url: "https://www.bookbugkalamazoo.com/book/9781776490110"
-        },
-
-        {
-            name: "Booktopia (Australia)",
-            url: "https://www.booktopia.com.au/the-qur-an-shaykh-fadhlalla-haeri/book/9781776490110.html"
+            url: "https://www.bookbugkalamazoo.com/book/9781776490110",
+            geography: "US"
         },
         {
-            name: "eBay (UK)",
-            url: "https://www.ebay.co.uk/itm/364807514020"
+            name: "Booktopia",
+            url: "https://www.booktopia.com.au/the-qur-an-shaykh-fadhlalla-haeri/book/9781776490110.html",
+            geography: "AU"
+        },
+        {
+            name: "eBay",
+            url: "https://www.ebay.co.uk/itm/364807514020",
+            geography: "UK"
         },
         {
             name: "Hickory Stick Bookshop",
-            url: "https://www.hickorystickbookshop.com/book/9781776490110"
+            url: "https://www.hickorystickbookshop.com/book/9781776490110",
+            geography: "US"
         },
         {
             name: "The Intellectual Bookshop",
-            url: "https://www.intellectualbookshop.com/book/9781776490110"
+            url: "https://www.intellectualbookshop.com/book/9781776490110",
+            geography: "US"
         },
         {
             name: "Krisostomus",
-            url: "https://www.kriso.ee/quran-path-eternal-life-tq-launch-db-9781776490110.html"
+            url: "https://www.kriso.ee/quran-path-eternal-life-tq-launch-db-9781776490110.html",
+            geography: "EE"
         },
         {
             name: "Laguna Beach Books",
-            url: "https://www.lagunabeachbooks.com/book/9781776490110"
+            url: "https://www.lagunabeachbooks.com/book/9781776490110",
+            geography: "US"
         },
         {
-            name: "Lehmanns (Germany)",
-            url: "https://www.lehmanns.de/shop/geisteswissenschaften/67516285-9781776490110-the-qur-an"
+            name: "Lehmanns",
+            url: "https://www.lehmanns.de/shop/geisteswissenschaften/67516285-9781776490110-the-qur-an",
+            geography: "DE"
         },
         {
             name: "RJ Julia",
-            url: "https://www.rjjulia.com/book/9781776490110"
+            url: "https://www.rjjulia.com/book/9781776490110",
+            geography: "US"
         },
         {
             name: "Shermans Maine Cost Book Shops",
-            url: "https://www.shermans.com/book/9781776490110"
+            url: "https://www.shermans.com/book/9781776490110",
+            geography: "US"
         },
         {
-            name: "Takealot (South Africa)",
-            url: "https://www.takealot.com/the-qur-an-path-to-eternal-life/PLID95219850"
+            name: "Takealot",
+            url: "https://www.takealot.com/the-qur-an-path-to-eternal-life/PLID95219850",
+            geography: "ZA"
         },
         {
             name: "The Reading Bug",
-            url: "https://www.thereadingbug.com/book/9781776490110"
+            url: "https://www.thereadingbug.com/book/9781776490110",
+            geography: "US"
         },
         {
             name: "Thrift Books",
-            url: "https://www.thriftbooks.com/w/the-quran-path-to-eternal-life-travel-version_shaykh-fadhlalla-haeri/52468919/#edition=71083075&idiq=63639719"
+            url: "https://www.thriftbooks.com/w/the-quran-path-to-eternal-life-travel-version_shaykh-fadhlalla-haeri/52468919/#edition=71083075&idiq=63639719",
+            geography: "US"
         },
         {
             name: "Yardstick",
-            url: "https://www.yardstickalgoma.com/book/9781776490110"
+            url: "https://www.yardstickalgoma.com/book/9781776490110",
+            geography: "US"
         },
         {
             name: "Waterstones",
-            url: "https://www.waterstones.com/book/the-quran/shaykh-fadhlalla-haeri/adnan-al-adnani/9781928329480"
+            url: "https://www.waterstones.com/book/the-quran/shaykh-fadhlalla-haeri/adnan-al-adnani/9781928329480",
+            geography: "UK"
         }
       ]
     },

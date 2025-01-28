@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Book } from '@/types';
+import { Book } from '../../types';
 import RichText from '@/components/ui/RichText'
 
 interface BookCardProps {

@@ -1,5 +1,5 @@
-import { getBooksByCategory } from '@/lib/books';
-import { categories } from '@/lib/books';
+import { getBooksByCategory } from '../../lib/books';
+import { categories } from '../../lib/books';
 import BookCard from '@/components/books/BookCard';
 
 type PageParams = {
