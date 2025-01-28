@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Read the books data
-const booksFile = fs.readFileSync(path.join(__dirname, '../src/app/lib/books.ts'), 'utf8');
+const booksFile = fs.readFileSync(path.join(__dirname, '../src/lib/books.ts'), 'utf8');
 
 // Extract the books array using regex
 const booksMatch = booksFile.match(/export const books: Book\[] = (\[[\s\S]*?\]);/);
