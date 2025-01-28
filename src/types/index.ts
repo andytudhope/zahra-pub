@@ -16,12 +16,12 @@ export interface Book {
   }
   
   export type CategorySlug = 
-    | 'islam'
     | 'quran'
+    | 'poetry'
+    | 'islam'
     | 'sufism'
     | 'practices'
     | 'talks-courses'
-    | 'poetry'
     | 'other';
   
   export interface Category {
