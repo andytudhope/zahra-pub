@@ -2,15 +2,14 @@ import { getBooksByCategory } from '@/lib/books';
 import { categories } from '@/lib/books';
 import BookCard from '@/components/books/BookCard';
 
-interface CategoryPageProps {
-  params: {
-    category: string;
-  };
+type PageParams = {
+  params: Promise<{ category: string }>;
 }
 
-export default function CategoryPage({ params }: CategoryPageProps) {
-  const category = categories[params.category];
-  const books = getBooksByCategory(params.category);
+export default async function Page({ params }: PageParams) {
+  const resolvedParams = await params;
+  const category = categories[resolvedParams.category];
+  const books = getBooksByCategory(resolvedParams.category);
 
   if (!category) {
     return <div>Category not found</div>;
@@ -23,7 +22,7 @@ export default function CategoryPage({ params }: CategoryPageProps) {
         <p className="text-gray-600">{category.description}</p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 min-h-screen">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {books.map((book) => (
           <BookCard key={book.id} book={book} variant="grid" />
         ))}
@@ -32,8 +31,7 @@ export default function CategoryPage({ params }: CategoryPageProps) {
   );
 }
 
-// Generate static params for all categories
-export async function generateStaticParams() {
+export function generateStaticParams() {
   return Object.keys(categories).map((category) => ({
     category,
   }));

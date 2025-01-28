@@ -1,24 +1,22 @@
 // src/app/book/[id]/page.tsx
 import { books } from '@/lib/books';
 import Image from 'next/image';
-import RichText from '@/components/ui/RichText';
 import { notFound } from 'next/navigation';
 
-interface BookPageProps {
-  params: {
-    id: string;
-  };
+type PageParams = {
+  params: Promise<{ id: string }>;
 }
 
-export default function BookPage({ params }: BookPageProps) {
-  const book = books.find(b => b.id === params.id);
+export default async function Page({ params }: PageParams) {
+  const resolvedParams = await params;
+  const book = books.find(b => b.id === resolvedParams.id);
 
   if (!book) {
     notFound();
   }
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-8">
+    <div className="max-w-7xl mx-auto px-4 py-8">
       <div className="flex flex-col md:flex-row gap-8">
         <div className="flex-shrink-0">
           <div className="relative w-64 h-96">
@@ -34,9 +32,7 @@ export default function BookPage({ params }: BookPageProps) {
 
         <div className="flex-grow">
           <h1 className="text-3xl font-bold mb-4">{book.title}</h1>
-          <div className="text-gray-600 mb-8">
-            <RichText content={book.description} />
-          </div>
+          <p className="text-gray-600 mb-8">{book.description}</p>
 
           <div className="space-y-4 max-w-md">
             {book.purchaseLinks.amazon && (
@@ -52,7 +48,7 @@ export default function BookPage({ params }: BookPageProps) {
 
             <a
               href={book.samplePdfUrl}
-                              className="block w-full text-center border-2 border-black text-black py-3 rounded-lg hover:bg-gray-50 transition-colors"
+              className="block w-full text-center border-2 border-black text-black py-3 rounded-lg hover:bg-gray-50 transition-colors"
               target="_blank"
               rel="noopener noreferrer"
             >
