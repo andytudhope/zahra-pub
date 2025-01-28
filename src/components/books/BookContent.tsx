@@ -3,6 +3,7 @@
 import { Book } from '@/types';
 import Image from 'next/image';
 import { useGeography } from '@/hooks/useGeography';
+import { getAmazonUrl } from '@/lib/amazonUtils';
 import RichText from '@/components/ui/RichText';
 
 interface BookContentProps {
@@ -11,6 +12,7 @@ interface BookContentProps {
 
 export default function BookContent({ book }: BookContentProps) {
   const userCountry = useGeography();
+  const amazonUrl = getAmazonUrl(book.purchaseLinks.amazon, userCountry);
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
@@ -41,9 +43,9 @@ export default function BookContent({ book }: BookContentProps) {
               Download Sample PDF
             </a>
             
-            {book.purchaseLinks.amazon && (
+            {amazonUrl && (
               <a
-                href={book.purchaseLinks.amazon}
+                href={amazonUrl}
                 className="block w-full text-center bg-black text-white py-3 rounded-lg hover:bg-black/80 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"

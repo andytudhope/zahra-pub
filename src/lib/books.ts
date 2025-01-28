@@ -41,7 +41,7 @@ export const books: Book[] = [
     coverImage: "/images/book-covers/QuranPathToEternalLife.jpg",
     category: 'quran',
     purchaseLinks: {
-      amazon: "http://www.amazon.com/dp/B0CW1JQCQ2",
+      amazon: "B0CW1JQCQ2",
       other: [
         {
             name: "Angus and Robertson",
@@ -61,7 +61,7 @@ export const books: Book[] = [
         {
             name: "Bookshop",
             url: "https://bookshop.org/book/9781776490110",
-            geography: "all"
+            geography: "US"
         },
         {
             name: "Book Bug",
@@ -149,7 +149,35 @@ export const books: Book[] = [
     coverImage: "/images/book-covers/ShadesOfReality.jpg",
     category: 'poetry',
     purchaseLinks: {
-      amazon: "http://www.amazon.com/dp/B0DPNG2JMH",
+      amazon: "B0DPNG2JMH",
+      other: [
+        {
+          name: "Bookshop",
+          url: "https://bookshop.org/p/books/shades-of-reality-shaykh-fadhlalla-haeri/22095110",
+          geography: "US"
+        },
+        {
+            name: "Booktopia",
+            url: "https://www.booktopia.com.au/shades-of-reality-shaykh-fadhlalla-haeri/book/9781776490141.html",
+            geography: "AU"
+        },
+        {
+            name: "Bokus",
+            url: "https://www.bokus.com/bok/9781776490141/shades-of-reality/",
+            geography: "SE"
+        }
+      ]
+    },
+    samplePdfUrl: "/samples/ShadesOfReality.pdf"
+  },
+  {
+    id: 'hikari',
+    title: "Hikari: Lights and Shadows",
+    description: " The word \"Hikari\" is often used in various contexts in Japanese culture, including literature, art, and everyday language, to convey different shades of meaning related to light and its symbolic significance.\n\nReality emanates from the perpetual cosmic Oneness that radiates numerous patterns of lights which brings about life. As evolved human beings, any link that connects us to the origin, gives us comfort, ease and joy.\n\nWe are privileged to have numerous links to this Oneness. Language can help us to connect and unify, so does a beautiful scene, so do all our major senses-through attraction and repulsion.\n\nThe short bursts of insights in this book are steps towards being at one with the light within the heart. All our ambitions and drives ultimately lead us to the origin and creation of cosmic Oneness. Truth is one. Reality is one. Boundless eternal life is one, emanating from the One.\n\n- From the Introduction by Shaykh Fadhlalla Haeri ",
+    coverImage: "/images/book-covers/Hikari.jpg",
+    category: 'poetry',
+    purchaseLinks: {
+      amazon: "B0DKB5B6SF",
       other: [
         {
           name: "Bookshop",
@@ -177,7 +205,7 @@ export const books: Book[] = [
     coverImage: "/images/book-covers/elements-of-islam.jpg",
     category: 'islam',
     purchaseLinks: {
-      amazon: "https://www.amazon.com/dp/B01IVTK8WG",
+      amazon: "B01IVTK8WG",
       other: [
         {
           name: "Barnes & Noble",
