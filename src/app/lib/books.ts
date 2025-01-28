@@ -59,7 +59,96 @@ export const books: Book[] = [
     },
     samplePdfUrl: "/samples/TheElementsOfIslam.pdf"
   },
-  // Add other books...
+  {
+    id: 'quran-path-eternal-life',
+    title: "The Qur'an: Path to Eternal Life",
+    description: "\"There are numerous challenges and quests in human life. The most powerful drive, however, is to understand and connect with that which is timeless and boundless. Our keen interest in the beginning of creation and its end is part of this quest. The Qur’an is the voice of truth which involves what is considered to be rational and shareable consciousness. The majesty of the Qur’an is that it addresses most of the human situation and day to day realities whilst connecting it with the Absolute and Boundless. At a normal, conditioned, human consciousness, the Qur’an can help to reduce suffering and discord, but a point is reached where spiritual insights go beyond the mind and into the realm of the soul where discernment and differentiations melt away into a zone where energy and matter are not distinguishable. For this reason, most classical scholars of Qur’an refer to this higher level as the Divine Domain and refrain from commenting or discussing it.\"\n – From the Foreword by Shaykh Fadhlalla Haeri\n\nThe <i>Irfani</i> reflections and commentaries presented by Shaykh Fadhlalla Haeri in this book provide a bridge between rational understanding and spiritual insights of the Qur’an. This production urges the reader to travel deeper and higher in their consciousness to achieve their ultimate destiny – awareness of awareness of the Ultimate Oneness of our existence.\n\nThis edition contains a Foreword by Shaykh Fadhlalla Haeri, an introduction by the editor Shaykh Saadi Douglas Klotz, and an introduction by the translator of the Qur’anic verses Dr Adnan Al Adnani. The text contains the Qur’anic translation followed by commentaries by Shaykh Fadhlalla Haeri relevant to each set of verses.",
+    coverImage: "/images/book-covers/QuranPathToEternalLife.jpg",
+    category: 'quran',
+    purchaseLinks: {
+      amazon: "http://www.amazon.com/dp/B0CW1JQCQ2",
+      other: [
+        {
+            name: "Angus and Robertson (Australia)",
+            url: "https://www.angusrobertson.com.au/books/the-quran-shaykh-fadhlalla-haeri/p/9781776490110"
+        },
+        {
+          name: "Barnes & Noble",
+          url: "https://www.barnesandnoble.com/w/the-quran-shaykh-fadhlalla-haeri/1144971602"
+        },
+        {
+            name: "Bol (Netherlands)",
+            url: "https://www.bol.com/be/nl/p/the-qur-an/9300000174603444/"
+        },
+        {
+            name: "Bookshop",
+            url: "https://bookshop.org/book/9781776490110"
+        },
+        {
+            name: "Book Bug",
+            url: "https://www.bookbugkalamazoo.com/book/9781776490110"
+        },
+
+        {
+            name: "Booktopia (Australia)",
+            url: "https://www.booktopia.com.au/the-qur-an-shaykh-fadhlalla-haeri/book/9781776490110.html"
+        },
+        {
+            name: "eBay (UK)",
+            url: "https://www.ebay.co.uk/itm/364807514020"
+        },
+        {
+            name: "Hickory Stick Bookshop",
+            url: "https://www.hickorystickbookshop.com/book/9781776490110"
+        },
+        {
+            name: "The Intellectual Bookshop",
+            url: "https://www.intellectualbookshop.com/book/9781776490110"
+        },
+        {
+            name: "Krisostomus",
+            url: "https://www.kriso.ee/quran-path-eternal-life-tq-launch-db-9781776490110.html"
+        },
+        {
+            name: "Laguna Beach Books",
+            url: "https://www.lagunabeachbooks.com/book/9781776490110"
+        },
+        {
+            name: "Lehmanns (Germany)",
+            url: "https://www.lehmanns.de/shop/geisteswissenschaften/67516285-9781776490110-the-qur-an"
+        },
+        {
+            name: "RJ Julia",
+            url: "https://www.rjjulia.com/book/9781776490110"
+        },
+        {
+            name: "Shermans Maine Cost Book Shops",
+            url: "https://www.shermans.com/book/9781776490110"
+        },
+        {
+            name: "Takealot (South Africa)",
+            url: "https://www.takealot.com/the-qur-an-path-to-eternal-life/PLID95219850"
+        },
+        {
+            name: "The Reading Bug",
+            url: "https://www.thereadingbug.com/book/9781776490110"
+        },
+        {
+            name: "Thrift Books",
+            url: "https://www.thriftbooks.com/w/the-quran-path-to-eternal-life-travel-version_shaykh-fadhlalla-haeri/52468919/#edition=71083075&idiq=63639719"
+        },
+        {
+            name: "Yardstick",
+            url: "https://www.yardstickalgoma.com/book/9781776490110"
+        },
+        {
+            name: "Waterstones",
+            url: "https://www.waterstones.com/book/the-quran/shaykh-fadhlalla-haeri/adnan-al-adnani/9781928329480"
+        }
+      ]
+    },
+    samplePdfUrl: "/samples/TheQuranPathToEternalLife.pdf"
+  },
 ];
 
 export const getBooksByCategory = (categorySlug: string): Book[] => {

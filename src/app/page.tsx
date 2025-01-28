@@ -1,5 +1,6 @@
 // src/app/page.tsx
 import Image from 'next/image';
+import Link from 'next/link';
 import { categories, books } from '@/lib/books';
 import BookCard from '@/components/books/BookCard';
 
@@ -32,13 +33,18 @@ export default function Home() {
 
               return (
                 <section key={category.slug}>
-                  <h2 className="text-2xl font-bold mb-6">{category.name}</h2>
+                  <Link 
+                    href={`/${category.slug}`}
+                    className="inline-block hover:underline"
+                  >
+                    <h2 className="text-3xl font-bold mb-6">{category.name}</h2>
+                  </Link>
                   <div className="overflow-x-auto -mx-4 px-4">
                     <div className="flex space-x-6 pb-4">
                       {categoryBooks.map((book) => (
-                        <BookCard 
-                          key={book.id} 
-                          book={book} 
+                        <BookCard
+                          key={book.id}
+                          book={book}
                           variant="grid"
                         />
                       ))}
