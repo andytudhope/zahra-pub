@@ -1,6 +1,6 @@
-// src/app/book/[id]/page.tsx
 import { books } from '@/lib/books';
 import Image from 'next/image';
+import RichText from '@/components/ui/RichText';
 import { notFound } from 'next/navigation';
 
 type PageParams = {
@@ -32,7 +32,9 @@ export default async function Page({ params }: PageParams) {
 
         <div className="flex-grow">
           <h1 className="text-3xl font-bold mb-4">{book.title}</h1>
-          <p className="text-gray-600 mb-8">{book.description}</p>
+          <div className="text-gray-600 mb-8">
+            <RichText content={book.description} />
+          </div>
 
           <div className="space-y-4 max-w-md">
             {book.purchaseLinks.amazon && (

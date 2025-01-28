@@ -46,10 +46,18 @@ export const books: Book[] = [
         {
           name: "Barnes & Noble",
           url: "https://www.barnesandnoble.com/w/elements-of-islam-shaykh-fadhlalla-haeri/1000382122"
+        },
+        {
+            name: "Takealot",
+            url: "https://www.takealot.com/the-elements-of-islam/PLID68923347"
+        },
+        {
+            name: "Waterstones",
+            url: "https://www.waterstones.com/book/the-elements-of-islam/shaykh-fadhlalla-haeri/9781919897059"
         }
       ]
     },
-    samplePdfUrl: "/samples/beginners-guide-islam.pdf"
+    samplePdfUrl: "/samples/TheElementsOfIslam.pdf"
   },
   // Add other books...
 ];
