@@ -11,11 +11,6 @@ interface BookContentProps {
 
 export default function BookContent({ book }: BookContentProps) {
   const userCountry = useGeography();
-  console.log('BookContent - User country:', userCountry);
-  console.log('BookContent - Available links:', book.purchaseLinks.other);
-  console.log('BookContent - Filtered links:', book.purchaseLinks.other?.filter(link => 
-    link.geography === 'all' || link.geography === userCountry
-  ));
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">

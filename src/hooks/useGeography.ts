@@ -11,9 +11,7 @@ export function useGeography() {
     fetch('/api/geography', {
       headers,
     }).then(response => {
-      console.log('useGeography - Response headers:', Object.fromEntries(response.headers));
       const country = response.headers.get('x-user-country');
-      console.log('useGeography - Detected country:', country);
       if (country) {
         setCountry(country);
       }
