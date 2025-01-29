@@ -246,8 +246,13 @@ export const books: Book[] = [
     description: " The word \"Hikari\" is often used in various contexts in Japanese culture, including literature, art, and everyday language, to convey different shades of meaning related to light and its symbolic significance.\n\nReality emanates from the perpetual cosmic Oneness that radiates numerous patterns of lights which brings about life. As evolved human beings, any link that connects us to the origin, gives us comfort, ease and joy.\n\nWe are privileged to have numerous links to this Oneness. Language can help us to connect and unify, so does a beautiful scene, so do all our major senses-through attraction and repulsion.\n\nThe short bursts of insights in this book are steps towards being at one with the light within the heart. All our ambitions and drives ultimately lead us to the origin and creation of cosmic Oneness. Truth is one. Reality is one. Boundless eternal life is one, emanating from the One.\n\n- From the Introduction by Shaykh Fadhlalla Haeri ",
     coverImage: "/images/book-covers/Hikari.jpg",
     category: 'poetry',
+    latest: true,
+    publishedDate: new Date('2024-09-19'),
     purchaseLinks: {
-      amazon: "B0DKB5B6SF",
+      amazon: "177649010X",
+      kindle: "B0DKB5B6SF",
+      kobo: "https://www.kobo.com/ca/en/ebook/hikari-3",
+      apple: "http://books.apple.com/us/book/id6737148873",
       other: [
         {
           name: "Bookshop",
@@ -274,8 +279,12 @@ export const books: Book[] = [
     description: "At a time when communities increasingly tend to view each other with suspicion, <i>The Elements of Islam</i> cuts through the morass of misunderstanding and misinformation to give a true and timely overview of the universality and light of the prophetic message of Islam.\n\n<i>The Elements of Islam</i> explains:\n\n<ol><li>The unifying path of Islam</li><li>The history and development of Islam as a religion</li><li>The distinction between original Islam and the traditions of Muslims</li><li>The life that Muslims lead today</li><li>The future of Islam</li></ol>",
     coverImage: "/images/book-covers/elements-of-islam.jpg",
     category: 'islam',
+    publishedDate: new Date('2020-04--19'),
     purchaseLinks: {
-      amazon: "B01IVTK8WG",
+      amazon: "1919897054",
+      kindle: "B01IVTK8WG",
+      kobo: "http://store.kobobooks.com/en-CA/ebook/the-elements-of-islam",
+      apple: "http://itunes.apple.com/us/book/id1144988283",
       other: [
         {
           name: "Barnes & Noble",
