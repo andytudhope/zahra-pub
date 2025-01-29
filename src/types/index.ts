@@ -21,6 +21,7 @@ export interface Book {
     }>;
   };
   samplePdfUrl?: string;
+  reviews?: string;
 }
 
 export type CategorySlug =

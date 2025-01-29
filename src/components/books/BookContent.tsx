@@ -42,14 +42,16 @@ export default function BookContent({ book }: BookContentProps) {
           
           <div className="mt-8 space-y-2">
             {/* Sample PDF */}
-            <a
-              href={book.samplePdfUrl}
-              className="block w-[calc(50%-20px)] md:w-full md:max-w-md text-center border-2 border-black text-black py-3 rounded-lg hover:bg-gray-50 transition-colors"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Download Sample PDF
-            </a>
+            {book.samplePdfUrl && (
+              <a
+                href={book.samplePdfUrl}
+                className="block w-[calc(50%-20px)] md:w-full md:max-w-md text-center border-2 border-black text-black py-3 rounded-lg hover:bg-gray-50 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Download Sample PDF
+              </a>
+            )}
 
             {/* Amazon button */}
             {amazonUrl && (
@@ -124,6 +126,14 @@ export default function BookContent({ book }: BookContentProps) {
                     </div>
                   </div>
                 )}
+              </div>
+            )}
+
+            {/* Reader Reviews */}
+            {book.reviews && (
+              <div>
+                <p className='text-xl font-bold my-2 underline'>Reader Reviews</p>
+                <RichText content={book.reviews} />
               </div>
             )}
           </div>

@@ -80,7 +80,7 @@ export default function Home() {
                     <h2 className="text-3xl font-bold mb-6">{category.name}</h2>
                   </Link>
                   <div className="overflow-x-auto overflow-y-hidden -mx-4 px-4">
-                    <div className="flex space-x-6 pb-4">
+                    <div className="flex space-x-6 md:space-x-2 pb-4">
                       {categoryBooks.map((book) => (
                         <BookCard
                           key={book.id}
