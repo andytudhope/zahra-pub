@@ -12,13 +12,17 @@ interface BookContentProps {
 export default function BookContent({ book }: BookContentProps) {
   const userCountry = useGeography();
   const amazonUrl = getAmazonUrl(book.purchaseLinks.amazon, userCountry);
+  const kindleUrl = getAmazonUrl(book.purchaseLinks.kindle, userCountry);
   
   const localShops = book.purchaseLinks.other?.filter(link =>
     link.geography === 'all' || link.geography === userCountry
   );
 
+  const hasEbooks = book.purchaseLinks.kindle || book.purchaseLinks.kobo || book.purchaseLinks.apple;
+  const hasLocalShops = localShops && localShops.length > 0;
+
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8">
+    <div className="max-w-6xl mx-auto px-4 py-8">
       <div className="flex flex-col md:flex-row gap-8">
         <div className="flex-shrink-0">
           <div className="relative w-64 h-96">
@@ -34,39 +38,91 @@ export default function BookContent({ book }: BookContentProps) {
         <div className="flex-grow">
           <h1 className="text-3xl font-bold mb-4">{book.title}</h1>
           <RichText content={book.description} />
-          <div className="mt-4 space-y-4 max-w-md">
+          
+          <div className="mt-8 space-y-2">
+            {/* Sample PDF */}
             <a
               href={book.samplePdfUrl}
-              className="block w-full text-center border-2 border-black text-black py-3 rounded-lg hover:bg-gray-50 transition-colors"
+              className="block w-[calc(50%-20px)] md:w-full md:max-w-md text-center border-2 border-black text-black py-3 rounded-lg hover:bg-gray-50 transition-colors"
               target="_blank"
               rel="noopener noreferrer"
             >
               Download Sample PDF
             </a>
+
+            {/* Amazon button */}
             {amazonUrl && (
               <a
                 href={amazonUrl}
-                className="block w-full text-center bg-black text-white py-3 rounded-lg hover:bg-black/80 transition-colors"
+                className="block w-[calc(50%-20px)] md:w-full md:max-w-md text-center bg-black text-white py-3 rounded-lg hover:bg-black/80 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Amazon
               </a>
             )}
-            {localShops && localShops.length > 0 && (
-              <div className="space-y-6 py-8 border-t border-gray-300">
-                <p className="font-bold text-xl">Local Book Shops Near You</p>
-                {localShops.map((link, index) => (
-                  <a
-                    key={index}
-                    href={link.url}
-                    className="block w-full text-center border border-gray-300 text-gray-700 py-3 rounded-lg hover:border-black transition-colors"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {link.name}
-                  </a>
-                ))}
+
+            {/* Purchase Options Grid */}
+            {(hasEbooks || hasLocalShops) && (
+              <div className="grid grid-cols-2 md:grid-cols-1 gap-8 py-8">
+                {/* E-books Column */}
+                {hasEbooks && (
+                  <div>
+                    <p className="font-bold text-xl mb-4">E-Books</p>
+                    <div className="space-y-3">
+                      {kindleUrl && (
+                        <a
+                          href={kindleUrl}
+                          className="block w-full text-center border border-gray-300 text-gray-700 py-3 rounded-lg hover:border-black transition-colors"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Kindle
+                        </a>
+                      )}
+                      {book.purchaseLinks.kobo && (
+                        <a
+                          href={book.purchaseLinks.kobo}
+                          className="block w-full text-center border border-gray-300 text-gray-700 py-3 rounded-lg hover:border-black transition-colors"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Kobo
+                        </a>
+                      )}
+                      {book.purchaseLinks.apple && (
+                        <a
+                          href={book.purchaseLinks.apple}
+                          className="block w-full text-center border border-gray-300 text-gray-700 py-3 rounded-lg hover:border-black transition-colors"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Apple Books
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                )}
+
+                {/* Local Bookshops Column */}
+                {hasLocalShops && (
+                  <div>
+                    <p className="font-bold text-xl mb-4">Book Shops Relevant to You</p>
+                    <div className="space-y-3">
+                      {localShops.map((link, index) => (
+                        <a
+                          key={index}
+                          href={link.url}
+                          className="block w-full text-center border border-gray-300 text-gray-700 py-3 rounded-lg hover:border-black transition-colors"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {link.name}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             )}
           </div>

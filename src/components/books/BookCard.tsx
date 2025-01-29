@@ -6,24 +6,23 @@ import RichText from '@/components/ui/RichText'
 interface BookCardProps {
   book: Book;
   variant: 'grid' | 'detail';
+  className?: string;
 }
 
-const BookCard = ({ book, variant }: BookCardProps) => {
+const BookCard = ({ book, variant, className = '' }: BookCardProps) => {
   if (variant === 'grid') {
     return (
-      <Link 
+      <Link
         href={`/book/${book.id}`}
-        className="block w-64 flex-shrink-0 transition-transform hover:scale-105"
+        className={`block aspect-[10/14] relative transition-transform hover:scale-105 ${className}`}
       >
-        <div className="relative w-64 h-96">
-          <Image
-            src={book.coverImage}
-            alt={book.title}
-            width={256}
-            height={384}
-            className="rounded-lg shadow-md"
-          />
-        </div>
+        <Image
+          src={book.coverImage}
+          alt={book.title}
+          fill
+          sizes="(max-width: 768px) 50vw, 33vw"
+          className="rounded-lg shadow-md object-cover"
+        />
       </Link>
     );
   }
@@ -41,16 +40,14 @@ const BookCard = ({ book, variant }: BookCardProps) => {
           />
         </div>
       </div>
-      
       <div className="p-4 flex flex-col flex-grow">
         <h3 className="text-xl font-semibold mb-2">{book.title}</h3>
         <div className="text-gray-600 mb-4 flex-grow overflow-hidden">
-          <RichText 
-            content={book.description} 
+          <RichText
+            content={book.description}
             className="line-clamp-3"
           />
         </div>
-        
         <div className="space-y-2">
           {book.purchaseLinks.amazon && (
             <a
@@ -62,10 +59,9 @@ const BookCard = ({ book, variant }: BookCardProps) => {
               Buy on Amazon
             </a>
           )}
-          
           <a
             href={book.samplePdfUrl}
-                          className="block w-full text-center border border-black text-black py-2 rounded hover:bg-gray-50 transition-colors"
+            className="block w-full text-center border border-black text-black py-2 rounded hover:bg-gray-50 transition-colors"
             target="_blank"
             rel="noopener noreferrer"
           >

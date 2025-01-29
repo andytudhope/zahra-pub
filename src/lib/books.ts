@@ -43,12 +43,36 @@ export const books: Book[] = [
   {
     id: 'quran-path-eternal-life',
     title: "The Qur'an: Path to Eternal Life",
-    description: "\"There are numerous challenges and quests in human life. The most powerful drive, however, is to understand and connect with that which is timeless and boundless. Our keen interest in the beginning of creation and its end is part of this quest. The Qur’an is the voice of truth which involves what is considered to be rational and shareable consciousness. The majesty of the Qur’an is that it addresses most of the human situation and day to day realities whilst connecting it with the Absolute and Boundless. At a normal, conditioned, human consciousness, the Qur’an can help to reduce suffering and discord, but a point is reached where spiritual insights go beyond the mind and into the realm of the soul where discernment and differentiations melt away into a zone where energy and matter are not distinguishable. For this reason, most classical scholars of Qur’an refer to this higher level as the Divine Domain and refrain from commenting or discussing it.\"\n – From the Foreword by Shaykh Fadhlalla Haeri\n\nThe <i>Irfani</i> reflections and commentaries presented by Shaykh Fadhlalla Haeri in this book provide a bridge between rational understanding and spiritual insights of the Qur’an. This production urges the reader to travel deeper and higher in their consciousness to achieve their ultimate destiny – awareness of awareness of the Ultimate Oneness of our existence.\n\nThis edition contains a Foreword by Shaykh Fadhlalla Haeri, an introduction by the editor Shaykh Saadi Douglas Klotz, and an introduction by the translator of the Qur’anic verses Dr Adnan Al Adnani. The text contains the Qur’anic translation followed by commentaries by Shaykh Fadhlalla Haeri relevant to each set of verses.",
+    description: "\"<i>There are numerous challenges and quests in human life. The most powerful drive, however, is to understand and connect with that which is timeless and boundless. Our keen interest in the beginning of creation and its end is part of this quest. The Qur’an is the voice of truth which involves what is considered to be rational and shareable consciousness. The majesty of the Qur’an is that it addresses most of the human situation and day to day realities whilst connecting it with the Absolute and Boundless. At a normal, conditioned, human consciousness, the Qur’an can help to reduce suffering and discord, but a point is reached where spiritual insights go beyond the mind and into the realm of the soul where discernment and differentiations melt away into a zone where energy and matter are not distinguishable. For this reason, most classical scholars of Qur’an refer to this higher level as the Divine Domain and refrain from commenting or discussing it.</i>\"\n – <b>From the Foreword by Shaykh Fadhlalla Haeri</b>\n\nThe <i>Irfani</i> reflections and commentaries presented by Shaykh Fadhlalla Haeri in this book provide a bridge between rational understanding and spiritual insights of the Qur’an. This production urges the reader to travel deeper and higher in their consciousness to achieve their ultimate destiny – awareness of awareness of the Ultimate Oneness of our existence.\n\nThis edition contains a Foreword by Shaykh Fadhlalla Haeri, an introduction by the editor Shaykh Saadi Douglas Klotz, and an introduction by the translator of the Qur’anic verses Dr Adnan Al Adnani. The text contains the Qur’anic translation followed by commentaries by Shaykh Fadhlalla Haeri relevant to each set of verses.\n\n<h2>Different Options Available</h2>\n\nWhen you navigate to the book shop of your choice below, please be aware that there are different options available for this unique work.\n\n<ul><li>A Hardcover and a Paperback version which includes a Foreword by Shaykh Fadhlalla Haeri, an Introduction by the editor Shaykh Saadi Douglas Klotz, an Introduction by the translator Dr Adnan Al Adnani. The text contains the Arabic of the Qur'an, a translation alongside it completed by Dr Adnan Al Adnani, commentaries by Shaykh Fadhlalla Haeri relevant to each page, as well as two additional sets of commentaries on the side of each page of the Qur'an, one of which describes the meaning of the key verse/s per page (identified by their verse numbers underlined) and the other which presents a prescription.</li><li>A Travel version in Paperback, which contains a Foreword by Shaykh Fadhlalla Haeri. The text contains the English translation of the Qur'an by Dr Adnan Al Adnani, along with commentaries and prescription by Shaykh Fadhlalla Haeri relevant to each page. It does not include the Arabic script</li><li>An E-Book version which contains a Foreword by Shaykh Fadhlalla Haeri, an Introduction by the editor Shaykh Saadi Douglas Klotz, and an Introduction by the translator of the Qur’anic verses Dr Adnan Al Adnani. The text contains the Qur'anic translation followed by commentaries and prescription by Shaykh Fadhlalla Haeri relevant to each set of verses. It does not include the Arabic script</li></ul>",
     coverImage: "/images/book-covers/QuranPathToEternalLife.jpg",
     category: 'quran',
+    order: 1,
+    featured: true, 
     purchaseLinks: {
-      amazon: "B0CW1JQCQ2",
+      amazon: "1928329209",
+      kobo: 'https://www.kobo.com/ca/en/ebook/the-qur-an-47',
+      apple: 'http://books.apple.com/us/book/id6478554730',
       other: [
+        {
+          name: "Amazon Paperback Version",
+          url: "http://www.amazon.com/dp/1928329489",
+          geography: "all"
+        },
+        {
+          name: "Amazon Travel Version",
+          url: "http://www.amazon.com/dp/1776490118",
+          geography: "all"
+        },
+        {
+          name: "Kindle",
+          url: "https://www.amazon.com/gp/product/B0CW1JQCQ2",
+          geography: "all"
+        },
+        {
+          name: "Adilbris",
+          url: "https://www.adlibris.com/se/bok/the-quran-9781928329480",
+          geography: "SE"
+        },
         {
             name: "Angus and Robertson",
             url: "https://www.angusrobertson.com.au/books/the-quran-shaykh-fadhlalla-haeri/p/9781776490110",
@@ -58,6 +82,11 @@ export const books: Book[] = [
           name: "Barnes & Noble",
           url: "https://www.barnesandnoble.com/w/the-quran-shaykh-fadhlalla-haeri/1144971602",
           geography: "US"
+        },
+        {
+          name: "Bokus",
+          url: "https://www.bokus.com/bok/9781928329480/the-quran-path-to-eternal-life/",
+          geography: "SE"
         },
         {
             name: "Bol",
@@ -85,6 +114,11 @@ export const books: Book[] = [
             geography: "UK"
         },
         {
+          name: "Feltrinelli",
+          url: "https://www.ibs.it/qur-path-to-eternal-life-libro-inglese-shaykh-fadhlalla-haeri/e/9781928329480?queryId=76313c9d865f1487d727d6f1239265ab",
+          geography: "IT"
+        },
+        {
             name: "Hickory Stick Bookshop",
             url: "https://www.hickorystickbookshop.com/book/9781776490110",
             geography: "US"
@@ -108,6 +142,31 @@ export const books: Book[] = [
             name: "Lehmanns",
             url: "https://www.lehmanns.de/shop/geisteswissenschaften/67516285-9781776490110-the-qur-an",
             geography: "DE"
+        },
+        {
+          name: "Magers & Quinn",
+          url: "https://www.magersandquinn.com/product/QURAN/26479732",
+          geography: "US"
+        },
+        {
+          name: "Matfel",
+          url: "https://matfel.pl/product-pol-1828976-The-Quran-Haeri-Shaykh-Fadhlalla.html",
+          geography: "PL"
+        },
+        {
+          name: "Medimops",
+          url: "https://www.medimops.de/haeri-shaykh-fadhlalla-the-qur-an-path-to-eternal-life-zp-qur-an-taschenbuch-M01928329489.html",
+          geography: "DE"
+        },
+        {
+          name: "Penguin Books",
+          url: "https://www.penguinbookshop.com/book/9781928329480",
+          geography: "US"
+        },
+        {
+          name: "Poshmark",
+          url: "https://poshmark.com/listing/The-Quran-Path-to-Eternal-Life-Shaykh-Fadhlalla-Haeri-6603c2944ba08af7fecd1b13",
+          geography: "US"
         },
         {
             name: "RJ Julia",
@@ -154,8 +213,13 @@ export const books: Book[] = [
     description: "In these stories I would like to show the many different ways that people strive towards a better life that is more secure and enjoyable. Sometimes our lives may be in a downward spiral and it might feel as if everything is disintegrating on a path of entropy. Our journey on earth is a short period of being exposed to interaction with the outer world, a period of awareness and self-reflection, which often follows a path that touches both hope and despair. I hope these snippets of life will enable the reader to rise in awareness to the inner spirit, which is eternal and divine.\n\nHuman consciousness is a special entity that interacts with whatever it focuses on, like the flame of a fire, unlike a passing wind that simply changes outer situations. Some of these stories show the effect of consciousness on an event. It is here that the narrator of the story participates in its content.\n\n- Shaykh Fadhlalla Haeri",
     coverImage: "/images/book-covers/ShadesOfReality.jpg",
     category: 'poetry',
+    latest: true,
+    publishedDate: new Date('2024-10-19'),
     purchaseLinks: {
-      amazon: "B0DPNG2JMH",
+      amazon: "B0DPLCXLDG",
+      kindle: "B0DPNG2JMH",
+      kobo: "https://www.kobo.com/ca/en/ebook/shades-of-reality-1",
+      apple: "http://books.apple.com/us/book/id6739071434",
       other: [
         {
           name: "Bookshop",

@@ -4,11 +4,15 @@ export interface Book {
   description: string;
   coverImage: string;
   category: CategorySlug;
+  order?: number;
   featured?: boolean;
   latest?: boolean;
   publishedDate?: Date;
   purchaseLinks: {
     amazon?: string;
+    kindle?: string;
+    kobo?: string;
+    apple?: string;
     other?: Array<{
       name: string;
       url: string;
