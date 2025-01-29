@@ -23,8 +23,8 @@ export default function BookContent({ book }: BookContentProps) {
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <div className="flex flex-col md:flex-row gap-8">
-        <div className="flex-shrink-0">
+      <div className="grid grid-cols-1 gap-8">
+        <div>
           <div className="relative w-64 h-96">
             <Image
               src={book.coverImage}
@@ -35,7 +35,7 @@ export default function BookContent({ book }: BookContentProps) {
             />
           </div>
         </div>
-        <div className="flex-grow">
+        <div>
           <h1 className="text-3xl font-bold mb-4">{book.title}</h1>
           <p className="text-gray-400 italic mb-6">by {book.author || 'Shaykh Fadhlalla Haeri'}</p>
           <RichText content={book.description} />
