@@ -5,7 +5,7 @@ export const categories: Categories = {
     slug: 'islam',
     name: 'Islam',
     description: 'Foundational works covering various aspects of Islamic knowledge and practice.',
-    order: 3
+    order: 6
   },
   'quran': {
     slug: 'quran',
@@ -17,19 +17,19 @@ export const categories: Categories = {
     slug: 'sufism',
     name: 'Sufism',
     description: '',
-    order: 4
+    order: 3
   },
   'practices': {
     slug: 'practices',
     name: 'Practices',
     description: '',
-    order: 5
+    order: 4
   },
   'talks-courses': {
     slug: 'talks-courses',
     name: 'Talks and Courses',
     description: '',
-    order: 6
+    order: 5
   },
   'poetry': {
     slug: 'poetry',
@@ -304,6 +304,187 @@ export const books: Book[] = [
       ]
     },
     samplePdfUrl: "/samples/TheElementsOfIslam.pdf"
+  },
+  {
+    id: "the-calling-heart",
+    title: "The Calling Heart",
+    description: "The Prophetic teachings and practices are very rich regarding the importance of supplication and prayers to Allah and calling upon His Attributes and Beautiful Names. Allah, the Sublime says: \"Indeed through the remembrance of Allah the hearts become tranquil.\" (13:28)\n\nI present this Litany (wird) to whomsoever desires access to the treasures of the Hereafter. There is no power and no strength except through Allah, the Magnificent. There is no victor except Him. There is no presence except His. There is nothing and none sought after besides Him. There is no beloved except Him. Oh He, Oh He, Oh He who there is no he except He.\n\n- Shaykh Fadhlalla Haeri",
+    coverImage: "/images/book-covers/TheCallingHeart.jpg",
+    category: "poetry",
+    order: 1,
+    latest: true,
+    publishedDate: new Date('2024-05-19'),
+    purchaseLinks: {
+      amazon: "B0D8CPSRQZ",
+      other: [
+        {
+          name: "Barnes & Noble",
+          url: "https://www.barnesandnoble.com/w/the-calling-heart-shaykh-fadhlalla-haeri/1145918765?ean=9781776490134",
+          geography: "US",
+        },
+      ]
+    },
+  },
+  {
+    id: "pathways-to-the-garden",
+    title: "Pathways to the Garden: Contemporary Insights on the Sufi Path",
+    description: " It is a natural human drive to discover and develop the perfect Garden. We long for a state where we have no concerns, anxieties or needs, just living in the Garden in the eternal drift of time. Only a few reach a point of bewilderment when they are not certain whether the Garden is in them or they are in the Garden. Truth is beyond space and time; therefore, its apparent confusion is a big grace when the ‘you’ is lost and the cosmic Oneness illuminates all.\n\nCosmic Light is boundless and eternal. Throughout human history, irrespective of religious orientation or culture, people have reflected on the eternal truth of this reality. Some of these sages, like Shaykh Sa`d ud-Dīn Mahmūd Shabistārī, were able to convey this in a universal light. In my experience and understanding, the conditioned consciousness of human beings has within it a drive towards higher consciousness and intelligence. Throughout our history, this appears in diverse ways and forms, cloaked within the culture of the time. With the rise in intelligence and education, today’s people can easily understand duality and the quest for unity without it being too esoteric. Young people today can also easily appreciate the truth that our existence has emerged from a mysterious unific source and will return to it after the end of time. Every one of us is challenged by the mystery of now, which is ever-changing and constant, and the unique gift of life.\n\nAll quests and teachings lead to the realization that the soul, or essence of life, is eternal and that the moment radiates from timelessness. We are obsessed with that which is eternal and ever-present. In my lifelong search to uncover and share the dazzling lights of Truth, I have been propelled to make more accessible translations of specific seminal texts from the Sufi tradition available, as I have done with <i>‘The Secret Garden’</i>. This book, <i>‘Pathways to the Garden’</i> is presented as an update to key questions for today’s time.\n\n- Shaykh Fadhlalla Haeri",
+    coverImage: "/images/book-covers/PathwaysToTheGarden.jpg",
+    category: "sufism",
+    order: 1,
+    latest: true,
+    publishedDate: new Date('2024-06-19'),
+    purchaseLinks: {
+      amazon: "1928329446",
+      kindle: "B0DDTRNFQW",
+      kobo: "https://www.kobo.com/ca/en/ebook/pathways-to-the-garden",
+      apple: "http://books.apple.com/us/book/id6651860673",
+      other: [
+        {
+          name: "",
+          url: "",
+          geography: "",
+        },
+      ]
+    },
+    samplePdfUrl: "/samples/PathwaysToTheGarden.pdf",
+  },
+  {
+    id: "seasons-of-wisdom",
+    title: "Seasons Of Wisdom",
+    description: " Seasons of Wisdom is mostly collated from the closing unscripted talks given by Shaykh Fadhlalla Haeri to seal the annual conferences held by the Academy of Self Knowledge in South Africa. It was his love for Qur'an that brought about a situation of regularly sharing commentaries and delights in the eternal Truth that whatever is known and unknown emanates from one Cosmic Source that is not subject to space or time.\n\n<i>\"Every living entity is a combination of a mysterious divine spirit or soul, which provides life and is eternal and boundless in nature, and a physical identity which connects the divine attributes of the soul with all earthly, transient realities and shadows. With intelligence and faith you will realize how these descriptions will provide seeds of prescriptions. If you dwell on either, you realise they are two facets of the same reality. One describes and the other leads to responsibility and drive. From the inert to the dynamic and moving.</i>\"\n\n- Shaykh Fadhlalla Haeri",
+    coverImage: "/images/book-covers/SeasonsOfWisdom.jpg",
+    category: "talks-courses",
+    order: 2,
+    publishedDate: new Date('2023-11-19'),
+    purchaseLinks: {
+      amazon: "1928329454",
+      kindle: "B0CRLM54RC",
+      kobo: "https://www.kobo.com/ca/en/ebook/seasons-of-wisdom",
+      apple: "http://books.apple.com/us/book/id6475609555",
+      other: [
+        {
+          name: "Takealot",
+          url: "https://www.takealot.com/seasons-of-wisdom/PLID94751076",
+          geography: "ZA",
+        },
+      ]
+    },
+    samplePdfUrl: "/samples/SeasonsOfWisdom-Sample.pdf",
+  },
+  {
+    id: "courteous-approach-quran",
+    title: "A Courteous Approach to Qur'an",
+    description: "<i>\"The Qur’an addresses most issues that concern human beings with constant references to the ultimate Reality and Truth. Considerable emphasis is given to relative time and human concerns on earth and the connection between the inseparability of the relative and the Absolute. The Qur'an emphasizes that anything that exists or happens is due to God and equally emphasizes human responsibility to act and live with clear accountability to God.\n\nThe main difference between other traditions and religions at the time of the Prophet Muhammad is the perplexing notion that, in truth, there is only God, and all else are shadows in this Light.\n\nTo understand the Qur’an and use it as a template, this brief background is necessary. This booklet presents extracts from talks I have given on the subject, arranged in six themes: Context and Action, the Self, Understanding, Transformation, Awakening and lastly Oneness and Balance.</i>\"\n\n- From the Introduction by Shaykh Fadhlalla Haeri ",
+    coverImage: "/images/book-covers/A-Courteous-Approach-To-Quran.jpg",
+    category: "quran",
+    order: 2,
+    publishedDate: new Date('2023-12-12'),
+    purchaseLinks: {
+      amazon: "1928329470",
+      kindle: "B0CQXRJ3SJ",
+      kobo: "https://www.kobo.com/ca/en/ebook/a-courteous-approach-to-qur-an",
+      apple: "http://books.apple.com/us/book/id6474973710",
+      other: [
+        {
+          name: "Takealot",
+          url: "https://www.takealot.com/a-courteous-approach-to-qur-an/PLID94727205",
+          geography: "ZA",
+        },
+      ]
+    },
+    samplePdfUrl: "/samples/A-Courteous-Approach-To-Quran.pdf",
+  },
+  {
+    id: "classical-sufi-teachings",
+    title: "Teachings from a Classical Sufi Master",
+    author: "Sidi `Ali al-Jamal",
+    description: "<b><i>\"Man is a copy of existence and existence is a copy of man. All opposites meet in the human being.\"</b></i>\n\nShaykh Fadhlalla Haeri and Shaykh Hosam Raouf have translated key passages from the writings of Sidi `Ali al-Jamal of Fes, Morocco (d. 1193/4 AH or 1779 CE), who was a great sage of the Shadhiliyya order.\n\nSidi `Ali later became better known through his pupil, Moulay al-`Arabi al-Darqawi, one of the most celebrated eighteenth-century Sufi masters and founder of the Darqawi-Shadhiliyya Tariqa.\n\nThe original Arabic title of this work translates as: ‘Advice to the Seeker on the Path of Asceticism’, or ‘Beautiful Rubies in Understanding the Meaning of Man’.\n\nSelected passages were chosen for this anthology to inspire, guide and make accessible eternal truths to the contemporary seeker.",
+    coverImage: "/images/book-covers/TeachingsFromAClassicalSufiMaster.jpg",
+    category: "sufism",
+    order: 1,
+    featured: true,
+    publishedDate: new Date('2023-04-19'),
+    purchaseLinks: {
+      amazon: "1928329438",
+      kindle: "B0C511DWNX",
+      kobo: "https://www.kobo.com/ca/en/ebook/teachings-from-a-classical-sufi-master",
+      apple: "http://books.apple.com/us/book/id6448954863",
+      other: [
+        {
+          name: "Waterstones",
+          url: "https://www.waterstones.com/book/teachings-from-a-classical-sufi-master/sidi-ali-al-jamal/shaykh-fadhlalla-haeri/9781928329435",
+          geography: "UK",
+        },
+      ]
+    },
+    samplePdfUrl: "/samples/TeachingsFromAClassicalSufiMaster.pdf",
+  },
+  {
+    id: "four-journeys",
+    title: "The Four Journeys",
+    description: "<b><i>\"O human you are struggling towards your Lord and striving until you come to know Him.</b></i>\" Qur'an 84:6\n\nThe notion of the complete human being or the 'Insan al-kamil' was addressed by early Islamic scholars and masters following the model of the Prophet and his exemplary conduct. Prophets, sages, imams and sufi masters have elaborated upon a life fulfilled by enlightenment and God-realisation.\n\nThis experience is the outcome of leaving behind self-illusion, identity and duality. Quality life begins when your direction is clear and you accept responsibility and accountability for your actions. Human needs and desires are endless. Acceptance of this fact is the first step. This is followed by a living faith and trust in God's perfect mercy and justice, irrespective of circumstance. Then comes the security, knowledge and experience of divine guidance through one's own soul and purified heart - a desirable destiny.\n\nAll prophets and messengers have travelled by trust and witnessed the light of Allah at all times. They lived with inner certainty and contentment. The illumined being also experiences the presence of Allah's mercy and grace; such beings can only be in ecstatic gratitude at heart, even when responding to earthly challenges. This is the complete person. Those people who have reached that station are the appropriate guides and role models to be followed. Numerous enlightened masters in the past have guided and helped humanity toward higher consciousness and happiness. Mulla Sadra (d.1640 CE) described the journey of the seeker's ascent into higher consciousness in four stages. In this work I have adopted and modified his four journeys to frame the poetry appropriately.",
+    coverImage: "/images/book-covers/TheFourJourneys.jpg",
+    category: "poetry",
+    order: 4,
+    featured: true,
+    publishedDate: new Date('2021-07-19'),
+    purchaseLinks: {
+      amazon: "1919826815",
+      kindle: "B0C5JX56NC",
+      kobo: "https://www.kobo.com/ca/en/ebook/the-four-journeys-1",
+      apple: "http://books.apple.com/us/book/id6449260467",
+      other: [
+        {
+          name: "Barnes & Noble",
+          url: "https://www.barnesandnoble.com/w/the-four-journeys-shaykh-fadhlalla-haeri/1144023427",
+          geography: "US",
+        },
+        {
+          name: "Takealot",
+          url: "https://www.takealot.com/the-four-journeys/PLID72907512",
+          geography: "ZA",
+        },
+        {
+          name: "Waterstones",
+          url: "https://www.waterstones.com/book/the-four-journeys/shaykh-fadhlalla-haeri/9781919826813",
+          geography: "UK",
+        },
+      ]
+    },
+  },
+  {
+    id: "fulfillment-now",
+    title: "Fulfilment Now",
+    description: "<b><i>A modern-day sage's indispensable insights into how to access true fulfilment</b></i>\n\nAt the heart of life's quest lies the mystery of existence. Fulfilment Now presents the key elements needed to fulfil this quest. Through questions put to him by students, Shaykh Fadhlalla Haeri succinctly lays bare a terrain that shows how two zones of consciousness prevail.\n\nThis book touches on the evolutionary rise of consciousness, time and timelessness, and the eternal moment. Fuelled by the major inherent drives of consciousness, connection and continuity, humanity is driven to seek contentment and to excel along the journey towards supreme consciousness. Guides have always been an inherent part of the journey to fulfilment, but Shaykh Haeri sees in the last few decades significant shifts away from localized relationships of master-student, wherein the mirroring needed by the seeker is no longer one of exclusivity but greater self-awareness and self-accountability.\n\n<b><i>Fulfilment Now</b></i> offers fresh insight into the nature of what is sought of a teacher, the subconscious, the balance between free will and predestination, what is meant by presence, death as a natural continuation, the obsession with life, relationality, and self-governance. The central thread is that it is connecting with higher consciousness that brings about fulfilment; with that calibration, suffering is reduced. Realizing this existence is a transitory stage of being between the infinite unknown and the finite known, between self and soul, leads to a fulfilled life. <b><i>Fulfilment Now</b></i> highlights that there is no distance between the seeker and the Giver.",
+    coverImage: "/images/book-covers/FulfilmentNow.jpg",
+    category: "talks-courses",
+    order: 1,
+    publishedDate: new Date('2023-01-19'),
+    purchaseLinks: {
+      amazon: "1928329349",
+      kindle: "B0BXJNF4D6",
+      kobo: "https://www.kobo.com/ca/en/ebook/fulfilment-now",
+      apple: "http://books.apple.com/us/book/id6446064445",
+      other: [
+        {
+          name: "Barnes & Noble",
+          url: "https://www.barnesandnoble.com/w/fulfilment-now-shaykh-fadhlalla-haeri/1143048417",
+          geography: "US",
+        },
+        {
+          name: "Takealot",
+          url: "https://www.takealot.com/fulfilment-now/PLID92669320",
+          geography: "ZA",
+        },
+        {
+          name: "Waterstones",
+          url: "https://www.waterstones.com/book/fulfilment-now/shaykh-fadhlalla-haeri/aliya-batul-haeri/9781928329343",
+          geography: "UK",
+        },
+      ]
+    },
+    samplePdfUrl: "/samples/FulfilmentNow.pdf",
   },
 ];
 

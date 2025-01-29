@@ -37,6 +37,7 @@ export default function BookContent({ book }: BookContentProps) {
         </div>
         <div className="flex-grow">
           <h1 className="text-3xl font-bold mb-4">{book.title}</h1>
+          <p className="text-gray-400 italic mb-6">by {book.author || 'Shaykh Fadhlalla Haeri'}</p>
           <RichText content={book.description} />
           
           <div className="mt-8 space-y-2">

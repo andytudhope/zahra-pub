@@ -1,6 +1,7 @@
 export interface Book {
   id: string;
   title: string;
+  author?: string;
   description: string;
   coverImage: string;
   category: CategorySlug;
@@ -19,7 +20,7 @@ export interface Book {
       geography: string | 'all';
     }>;
   };
-  samplePdfUrl: string;
+  samplePdfUrl?: string;
 }
 
 export type CategorySlug =

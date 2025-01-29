@@ -6,12 +6,24 @@ interface LatestBooksProps {
 }
 
 export default function LatestBooks({ books }: LatestBooksProps) {
+  // Sort books by publishedDate (newest first), fallback to title
+  const sortedBooks = [...books].sort((a, b) => {
+    if (a.publishedDate && b.publishedDate) {
+      return b.publishedDate.getTime() - a.publishedDate.getTime();
+    }
+    // Put books with publishedDate before those without
+    if (a.publishedDate) return -1;
+    if (b.publishedDate) return 1;
+    // Fall back to title comparison
+    return a.title.localeCompare(b.title);
+  });
+
   // Take only the first 4 books
-  const displayBooks = books.slice(0, 4);
+  const displayBooks = sortedBooks.slice(0, 4);
 
   return (
     <div className='mr-4'>
-      <h2 className="text-2xl font-bold mb-6">Latest Books</h2>
+      <h2 className="text-2xl font-bold mb-6 border-b border-gray-300 pb-2">Latest</h2>
       <div className="grid grid-cols-2 gap-4">
         {displayBooks.map((book) => (
           <BookCard
