@@ -13,14 +13,20 @@ export default function Home() {
       {/* Hero Section */}
       <div className="max-w-6xl mx-auto px-4 py-8">
         <div className="relative w-full aspect-[1030/343]">
-          <Image
-            src="/images/PathToEternalLifeHero.jpg"
-            alt="Zahra Publications Hero"
-            fill
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1030px"
-            className="object-contain"
-            priority
-          />
+        <Link 
+          href="https://www.amazon.com/dp/1928329209"
+          target="_blank"
+          rel="noopener noreferrer"
+          >
+            <Image
+              src="/images/PathToEternalLifeHero.jpg"
+              alt="Zahra Publications Hero"
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1030px"
+              className="object-contain"
+              priority
+            />
+          </Link>
         </div>
       </div>
 
