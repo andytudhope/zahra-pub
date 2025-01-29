@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Menu } from 'lucide-react';
 import { categories } from '@/lib/books';
 import SideDrawer from './SideDrawer';
@@ -16,10 +17,16 @@ const Navbar = () => {
       <nav className="bg-white shadow-md fixed w-full top-0 z-30">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between h-16">
-            {/* Logo */}
-            <div className="flex items-center">
-              <Link href="/" className="text-xl font-bold">
-                Zahra Publications
+            {/* Desktop Logo */}
+            <div className="flex md:hidden items-center">
+              <Link href="/">
+                <Image src="/images/desktop-logo.png" alt="Zahra Publications" width={150} height={30} />
+              </Link>
+            </div>
+            {/* Mobile Logo */}
+            <div className="hidden md:flex items-center">
+              <Link href="/">
+                <Image src="/images/mobile-logo.png" alt="Zahra Publications" width={26} height={26} />
               </Link>
             </div>
 

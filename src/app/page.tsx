@@ -24,7 +24,9 @@ export default function Home() {
       <div className="py-16">
         <div className="max-w-6xl mx-auto px-4">
           <div className="space-y-16">
-            {Object.values(categories).map((category) => {
+          {Object.values(categories)
+            .sort((a, b) => a.order - b.order)
+            .map((category) => {
               const categoryBooks = books
                 .filter(book => book.category === category.slug)
                 .slice(0, 5);
@@ -39,7 +41,7 @@ export default function Home() {
                   >
                     <h2 className="text-3xl font-bold mb-6">{category.name}</h2>
                   </Link>
-                  <div className="overflow-x-auto -mx-4 px-4">
+                  <div className="overflow-x-auto overflow-y-hidden -mx-4 px-4">
                     <div className="flex space-x-6 pb-4">
                       {categoryBooks.map((book) => (
                         <BookCard

@@ -4,6 +4,9 @@ export interface Book {
   description: string;
   coverImage: string;
   category: CategorySlug;
+  featured?: boolean;
+  latest?: boolean;
+  publishedDate?: Date;
   purchaseLinks: {
     amazon?: string;
     other?: Array<{
@@ -28,6 +31,7 @@ export interface Category {
   slug: CategorySlug;
   name: string;
   description: string;
+  order: number;
 }
 
 export interface Categories {

@@ -1,5 +1,4 @@
 'use client';
-
 import { Book } from '@/types';
 import Image from 'next/image';
 import { useGeography } from '@/hooks/useGeography';
@@ -13,6 +12,10 @@ interface BookContentProps {
 export default function BookContent({ book }: BookContentProps) {
   const userCountry = useGeography();
   const amazonUrl = getAmazonUrl(book.purchaseLinks.amazon, userCountry);
+  
+  const localShops = book.purchaseLinks.other?.filter(link =>
+    link.geography === 'all' || link.geography === userCountry
+  );
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
@@ -28,11 +31,9 @@ export default function BookContent({ book }: BookContentProps) {
             />
           </div>
         </div>
-
         <div className="flex-grow">
           <h1 className="text-3xl font-bold mb-4">{book.title}</h1>
           <RichText content={book.description} />
-
           <div className="mt-4 space-y-4 max-w-md">
             <a
               href={book.samplePdfUrl}
@@ -42,7 +43,6 @@ export default function BookContent({ book }: BookContentProps) {
             >
               Download Sample PDF
             </a>
-            
             {amazonUrl && (
               <a
                 href={amazonUrl}
@@ -53,21 +53,22 @@ export default function BookContent({ book }: BookContentProps) {
                 Amazon
               </a>
             )}
-
-            {book.purchaseLinks.other?.filter(link => 
-              link.geography === 'all' || link.geography === userCountry
-            ).map((link, index) => (
-              <a
-                key={index}
-                href={link.url}
-                className="block w-full text-center border border-gray-300 text-gray-700 py-3 rounded-lg hover:border-black transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {link.name}
-              </a>
-            ))}
-
+            {localShops && localShops.length > 0 && (
+              <div className="space-y-6 py-8 border-t border-gray-300">
+                <p className="font-bold text-xl">Local Book Shops Near You</p>
+                {localShops.map((link, index) => (
+                  <a
+                    key={index}
+                    href={link.url}
+                    className="block w-full text-center border border-gray-300 text-gray-700 py-3 rounded-lg hover:border-black transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {link.name}
+                  </a>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </div>
