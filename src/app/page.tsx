@@ -44,6 +44,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="space-y-16">
           {Object.values(categories)
+            .filter(category => category.slug !== 'other')
             .sort((a, b) => a.order - b.order)
             .map((category) => {
               const categoryBooks = books

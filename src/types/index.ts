@@ -36,7 +36,6 @@ export type CategorySlug =
 export interface Category {
   slug: CategorySlug;
   name: string;
-  description: string;
   order: number;
 }
 

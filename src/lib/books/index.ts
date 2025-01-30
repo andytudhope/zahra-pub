@@ -5,6 +5,7 @@ import { quranBooks } from './data/quran';
 import { sufismBooks } from './data/sufism';
 import { talksCoursesBooks } from './data/talks-courses';
 import { poetryBooks } from './data/poetry';
+import { otherBooks } from './data/other';
 
 export const books: Book[] = [
   ...islamBooks,
@@ -12,6 +13,7 @@ export const books: Book[] = [
   ...sufismBooks,
   ...talksCoursesBooks,
   ...poetryBooks,
+  ...otherBooks,
 ];
 
 export { categories };
