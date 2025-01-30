@@ -1,19 +1,41 @@
 const fs = require('fs');
 const path = require('path');
 
-// Read the books data
-const booksFile = fs.readFileSync(path.join(__dirname, '../src/lib/books.ts'), 'utf8');
+function readBooksFromFile(filePath) {
+  const content = fs.readFileSync(filePath, 'utf8');
+  // Match the export const {something}Books array
+  const booksMatch = content.match(/export const \w+Books: Book\[] = (\[[\s\S]*?\]);/);
+  if (!booksMatch) return [];
+  
+  try {
+    // Remove TypeScript types before evaluating
+    const cleanedContent = booksMatch[1].replace(/: Book/g, '');
+    return eval(cleanedContent);
+  } catch (error) {
+    console.error(`Error parsing ${filePath}:`, error);
+    return [];
+  }
+}
 
-// Extract the books array using regex
-const booksMatch = booksFile.match(/export const books: Book\[] = (\[[\s\S]*?\]);/);
-const booksData = eval(booksMatch[1].replace(/export const books: Book\[] = /, ''));
+// Get all book data files
+const dataDir = path.join(__dirname, '../src/lib/books/data');
+const bookFiles = fs.readdirSync(dataDir)
+  .filter(file => file.endsWith('.ts'));
+
+// Combine all books from different files
+const allBooks = [];
+bookFiles.forEach(file => {
+  const filePath = path.join(dataDir, file);
+  const books = readBooksFromFile(filePath);
+  allBooks.push(...books);
+});
 
 // Create search index
-const searchIndex = booksData.map(book => ({
+const searchIndex = allBooks.map(book => ({
   id: book.id,
   title: book.title,
   description: book.description.replace(/<[^>]*>/g, ''), // Remove HTML tags
-  category: book.category
+  category: book.category,
 }));
 
 // Write the search index to a JSON file
@@ -22,4 +44,5 @@ fs.writeFileSync(
   JSON.stringify(searchIndex, null, 2)
 );
 
-console.log('Search index generated successfully!');
+console.log(`Search index generated with ${searchIndex.length} books!`);
+console.log('Files processed:', bookFiles.join(', '));

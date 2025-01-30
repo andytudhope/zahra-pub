@@ -99,6 +99,12 @@ export default function SearchBox() {
                 <p className="text-sm text-gray-600 line-clamp-2">{result.description}</p>
               </Link>
             ))}
+            <Link 
+              href={`/search?q=${encodeURIComponent(searchTerm)}`}
+              className="block p-4 text-center text-blue-600 hover:bg-gray-50 font-medium"
+            >
+              See all results
+            </Link>
           </div>
         </div>
       )}
