@@ -401,12 +401,46 @@ export const sufismBooks: Book[] = [
         samplePdfUrl: "/samples/TheGardenOfMeaning.pdf",
       },
       {
+        id: "hikam",
+        title: "The Hikam - The Wisdom of Ibn `Ata 'Allah",
+        author: "Translation & Commentary by Shaykh Fadhlalla Haeri",
+        description: "The Hikam, or Wisdom, of the great Sufi Master Ibn `Ata 'Allah al-Iskandari has long been acknowledged as an essential and classic masterwork of the Islamic science of enlightenment. Ibn `Ata 'Allah exemplified the ultimate model of a Sufi master possessed of a deep foundation in the sciences of the Qur'an, the way of the Prophet and the Universal Laws of the Islamic way of life, both outer and inner.\n\nShort but immensely thought provoking, dense in their significance and insightfulness, crisp and sharp in their elucidation, the aphoristic Hikam are a true manifesto for those who are sincerely on the path of knowledge and awareness. This wisdom strips away our conventional responses to events, actions and phenomena, and encourage us to concentrate on the only true Reality.\n\nWith the publication of Shaykh Fadhlalla Haeri's new translation and with the aid of his accompanying commentary, students and adepts alike can now gain a profounder understanding of these timeless teachings from the wellspring of the heart of Islam.",
+        coverImage: "/images/book-covers/Hikam.jpg",
+        category: "sufism",
+        order: 16,
+        publishedDate: new Date('2019-11-09'),
+        purchaseLinks: {
+          amazon: "1928329063",
+          kindle: "B01JBIYTPI",
+          kobo: "http://store.kobobooks.com/en-CA/ebook/the-hikam-the-wisdom-of-ibn-ata-allah",
+          apple: "http://itunes.apple.com/us/book/id1145019417",
+          other: [
+            {
+              name: "Barnes & Noble",
+              url: "https://www.barnesandnoble.com/w/the-hikam-the-wisdom-of-ibn-ata-allah-shaykh-fadhlalla-haeri/1138276946",
+              geography: "US",
+            },
+            {
+              name: "Takealot",
+              url: "https://www.takealot.com/the-hikam-the-wisdom-of-ibn-ata-allah/PLID53197582",
+              geography: "ZA",
+            },
+            {
+              name: "Waterstones",
+              url: "https://www.waterstones.com/book/the-hikam-the-wisdom-of-ibn-ata-allah/shaykh-fadhlalla-haeri/shaykh-ibn-ataallah-al-iskandari/9781928329060",
+              geography: "UK",
+            },
+          ]
+        },
+        samplePdfUrl: "/samples/TheHikam.pdf",
+      },
+      {
         id: "journey-of-the-self",
         title: "The Journey of the Self",
         description: "\"<i><b>The Journey of the Self</b> provides a genuine spiritual psychology...We are invited to self-understanding in this book, to psychology and spiritual self-knowledge. Not only are we invited, we are given concrete examples and concrete help in making our way toward that goal.</i>\" -- from the Forward by Robert Frager, founder, Institute of Transpersonal Psychology.\n\nThis unique guide to spiritual psychology presents Western readers with an Islamic concept of personality -- the wellspring of the Enneagram and other Sufi theories of personality. After introducing the basic model of the self, Shaykh Haeri describes a simple yet complete outline of the self's emergence, development, sustenance, and growth toward its highest potential.",
         coverImage: "/images/book-covers/TheJourneyOfTheSelf.jpg",
         category: "sufism",
-        order: 16,
+        order: 17,
         publishedDate: new Date('2019-11-09'),
         purchaseLinks: {
           kindle: "B01J93ZHII",
@@ -421,7 +455,7 @@ export const sufismBooks: Book[] = [
         description: "\"<i>There can be no doubt that there is only one message in man's heart, to be fulfilled, to live a life that is honorable and fearless, that has within it no darkness, ignorance or abuse.</i>\"\n\nThis book is based on a collection of talks which were given in the eighties in the United States. The sixties and seventies witnessed resurgences in various spheres of mysticism, spirituality and related endeavors or topics, including the manifestation of formal prescriptive Islam in various forms. The reactions were both positive and negative, causing many people to begin to awaken to a better understanding of this ever vibrant faith, the last revealed of the world's great religions.",
         coverImage: "/images/book-covers/TheSufiWayToSelfUnfoldment.jpg",
         category: "sufism",
-        order: 17,
+        order: 18,
         publishedDate: new Date('2019-11-09'),
         purchaseLinks: {
           amazon: "1919826572",
