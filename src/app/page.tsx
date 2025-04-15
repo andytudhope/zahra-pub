@@ -1,8 +1,8 @@
-// src/app/page.tsx
 import Image from 'next/image';
 import Link from 'next/link';
 import { categories, books } from '@/lib/books';
 import { getFeaturedBooks, getLatestBooks } from '@/lib/bookUtils';
+import PrintPartners from '@/components/ui/PrintPartners';
 import BookCard from '@/components/books/BookCard';
 import FeaturedBooks from '@/components/sections/FeaturedBooks';
 import LatestBooks from '@/components/sections/LatestBooks';
@@ -36,6 +36,17 @@ export default function Home() {
           <FeaturedBooks books={getFeaturedBooks(books)} />
           <LatestBooks books={getLatestBooks(books)} />
         </div>
+      </div>
+
+      {/* About Section */}
+      <div className="py-16 max-w-6xl mx-auto">
+        <p className='text-4xl font-bold text-center border-b border-gray-300 py-2 mb-8'>About Us</p>
+        <p className='text-l px-4 mb-8'>
+          Zahra Publications have been publishing books on Islam and Sufism since 1981. Dedicated to disseminating the original teachings of Islam through contemporary and classical works alike, Zahra Publications titles lay particular emphasis on spiritual and transformative teachings.
+        </p>
+        <p className='text-l px-4 mb-8'>
+          Islam reflects the constant compassion and presence of the Divine Light. In these crucial times, more than ever before, Muslims and seekers of a life lived with integrity and harmony need to renew their knowledge and awaken to the original Prophetic path.
+        </p>
       </div>
 
       {/* Category Sections */}
@@ -98,6 +109,12 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* Print Partners Sections */}
+      <div className="py-16 max-w-6xl mx-auto">
+        <PrintPartners />
+      </div>
+
     </div>
   );
 }
