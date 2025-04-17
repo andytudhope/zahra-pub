@@ -39,7 +39,7 @@ export default function Home() {
       </div>
 
       {/* About Section */}
-      <div className="py-16 max-w-6xl mx-auto">
+      <div className="py-16 sm:py-4 max-w-6xl mx-auto">
         <p className='text-4xl font-bold text-center border-b border-gray-300 py-2 mb-8'>About Us</p>
         <p className='text-l px-4 mb-8'>
           Zahra Publications have been publishing books on Islam and Sufism since 1981. Dedicated to disseminating the original teachings of Islam through contemporary and classical works alike, Zahra Publications titles lay particular emphasis on spiritual and transformative teachings.
@@ -50,7 +50,7 @@ export default function Home() {
       </div>
 
       {/* Category Sections */}
-      <div className="py-16 max-w-6xl mx-auto">
+      <div className="py-16 sm:py-4 max-w-6xl mx-auto">
         <p className='text-4xl font-bold text-center border-b border-gray-300 py-2 mb-8'>All Categories</p>
         <div className="max-w-6xl mx-auto px-4">
           <div className="space-y-16">
@@ -111,7 +111,7 @@ export default function Home() {
       </div>
 
       {/* Print Partners Sections */}
-      <div className="py-16 max-w-6xl mx-auto">
+      <div className="py-16 sm:py-4 max-w-6xl mx-auto">
         <PrintPartners />
       </div>
 

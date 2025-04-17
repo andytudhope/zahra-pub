@@ -134,10 +134,10 @@ export default function PrintPartners() {
               onClick={() => toggleRegion(region)}
               className="w-full flex items-center justify-between p-4 bg-gray-50 hover:bg-gray-100 transition-colors"
             >
-              <div className="flex items-center space-x-3">
+              <div className="flex items-center space-x-2">
                 {regions[region].icon}
-                <span className="font-medium text-lg text-gray-800">{region}</span>
-                <span className="text-sm text-gray-500">({regions[region].partners.length} partners)</span>
+                <span className="font-medium text-md text-gray-800">{region}</span>
+                <span className="block sm:hidden text-sm text-gray-500">({regions[region].partners.length} partners)</span>
               </div>
               {expandedRegion === region ? (
                 <ChevronUp size={20} className="text-gray-600" />
