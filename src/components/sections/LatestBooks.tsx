@@ -22,7 +22,7 @@ export default function LatestBooks({ books }: LatestBooksProps) {
   const displayBooks = sortedBooks.slice(0, 4);
 
   return (
-    <div className='mr-4'>
+    <div className='mr-4 sm:mt-10'>
       <h2 className="text-2xl font-bold mb-6 border-b border-gray-300 pb-2">Latest</h2>
       <div className="grid grid-cols-2 gap-4">
         {displayBooks.map((book) => (

@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { categories, books } from '@/lib/books';
 import { getFeaturedBooks, getLatestBooks } from '@/lib/bookUtils';
@@ -10,28 +9,9 @@ import LatestBooks from '@/components/sections/LatestBooks';
 export default function Home() {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <div className="max-w-6xl mx-auto px-4 py-8">
-        <div className="relative w-full aspect-[1030/343]">
-        <Link 
-          href="https://www.amazon.com/dp/1928329209"
-          target="_blank"
-          rel="noopener noreferrer"
-          >
-            <Image
-              src="/images/PathToEternalLifeHero.jpg"
-              alt="Zahra Publications Hero"
-              fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1030px"
-              className="object-contain"
-              priority
-            />
-          </Link>
-        </div>
-      </div>
 
       {/* Featured and Latest Section */}
-      <div className="max-w-6xl mx-auto px-4 mb-16">
+      <div className="max-w-6xl mt-10 mx-auto px-4 mb-16">
         <div className="grid grid-cols-2 md:grid-cols-1">
           <FeaturedBooks books={getFeaturedBooks(books)} />
           <LatestBooks books={getLatestBooks(books)} />
