@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { categories, books } from '@/lib/books';
 import { getFeaturedBooks, getLatestBooks } from '@/lib/bookUtils';
-import PrintPartners from '@/components/ui/PrintPartners';
+import WorldMapWithPartners from '@/components/ui/PrintPartnersMap';
 import BookCard from '@/components/books/BookCard';
 import FeaturedBooks from '@/components/sections/FeaturedBooks';
 import LatestBooks from '@/components/sections/LatestBooks';
@@ -92,7 +92,7 @@ export default function Home() {
 
       {/* Print Partners Sections */}
       <div className="py-8 sm:py-4 max-w-6xl mx-auto">
-        <PrintPartners />
+        <WorldMapWithPartners />
       </div>
 
     </div>

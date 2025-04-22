@@ -466,4 +466,37 @@ export const sufismBooks: Book[] = [
         samplePdfUrl: "/samples/TheSufiWaytoSelfUnfoldment.pdf",
         reviews: "<b>By Sadiqa</b>\n\n\"<i>We will not understand the world unless we understand the individual..We will not make headway unless we understand the 'I'...</i>\"\n\nBased on a series of talks given in the 80s, The Sufi Way to Self-Unfoldment is, more than ever, relevant to our times when more and more of us question the purpose of life and values that go beyond materialism.\n\nOver the years, the book's timeless and universal message has appealed to seekers world wide and has been an inspiration and revelation for many, including myself.\n\nI was interested in Islam but found I was unable to 'connect' with what I felt to be a cultural view. I was given The Sufi Way to Self-Unfoldment in its pre-published format -- Self Knowledge.\n\nThe book made complete sense to me. I carried it around for years --highlighted it -- wondering who the author was -- this was before the days of ISBN. I was even teaching Muslim friends from the book, which made absolute sense.\n\nThen -- by 'coincidence' -- I met the author's wife -- who gifted me a copy of a book just published by her husband. It was The Sufi Way to Self-Unfoldment.\n\nShaykh Fadhlalla emphasises the absolute need for self-knowledge as an essential tool for a committed seeker... A simple description is given of all aspects of the self and \"our ultimate purpose in life...to get rid of the 'I'\".\n\nThe book is a must, both for Muslims needing more in-depth explanation of the inner meanings of their rituals, and for non-Muslims, needing clarification of Islamic practices and their ultimate purpose.\n\nA short book, The Sufi Way to Self-Unfoldment can be read in an evening, and re-read for life. I still have my battered copy -- bound together with sellotape. It was instrumental to a profound understanding of the Sufi Islamic teachings. I will never throw it away."
       },
+      {
+        id: "son-of-karbala",
+        title: "Son of Karbala",
+        description: "In this autobiography the atmosphere of an Iraq in transition is brought to life with all its sights, sounds and political realities. But the author's personal concern and quest has always been spiritual rather than political, so the national and cultural upheavals are used as a backdrop for his own journey of self discovery and search for truth. For everyone interested in the events that created modern Iraq, in how Muslims view their own history and in how the message of Islam meets both individual needs and that of the world today, this is a timely and thought-provoking book.\n\n'<i>A new dawn has also appeared in spiritual travelogues with the publication of Son of Karbala. It deserves a place among the great spiritual odysseys of our time, right next to Gurdjieff's <b>Meetings with Remarkable Men</b>, which is at once resembles and exceeds in its honesty and clarity.</i>'\n\n-- Professor Bruce B. Lawrence, Duke University, Durham NC ",
+        coverImage: "/images/book-covers/SonOfKarbala.jpg",
+        category: "sufism",
+        order: 19,
+        publishedDate: new Date('2022-03-19'),
+        purchaseLinks: {
+          amazon: "1928329241",
+          kindle: "B01JEJCIIY",
+          kobo: "http://store.kobobooks.com/en-CA/ebook/son-of-karbala",
+          apple: "http://itunes.apple.com/us/book/id1144975494",
+          other: [
+            {
+                name: "Barnes & Noble",
+                url: "https://www.barnesandnoble.com/w/son-of-karbala-shaykh-fadhlalla-haeri/1114214419",
+                geography: "US",
+              },
+              {
+                name: "Takealot",
+                url: "https://www.takealot.com/son-of-karbala/PLID1047549",
+                geography: "ZA",
+              },
+              {
+                name: "Waterstones",
+                url: "https://www.waterstones.com/book/son-of-karbala/shaykh-fadhlalla-haeri/9781928329244",
+                geography: "UK",
+              },
+          ]
+        },
+        samplePdfUrl: "/samples/SonOfKarbala.pdf",
+    },
 ];
