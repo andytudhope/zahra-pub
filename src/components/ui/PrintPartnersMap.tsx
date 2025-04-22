@@ -109,7 +109,7 @@ const partnersByRegion: Record<string, string[]> = {
 export default function WorldMapWithPartners() {
   const [selectedRegion, setSelectedRegion] = useState<string | null>(null)
 
-  const handleClick = (event: any) => {
+  const handleClick = (event: { countryCode: string }) => {
     const country = event.countryCode
     const countryToRegionMap: Record<string, string> = {
         US: 'North America and Canada',
