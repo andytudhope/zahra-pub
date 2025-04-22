@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import WorldMap from 'react-svg-worldmap'
 import Dialog from '@/components/ui/Dialog'
 
@@ -106,8 +106,26 @@ const partnersByRegion: Record<string, string[]> = {
   ]
 }
 
+
 export default function WorldMapWithPartners() {
   const [selectedRegion, setSelectedRegion] = useState<string | null>(null)
+  const [dimensions, setDimensions] = useState({ width: 640, height: 480 })
+
+  useEffect(() => {
+    const updateDimensions = () => {
+      if (window.innerWidth < 640) {
+        setDimensions({ width: 270, height: 202.5 })
+      } else if (window.innerWidth < 768) {
+        setDimensions({ width: 620.25, height: 465.1875 })
+      } else {
+        setDimensions({ width: 640, height: 480 })
+      }
+    }
+
+    updateDimensions()
+    window.addEventListener('resize', updateDimensions)
+    return () => window.removeEventListener('resize', updateDimensions)
+  }, [])
 
   const handleClick = (event: { countryCode: string }) => {
     const country = event.countryCode
@@ -137,27 +155,27 @@ export default function WorldMapWithPartners() {
   }
 
   return (
-    <div className='max-w-4xl mx-auto pl-[8%]'>
+    <div className='max-w-4xl mx-auto pl-[12%]'>
         <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">Our Print Partners Worldwide</h2>
-      <WorldMap
-        size="responsive"
-        data={regionData}
-        color="#ccc"
-        tooltipTextFunction={() => ''}
-        onClickFunction={handleClick}
-        backgroundColor="transparent"
-        valuePrefix=""
-        valueSuffix=""
-        styleFunction={({ countryCode }: { countryCode: string }) => {
-            const region = regionData.find((d) => d.country === countryCode)
-            return {
-              fill: regionColors[region?.value ?? -1] || '#ccc',
-              stroke: 'white',
-              strokeWidth: 0.5,
-              cursor: 'pointer'
-            }
-          }}          
-      />
+          <WorldMap
+            size={dimensions.width}
+            data={regionData}
+            color="#ccc"
+            tooltipTextFunction={() => ''}
+            onClickFunction={handleClick}
+            backgroundColor="transparent"
+            valuePrefix=""
+            valueSuffix=""
+            styleFunction={({ countryCode }: { countryCode: string }) => {
+                const region = regionData.find((d) => d.country === countryCode)
+                return {
+                  fill: regionColors[region?.value ?? -1] || '#ccc',
+                  stroke: 'white',
+                  strokeWidth: 0.5,
+                  cursor: 'pointer'
+                }
+              }}          
+          />
 
     {selectedRegion && (
     <Dialog open={!!selectedRegion} onClose={() => setSelectedRegion(null)}>

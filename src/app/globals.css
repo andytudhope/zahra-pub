@@ -23,3 +23,8 @@ body {
 .prose {
   max-width: 95ch;
 }
+
+svg[width][height] {
+  height: auto !important;
+  max-width: 100% !important;
+}
