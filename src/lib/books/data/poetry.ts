@@ -62,7 +62,6 @@ export const poetryBooks: Book[] = [
         coverImage: "/images/book-covers/Hikari.jpg",
         category: 'poetry',
         order: 3,
-        latest: true,
         publishedDate: new Date('2024-09-19'),
         purchaseLinks: {
           amazon: "177649010X",
