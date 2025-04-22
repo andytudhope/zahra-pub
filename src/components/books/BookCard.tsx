@@ -22,6 +22,7 @@ const BookCard = ({ book, variant, className = '' }: BookCardProps) => {
           fill
           sizes="(max-width: 768px) 50vw, 33vw"
           className="rounded-lg shadow-md object-cover"
+          unoptimized
         />
       </Link>
     );
@@ -37,6 +38,7 @@ const BookCard = ({ book, variant, className = '' }: BookCardProps) => {
             width={192}
             height={288}
             className="rounded shadow-sm"
+            unoptimized
           />
         </div>
       </div>

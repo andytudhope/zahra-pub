@@ -32,6 +32,7 @@ export default function BookContent({ book }: BookContentProps) {
               width={256}
               height={384}
               className="rounded-lg shadow-md"
+              unoptimized
             />
           </div>
         </div>
