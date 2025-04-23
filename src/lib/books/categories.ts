@@ -4,7 +4,7 @@ export const categories: Categories = {
   'islam': {
     slug: 'islam',
     name: 'Islam',
-    order: 6
+    order: 2
   },
   'quran': {
     slug: 'quran',
@@ -13,23 +13,18 @@ export const categories: Categories = {
   },
   'poetry': {
     slug: 'poetry',
-    name: 'Poetry',
-    order: 2
+    name: 'Poetic Inspirations',
+    order: 5
   },
   'sufism': {
     slug: 'sufism',
     name: 'Sufism',
     order: 3
   },
-  'practices': {
-    slug: 'practices',
-    name: 'Practices',
-    order: 4
-  },
   'talks-courses': {
     slug: 'talks-courses',
     name: 'Talks and Courses',
-    order: 5
+    order: 4
   },
   'other': {
     slug: 'other',
