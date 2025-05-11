@@ -3,7 +3,7 @@ import { Categories } from '@/types';
 export const categories: Categories = {
   'quran': {
     slug: 'quran',
-    name: 'Quran',
+    name: 'Qur\'an',
     order: 1,
   },
   'islam': {
