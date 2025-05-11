@@ -178,7 +178,8 @@ export const quranBooks: Book[] = [
         latest: true,
         publishedDate: new Date('2025-02-19'),
         purchaseLinks: {
-          amazon: "1",
+          amazon: "B0F4M3PSW7",
+          kindle: "B0F5QYQDT1",
           other: [
             {
               name: "Adilbris",

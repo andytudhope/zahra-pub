@@ -1,12 +1,12 @@
 import { Book } from '@/types';
 
-export const poetryBooks: Book[] = [
+export const inspirationalBooks: Book[] = [
     {
         id: "the-calling-heart",
         title: "The Calling Heart",
         description: "The Prophetic teachings and practices are very rich regarding the importance of supplication and prayers to Allah and calling upon His Attributes and Beautiful Names. Allah, the Sublime says: \"Indeed through the remembrance of Allah the hearts become tranquil.\" (13:28)\n\nI present this Litany (wird) to whomsoever desires access to the treasures of the Hereafter. There is no power and no strength except through Allah, the Magnificent. There is no victor except Him. There is no presence except His. There is nothing and none sought after besides Him. There is no beloved except Him. Oh He, Oh He, Oh He who there is no he except He.\n\n- Shaykh Fadhlalla Haeri",
         coverImage: "/images/book-covers/TheCallingHeart.jpg",
-        category: "poetry",
+        category: "inspirations",
         order: 1,
         latest: true,
         publishedDate: new Date('2024-05-19'),
@@ -93,7 +93,7 @@ export const poetryBooks: Book[] = [
         title: "The Four Journeys",
         description: "<b><i>\"O human you are struggling towards your Lord and striving until you come to know Him.</b></i>\" Qur'an 84:6\n\nThe notion of the complete human being or the 'Insan al-kamil' was addressed by early Islamic scholars and masters following the model of the Prophet and his exemplary conduct. Prophets, sages, imams and sufi masters have elaborated upon a life fulfilled by enlightenment and God-realisation.\n\nThis experience is the outcome of leaving behind self-illusion, identity and duality. Quality life begins when your direction is clear and you accept responsibility and accountability for your actions. Human needs and desires are endless. Acceptance of this fact is the first step. This is followed by a living faith and trust in God's perfect mercy and justice, irrespective of circumstance. Then comes the security, knowledge and experience of divine guidance through one's own soul and purified heart - a desirable destiny.\n\nAll prophets and messengers have travelled by trust and witnessed the light of Allah at all times. They lived with inner certainty and contentment. The illumined being also experiences the presence of Allah's mercy and grace; such beings can only be in ecstatic gratitude at heart, even when responding to earthly challenges. This is the complete person. Those people who have reached that station are the appropriate guides and role models to be followed. Numerous enlightened masters in the past have guided and helped humanity toward higher consciousness and happiness. Mulla Sadra (d.1640 CE) described the journey of the seeker's ascent into higher consciousness in four stages. In this work I have adopted and modified his four journeys to frame the poetry appropriately.",
         coverImage: "/images/book-covers/TheFourJourneys.jpg",
-        category: "poetry",
+        category: "inspirations",
         order: 4,
         publishedDate: new Date('2021-07-19'),
         purchaseLinks: {
@@ -125,7 +125,7 @@ export const poetryBooks: Book[] = [
         title: "Differentiated Sameness: A Collection of Sufi Poems",
         description: "<i>\"The human journey on earth is from low, basic sentiency towards the highest level of consciousness. From childhood on we are challenged to witness, experience, and choose what is better for our happiness. With awakening you discover that, in truth, there is no differentiation or separation as everything is still contained within absolute, unitive reality.\n\nOneness is the only truth and the process of differentiating between what is good and what is not is like coming across milestones along that path. We differentiate in order to be content with the connectedness that leads to essential original Oneness.\n\nHuman consciousness links the infinite unseen with finite sensory experiences. These poems are like flags. The material is a language or brush strokes indicating transitions between the boundless and the limited, within and beyond time and space, like flags on a temple reminding us of our transitory earthly journey and how magnificient it is if we are aware of its timeless grace.</i>\"\n\n<h2>Audio Version of this Book</h2>\n\n These poems are like flags. The material is a language or brush strokes, indicating transitions between the boundless and the limited, within and beyond time and space, like flags on a temple reminding us of our transitory earthly journey and how magnificent it is if we are aware of its timeless grace.\n\n<b>The audio version of this book, narrated by Shaykh Fadhlalla, is available below:</b>\n\n<a class=\"block text-center border border-gray-300 text-gray-700 py-3 rounded-lg hover:border-black transition-colors\" href=\"https://www.audible.com/pd/Differentiated-Sameness-Audiobook/B09CVBS11W\" target=\"_blank\">Audible</a>",
         coverImage: "/images/book-covers/DifferentiatedSameness.jpg",
-        category: "poetry",
+        category: "inspirations",
         order: 5,
         publishedDate: new Date('2021-07-19'),
         purchaseLinks: {
@@ -158,7 +158,7 @@ export const poetryBooks: Book[] = [
         title: "The Wisdom of Ramana Maharshi: A Modern Sufi Rendition",
         description: " Forty Verses on Reality by Sri Ramana Maharshi is a pithy and aphoristic short sacred work. This little book is full of the most profound revelations of Self-Knowledge. An essential text for all interested in Nonduality and the Maharshi's teachings.\n\nTruth is eternal and it is not subject to certain people, place, or time. The utterances of Bhagavan Sri Ramana Maharshi carry with them the potency of what is real.\n\nThese interpretations use a more modern English language and understanding than the original ones under which the publication of 1935 took place.\n\nThis rendering shows the universality of original teachings. It shows what is truly inspired by truth itself is true anytime, anywhere, any place.\n\nThis version is particularly important as it interprets the original Ulladu Narpadu in the contemporary idiom.\n\nShaykh Fadhlalla Haeri, himself a realized master, relates the teachings of Sri Ramana Maharshi in a respectful and loving manner.\n\nThis little book is dedicated in admiration to the great teacher.",
         coverImage: "/images/book-covers/WisdomOfRamanaMaharshi.jpg",
-        category: "poetry",
+        category: "inspirations",
         order: 6,
         publishedDate: new Date('2020-04-19'),
         purchaseLinks: {
@@ -191,7 +191,7 @@ export const poetryBooks: Book[] = [
         title: "Look Again",
         description: "<i>Look Again</i> invites us to cast our sight beyond things as they appear to be - Insight. The most consistent need of every human being is to know the Truth or Reality and its permanency, hidden behind infinite varieties of appearances and existences. Truth reveals itself when we transcend identity with body and mind.\n\nIn truth there is only Truth, and to resonate with that and experience, we need to block out all other distractions.\n\nLook Again reflects the most wonderful light and delight of being at one with the One. There is only One but we are veiled by the illusion of otherness.",
         coverImage: "/images/book-covers/LookAgain.jpg",
-        category: "poetry",
+        category: "inspirations",
         order: 7,
         publishedDate: new Date('2017-09-19'),
         purchaseLinks: {
@@ -223,7 +223,7 @@ export const poetryBooks: Book[] = [
         title: "101 Helpful Illusions",
         description: "<b><i>101 Helpful Illusions</i></b> highlights natural veils waiting to be transcended by disciplined courage, wisdom and insight. Everything in creation has a purpose relevant to a specific situation that could lead the seeker of higher knowledge towards the ultimate spiritual truth of oneness. Thus our egotistic vices can indeed be stepping stones towards acting selflessly, spontaneously, and cheerfully with heightened awareness and good expectations in all situations. Indeed, all our mistakes can lead us towards the desired spiritual awakening -- the ultimate purpose in life.\n\nShaykh Fadhlalla Haeri shares with the reader that whatever we consider confusing illusions or paradoxes are actually conducive to and helpful along the path of awakening and soul discovery. When consciousness transcends duality and recognizes all-encompassing unity, then all paradoxes and illusions are resolved. ",
         coverImage: "/images/book-covers/101HelpfulIllusions.jpg",
-        category: "poetry",
+        category: "inspirations",
         order: 8,
         publishedDate: new Date('2017-09-19'),
         purchaseLinks: {
@@ -256,7 +256,7 @@ export const poetryBooks: Book[] = [
         title: "Pointers to Reality: A Collection of Aphorisms for Spiritual Transcendence",
         description: "Consciousness is the cosmic mystery that provides all the ingredients to the majesty and beauty of Life and existence on earth. We take the simple day-to-day awareness of this Life for granted, without the respect that it deserves. Every life moves towards higher and higher levels of consciousness, often a great source of delight for us, when we witness the distinctions of growth in awareness of this beauty.\n\nPointers to Reality provides some helpful reminders to us that our direction is always towards full awakening, whether it occurs in this life, or in the next. We hope that these aphorisms will give you the sparks of delight of our purpose of life.\n\nYou can find a slideshow of some sample aphorisms <a href=\"https://youtu.be/dyzoPVJyRWQ\" target=\"_blank\">here</a>.",
         coverImage: "/images/book-covers/PointersToReality.jpg",
-        category: "poetry",
+        category: "inspirations",
         order: 9,
         publishedDate: new Date('2020-04-19'),
         purchaseLinks: {
@@ -288,7 +288,7 @@ export const poetryBooks: Book[] = [
         title: "Pointers to Presence: A Collection of Aphorisms for the Wayfarer",
         description: " Shaykh Fadhlalla Haeri emphasizes inner transformation and the refinement of conduct, as preludes to the realization of the prevalence of Divine Grace. He considers that the purpose of life is to know and resonate with the eternal essence of the one and only Life giver -- Allah.\n\n<b><i>Pointers to Presence</b></i> are for the heart. This collection of aphorisms provides insights into consciousness and are pointers to spiritual awakening. ",
         coverImage: "/images/book-covers/PointersToPresence.jpg",
-        category: "poetry",
+        category: "inspirations",
         order: 10,
         publishedDate: new Date('2020-04-19'),
         purchaseLinks: {
@@ -316,7 +316,7 @@ export const poetryBooks: Book[] = [
         title: "Beyond Windows",
         description: "<b><i>Beyond Windows</b></i> offers moving and profound insights into the thoughts and murmurings of the eminent Shaykh Fadhlalla Haeri, whose touching compassion and giving spirituality shines through every poem in this anthology of concinnity between the slave-self and the Eternal Lord.\n\nThe collection is a finely woven quilt of deep expression in which the yearning of the soul's quest to live (and die) in the aura and divine sheen of the Creator permeates every line and stanza, bringing the reader closer to that soul's striving for spiritual relevance and meaning.\n\nThese poems are a portal to an essentially private spiritual journey, beyond the windows of our ordinary, erroneous perceptions of the self –- yet they bind us and take us along to this erudite sage's deep thirst for the Love, Mercy and Presence of our Inimitable and infinite Lord.\n\n-- From the Book's Foreword",
         coverImage: "/images/book-covers/BeyondWindows.jpg",
-        category: "poetry",
+        category: "inspirations",
         order: 10,
         publishedDate: new Date('2020-04-19'),
         purchaseLinks: {
@@ -331,7 +331,7 @@ export const poetryBooks: Book[] = [
         title: "Bursts of Silence",
         description: "These inspired aphorisms are remedies for hearts that seek the truth. They provide keys to the doors of inner knowledge, as well as antidotes to distraction and confusion.",
         coverImage: "/images/book-covers/BurstsOfSilence.jpg",
-        category: "poetry",
+        category: "inspirations",
         order: 11,
         publishedDate: new Date('2020-04-19'),
         purchaseLinks: {
@@ -346,7 +346,7 @@ export const poetryBooks: Book[] = [
         title: "Ripples of Light",
         description: "Inspired aphorisms which become remedies for hearts that seek the truth. This booklet is a continuation of the remedies for the heart in <a href=\"/book/burst-of-silence\">Bursts of Silence.</a>",
         coverImage: "/images/book-covers/RipplesOfLight.jpg",
-        category: "poetry",
+        category: "inspirations",
         order: 12,
         publishedDate: new Date('2020-04-19'),
         purchaseLinks: {
@@ -361,7 +361,7 @@ export const poetryBooks: Book[] = [
         title: "Sound Waves",
         description: "Sound and the faculty of hearing is probably the most critical of human links to the web of life. It is through the messages carried in sound waves that we can respond to the world around us and connect to higher consciousness.\n\n<b><i>Sound Waves</b></i> is a collection of Shaykh Fadhlalla Haeri's aphorisms and maxims that help us to reflect and discover the intricate connection between self and soul.",
         coverImage: "/images/book-covers/SoundWaves.jpg",
-        category: "poetry",
+        category: "inspirations",
         order: 13,
         publishedDate: new Date('2020-04-19'),
         purchaseLinks: {
@@ -377,7 +377,7 @@ export const poetryBooks: Book[] = [
         author: "Shaykh Abd al-Qadir al-Jilani",
         description: "This collection of extracts compiled and edited thematically from all his available existing works brings into focus the transformative impact of his teachings. Firmly embedded within the traditional sciences of knowledge – the Qur'an and the way of the Prophet Muhammad (S) – the reader is guided by teachings, comments, elucidations and instructions that render the life-transaction of Islam dynamic, meaningful, immediate and liberating.\n\n<i>'This outstanding book will teach you how to live in this world in harmony with the laws of Allah; it will revolutionize your belief, your thinking, and will direct you to live successfully in the material and spiritual dimensions.'</i> – From the Introduction by Ismail A Kalla. ",
         coverImage: "/images/book-covers/SublimeGems.jpg",
-        category: "poetry",
+        category: "inspirations",
         order: 14,
         publishedDate: new Date('2020-04-19'),
         purchaseLinks: {

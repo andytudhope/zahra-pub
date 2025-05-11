@@ -4,7 +4,7 @@ import { islamBooks } from './data/islam';
 import { quranBooks } from './data/quran';
 import { sufismBooks } from './data/sufism';
 import { talksCoursesBooks } from './data/talks-courses';
-import { poetryBooks } from './data/poetry';
+import { inspirationalBooks } from './data/inspirations';
 import { otherBooks } from './data/other';
 
 export const books: Book[] = [
@@ -12,7 +12,7 @@ export const books: Book[] = [
   ...quranBooks,
   ...sufismBooks,
   ...talksCoursesBooks,
-  ...poetryBooks,
+  ...inspirationalBooks,
   ...otherBooks,
 ];
 

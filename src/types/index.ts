@@ -26,7 +26,7 @@ export interface Book {
 
 export type CategorySlug =
   | 'quran'
-  | 'poetry'
+  | 'inspirations'
   | 'islam'
   | 'sufism'
   | 'practices'
