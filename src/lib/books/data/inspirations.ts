@@ -26,7 +26,7 @@ export const inspirationalBooks: Book[] = [
         title: "Shades of Reality",
         description: "In these stories I would like to show the many different ways that people strive towards a better life that is more secure and enjoyable. Sometimes our lives may be in a downward spiral and it might feel as if everything is disintegrating on a path of entropy. Our journey on earth is a short period of being exposed to interaction with the outer world, a period of awareness and self-reflection, which often follows a path that touches both hope and despair. I hope these snippets of life will enable the reader to rise in awareness to the inner spirit, which is eternal and divine.\n\nHuman consciousness is a special entity that interacts with whatever it focuses on, like the flame of a fire, unlike a passing wind that simply changes outer situations. Some of these stories show the effect of consciousness on an event. It is here that the narrator of the story participates in its content.\n\n- Shaykh Fadhlalla Haeri",
         coverImage: "/images/book-covers/ShadesOfReality.jpg",
-        category: 'poetry',
+        category: 'inspirations',
         order: 2,
         latest: true,
         publishedDate: new Date('2024-10-19'),
@@ -60,7 +60,7 @@ export const inspirationalBooks: Book[] = [
         title: "Hikari: Lights and Shadows",
         description: " The word \"Hikari\" is often used in various contexts in Japanese culture, including literature, art, and everyday language, to convey different shades of meaning related to light and its symbolic significance.\n\nReality emanates from the perpetual cosmic Oneness that radiates numerous patterns of lights which brings about life. As evolved human beings, any link that connects us to the origin, gives us comfort, ease and joy.\n\nWe are privileged to have numerous links to this Oneness. Language can help us to connect and unify, so does a beautiful scene, so do all our major senses-through attraction and repulsion.\n\nThe short bursts of insights in this book are steps towards being at one with the light within the heart. All our ambitions and drives ultimately lead us to the origin and creation of cosmic Oneness. Truth is one. Reality is one. Boundless eternal life is one, emanating from the One.\n\n- From the Introduction by Shaykh Fadhlalla Haeri ",
         coverImage: "/images/book-covers/Hikari.jpg",
-        category: 'poetry',
+        category: 'inspirations',
         order: 3,
         publishedDate: new Date('2024-09-19'),
         purchaseLinks: {
