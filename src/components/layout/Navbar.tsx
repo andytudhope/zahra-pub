@@ -26,7 +26,7 @@ const Navbar = () => {
             {/* Mobile Logo */}
             <div className="hidden md:flex items-center">
               <Link href="/">
-                <Image src="/images/mobile-logo.png" alt="Zahra Publications" width={70} height={50} />
+                <Image src="/images/desktop-logo.png" alt="Zahra Publications" width={120} height={50} />
               </Link>
             </div>
 

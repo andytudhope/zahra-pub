@@ -187,6 +187,11 @@ export const quranBooks: Book[] = [
               geography: "SE"
             },
             {
+              name: "Bookshop",
+              url: "https://bookshop.org/p/books/qur-an-discourses-a-collection-of-jumu-ah-talks-by-shaykh-fadhlalla-haeri/85bac6b3033e09b5",
+              geography: "US"
+            },
+            {
               name: 'Bokus',
               url: "https://www.bokus.com/bok/9781776490158/quran-discourses-a-collection-of-jumuah-talks-by-shaykh-fadhlalla-haeri/",
               geography: "SE"
@@ -201,9 +206,44 @@ export const quranBooks: Book[] = [
               url: "https://www.saxo.com/dk/quran-discourses-a-collection-of-jumuah-talks-by-shaykh-fadhlalla-haeri_bog_9781776490158",
               geography: "DE"
             },
-            
+            {
+              name: "Yes 24",
+              url: "https://www.yes24.com/product/goods/145819519",
+              geography: "KR"
+            },
+            {
+              name: "IBS",
+              url: "https://www.ibs.it/qur-discourses-collection-of-jumu-libro-inglese-shaykh-fadhlalla-haeri/e/9781776490158",
+              geography: "IT"
+            },
+            {
+              name: "Books.com",
+              url: "https://www.books.com.tw/products/F01b228831",
+              geography: "TW"
+            },
+            {
+              name: "Roscoe Books",
+              url: "https://www.roscoebooks.com/book/9781776490158",
+              geography: "US"
+            },
+            {
+              name: "Books Direct",
+              url: "https://www.booksdirect.com.au/quran-discourses-a-collection-of-jumuah-talks-by-shaykh-fadhlalla-haeri/shaykh-fadhlalla-haeri/book_9781776490158.htm",
+              geography: "AU"
+            },
+            {
+              name: "RJ Julia Booksellers",
+              url: "https://www.rjjulia.com/book/9781776490158",
+              geography: "US"
+            },
+            {
+              name: "Takealot",
+              url: "https://www.takealot.com/qur-an-discourses/PLID98219371",
+              geography: "ZA"
+            }
           ]
-        }
+        },
+        samplePdfUrl: "/samples/QuranDiscourses.pdf"
       },
       {
         id: "keys-full",
