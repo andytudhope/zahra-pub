@@ -26,11 +26,11 @@ export interface Book {
 
 export type CategorySlug =
   | 'quran'
-  | 'inspirations'
   | 'islam'
   | 'sufism'
   | 'practices'
   | 'talks-courses'
+  | 'inspirations'
   | 'other';
 
 export interface Category {

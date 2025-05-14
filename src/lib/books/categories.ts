@@ -21,7 +21,7 @@ export const categories: Categories = {
     name: 'Talks and Courses',
     order: 4
   },
-  'poetry': {
+  'inspirations': {
     slug: 'inspirations',
     name: 'Inspirations',
     order: 5
