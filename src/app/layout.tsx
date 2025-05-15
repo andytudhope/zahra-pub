@@ -39,7 +39,7 @@ export const metadata: Metadata = {
       {
         url: "/images/share-image.png",
         width: 1200,
-        height: 478,
+        height: 630,
         alt: "Zahra Publications",
       },
     ],
