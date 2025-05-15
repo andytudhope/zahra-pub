@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Zahra Publications",
     description: "All Shaykh Fadhlalla Haeri's books in one place",
-    url: "https://zahrapublications.pub",
+    url: "https://zahra-pub.vercel.app",
     siteName: "Zahra Publications",
     images: [
       {
