@@ -29,7 +29,22 @@ export const metadata: Metadata = {
         type: "image/png",
       },
     ],
-  }
+  },
+  openGraph: {
+    title: "Zahra Publications",
+    description: "All Shaykh Fadhlalla Haeri's books in one place",
+    url: "https://zahra-pub.vercel.app",
+    siteName: "Zahra Publications",
+    images: [
+      {
+        url: "/images/share-image.png",
+        width: 1200,
+        height: 478,
+        alt: "Zahra Publications",
+      },
+    ],
+    type: "website",
+  },
 };
 
 export default function RootLayout({
