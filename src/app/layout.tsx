@@ -17,6 +17,34 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Zahra Publications",
   description: "All Shaykh Fadhlalla Haeri's books in one place",
+  icons: {
+    icon: "/favicon.ico", // or .png, .svg etc.
+    shortcut: "/images/favicon-32x32.png",
+    apple: "/images/apple-touch-icon.png",
+    other: [
+      {
+        rel: "icon",
+        url: "/images/android-chrome-512x512.png",
+        sizes: "512x512",
+        type: "image/png",
+      },
+    ],
+  },
+  openGraph: {
+    title: "Zahra Publications",
+    description: "All Shaykh Fadhlalla Haeri's books in one place",
+    url: "https://zahrapublications.pub",
+    siteName: "Zahra Publications",
+    images: [
+      {
+        url: "/images/share-image.png",
+        width: 1200,
+        height: 478,
+        alt: "Zahra Publications",
+      },
+    ],
+    type: "website",
+  },
 };
 
 export default function RootLayout({
