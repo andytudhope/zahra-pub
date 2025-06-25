@@ -140,9 +140,14 @@ export const quranBooks: Book[] = [
                 geography: "US"
             },
             {
-                name: "Takealot",
+                name: "Takealot Paperback Version",
                 url: "https://www.takealot.com/the-qur-an-path-to-eternal-life/PLID95219850",
                 geography: "ZA"
+            },
+            {
+              name: "Takealot Travel Version",
+              url: "https://www.takealot.com/the-qur-an/PLID95243226",
+              geography: "ZA"
             },
             {
                 name: "The Reading Bug",
