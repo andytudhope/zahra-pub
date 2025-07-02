@@ -11,6 +11,7 @@ export const quranBooks: Book[] = [
         featured: true, 
         purchaseLinks: {
           amazon: "1928329209",
+          kindle: "B0CW1JQCQ2",
           kobo: 'https://www.kobo.com/ca/en/ebook/the-qur-an-47',
           apple: 'http://books.apple.com/us/book/id6478554730',
           other: [
@@ -22,11 +23,6 @@ export const quranBooks: Book[] = [
             {
               name: "Amazon Travel Version",
               url: "http://www.amazon.com/dp/1776490118",
-              geography: "all"
-            },
-            {
-              name: "Kindle",
-              url: "https://www.amazon.com/gp/product/B0CW1JQCQ2",
               geography: "all"
             },
             {
