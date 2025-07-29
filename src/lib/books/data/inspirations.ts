@@ -50,6 +50,10 @@ export const inspirationalBooks: Book[] = [
                 name: "Bokus",
                 url: "https://www.bokus.com/bok/9781776490141/shades-of-reality/",
                 geography: "SE"
+            },
+            { name: "eBay",
+              url: "https://www.ebay.com/itm/387986364101",
+              geography: "US"
             }
           ]
         },

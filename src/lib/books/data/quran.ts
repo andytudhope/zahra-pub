@@ -136,6 +136,11 @@ export const quranBooks: Book[] = [
                 geography: "US"
             },
             {
+              name: "Takealot Hardcover Version",
+              url: "https://www.takealot.com/the-qur-an-path-to-eternal-life/PLID95219849",
+              geography: "ZA"
+            },
+            {
                 name: "Takealot Paperback Version",
                 url: "https://www.takealot.com/the-qur-an-path-to-eternal-life/PLID95219850",
                 geography: "ZA"
@@ -241,6 +246,11 @@ export const quranBooks: Book[] = [
               name: "Takealot",
               url: "https://www.takealot.com/qur-an-discourses/PLID98219371",
               geography: "ZA"
+            },
+            {
+              name: "Thrift Books",
+              url: "https://www.thriftbooks.com/w/quran-discourses-a-collection-of-jumuah-talks-by-shaykh-fadhlalla-haeri/55299790/",
+              geography: "US"
             }
           ]
         },
