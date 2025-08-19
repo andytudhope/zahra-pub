@@ -1,3 +1,5 @@
+import { AmazonRegionalOverrides } from '@/types/geo';
+
 export interface Book {
   id: string;
   title: string;
@@ -11,12 +13,7 @@ export interface Book {
   publishedDate?: Date;
   purchaseLinks: {
     amazon?: string;
-    amazonRegional?: {
-      [country: string]: {
-        domain?: string;
-        asin?: string;
-      };
-    }
+    amazonRegional?: AmazonRegionalOverrides;
     kindle?: string;
     kobo?: string;
     apple?: string;

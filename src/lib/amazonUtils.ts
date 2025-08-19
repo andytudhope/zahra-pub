@@ -1,4 +1,4 @@
-type AmazonDomain = 'com' | 'co.uk' | 'fr' | 'de' | 'it' | 'es' | 'com.mx' | 'com.br' | 'jp' | 'se' | 'com.au' | 'nl' | 'in' | 'ca' | 'co.za';
+import { AmazonDomain, AmazonRegionalOverrides } from '@/types/geo';
 
 const countryToDomain: Record<string, AmazonDomain> = {
   US: 'com',
@@ -21,25 +21,15 @@ const countryToDomain: Record<string, AmazonDomain> = {
   AU: 'com.au'
 };
 
-export type AmazonRegionalOverrides = Partial<
-  Record<string, { asin?: string; domain?: AmazonDomain }>
->;
-
 export function getAmazonUrl(
   asin: string | undefined,
-  userCountry: string,
+  userCountryRaw: string,
   regional?: AmazonRegionalOverrides
 ): string | null {
-  const baseAsin = asin;
+  if (!asin) return null;
+  const userCountry = (userCountryRaw || '').toUpperCase();
   const override = regional?.[userCountry];
-
-  const chosenAsin = override?.asin ?? baseAsin;
-  if (!chosenAsin) return null;
-
-  const chosenDomain =
-    override?.domain ?? countryToDomain[userCountry] ?? 'com';
-
-  console.log(`Using ASIN: ${chosenAsin} for domain: ${chosenDomain} in country: ${userCountry}`);
-
+  const chosenAsin = override?.asin ?? asin;
+  const chosenDomain = override?.domain ?? countryToDomain[userCountry] ?? 'com';
   return `https://amazon.${chosenDomain}/dp/${chosenAsin}`;
 }
