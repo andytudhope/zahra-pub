@@ -11,6 +11,9 @@ export const talksCoursesBooks: Book[] = [
         publishedDate: new Date('2023-01-19'),
         purchaseLinks: {
           amazon: "1928329349",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B0BXJNF4D6",
           kobo: "https://www.kobo.com/ca/en/ebook/fulfilment-now",
           apple: "http://books.apple.com/us/book/id6446064445",
@@ -67,6 +70,9 @@ export const talksCoursesBooks: Book[] = [
         publishedDate: new Date('2021-11-10'),
         purchaseLinks: {
           amazon: "1919826297",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B01JD72Q3Y",
           kobo: "http://store.kobobooks.com/en-CA/ebook/the-prophetic-way-of-life",
           apple: "http://itunes.apple.com/us/book/id1145039121",
@@ -95,6 +101,9 @@ export const talksCoursesBooks: Book[] = [
         publishedDate: new Date('2023-11-19'),
         purchaseLinks: {
           amazon: "1928329454",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B0CRLM54RC",
           kobo: "https://www.kobo.com/ca/en/ebook/seasons-of-wisdom",
           apple: "http://books.apple.com/us/book/id6475609555",
@@ -118,6 +127,9 @@ export const talksCoursesBooks: Book[] = [
         publishedDate: new Date('2023-11-19'),
         purchaseLinks: {
           amazon: "1928329055",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B0C5FR567B",
           kobo: "https://www.kobo.com/ca/en/ebook/refinement-of-character-1",
           apple: "http://books.apple.com/us/book/id6449231090",
@@ -195,6 +207,9 @@ export const talksCoursesBooks: Book[] = [
         order: 8,
         purchaseLinks: {
           amazon: "1928329128",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B07SD7RRBZ",
           kobo: "https://www.kobo.com/ca/en/ebook/the-connection-between-the-absolute-and-the-relative",
           apple: "http://books.apple.com/us/book/id1465775083",
@@ -229,6 +244,9 @@ export const talksCoursesBooks: Book[] = [
         publishedDate: new Date('2019-06-20'),
         purchaseLinks: {
           amazon: "192832911X",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B07QW35SXK",
           kobo: "https://www.kobo.com/ca/en/ebook/the-spiritual-path-1",
           apple: "http://itunes.apple.com/us/book/id1460280842",

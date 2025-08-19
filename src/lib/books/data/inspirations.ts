@@ -12,6 +12,9 @@ export const inspirationalBooks: Book[] = [
         publishedDate: new Date('2024-05-19'),
         purchaseLinks: {
           amazon: "B0D8CPSRQZ",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           other: [
             {
               name: "Barnes & Noble",
@@ -32,6 +35,9 @@ export const inspirationalBooks: Book[] = [
         publishedDate: new Date('2024-10-19'),
         purchaseLinks: {
           amazon: "B0DPLCXLDG",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B0DPNG2JMH",
           kobo: "https://www.kobo.com/ca/en/ebook/shades-of-reality-1",
           apple: "http://books.apple.com/us/book/id6739071434",
@@ -69,6 +75,9 @@ export const inspirationalBooks: Book[] = [
         publishedDate: new Date('2024-09-19'),
         purchaseLinks: {
           amazon: "177649010X",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B0DKB5B6SF",
           kobo: "https://www.kobo.com/ca/en/ebook/hikari-3",
           apple: "http://books.apple.com/us/book/id6737148873",
@@ -102,6 +111,9 @@ export const inspirationalBooks: Book[] = [
         publishedDate: new Date('2021-07-19'),
         purchaseLinks: {
           amazon: "1919826815",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B0C5JX56NC",
           kobo: "https://www.kobo.com/ca/en/ebook/the-four-journeys-1",
           apple: "http://books.apple.com/us/book/id6449260467",
@@ -134,6 +146,9 @@ export const inspirationalBooks: Book[] = [
         publishedDate: new Date('2021-07-19'),
         purchaseLinks: {
           amazon: "1928329187",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B0CSN6HLXG",
           kobo: "https://www.kobo.com/ca/en/ebook/differentiated-sameness",
           apple: "http://books.apple.com/us/book/id6476278777",
@@ -158,7 +173,7 @@ export const inspirationalBooks: Book[] = [
         samplePdfUrl: "/samples/DifferentiatedSameness",
       },
       {
-        id: "wisdom-raman-maharshi",
+        id: "wisdom-ramana-maharshi",
         title: "The Wisdom of Ramana Maharshi: A Modern Sufi Rendition",
         description: " Forty Verses on Reality by Sri Ramana Maharshi is a pithy and aphoristic short sacred work. This little book is full of the most profound revelations of Self-Knowledge. An essential text for all interested in Nonduality and the Maharshi's teachings.\n\nTruth is eternal and it is not subject to certain people, place, or time. The utterances of Bhagavan Sri Ramana Maharshi carry with them the potency of what is real.\n\nThese interpretations use a more modern English language and understanding than the original ones under which the publication of 1935 took place.\n\nThis rendering shows the universality of original teachings. It shows what is truly inspired by truth itself is true anytime, anywhere, any place.\n\nThis version is particularly important as it interprets the original Ulladu Narpadu in the contemporary idiom.\n\nShaykh Fadhlalla Haeri, himself a realized master, relates the teachings of Sri Ramana Maharshi in a respectful and loving manner.\n\nThis little book is dedicated in admiration to the great teacher.",
         coverImage: "/images/book-covers/WisdomOfRamanaMaharshi.jpg",
@@ -167,6 +182,9 @@ export const inspirationalBooks: Book[] = [
         publishedDate: new Date('2020-04-19'),
         purchaseLinks: {
           amazon: "1928329330",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B09J9DDQ81",
           kobo: "http://www.kobobooks.com/search/search.html?q=1230005206285",
           apple: "http://books.apple.com/us/book/id1589978195",
@@ -200,6 +218,9 @@ export const inspirationalBooks: Book[] = [
         publishedDate: new Date('2017-09-19'),
         purchaseLinks: {
           amazon: "191982698X",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B0C5K114G3",
           kobo: "https://www.kobo.com/ca/en/ebook/look-again-20",
           apple: "http://books.apple.com/us/book/id6449262725",
@@ -265,6 +286,9 @@ export const inspirationalBooks: Book[] = [
         publishedDate: new Date('2020-04-19'),
         purchaseLinks: {
           amazon: "1928329179",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B0C5G6NZLZ",
           kobo: "https://www.kobo.com/ca/en/ebook/pointers-to-reality-1",
           apple: "http://books.apple.com/us/book/id6449234865",
@@ -297,6 +321,9 @@ export const inspirationalBooks: Book[] = [
         publishedDate: new Date('2020-04-19'),
         purchaseLinks: {
           amazon: "191982670X",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B01IKZ5QIW",
           kobo: "http://store.kobobooks.com/en-CA/ebook/pointers-to-presence",
           apple: "http://itunes.apple.com/us/book/id1144117161",

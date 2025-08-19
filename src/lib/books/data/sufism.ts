@@ -12,6 +12,9 @@ export const sufismBooks: Book[] = [
         publishedDate: new Date('2024-06-19'),
         purchaseLinks: {
           amazon: "1928329446",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B0DDTRNFQW",
           kobo: "https://www.kobo.com/ca/en/ebook/pathways-to-the-garden",
           apple: "http://books.apple.com/us/book/id6651860673",
@@ -29,6 +32,9 @@ export const sufismBooks: Book[] = [
         publishedDate: new Date('2018-09-18'),
         purchaseLinks: {
           amazon: "1786781859",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B07RL8X6KR",
           kobo: "http://store.kobobooks.com/en-US/ebook/sufi-encounters-1",
           other: [
@@ -71,6 +77,9 @@ export const sufismBooks: Book[] = [
         publishedDate: new Date('2018-09-18'),
         purchaseLinks: {
           amazon: "1919826955",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B0C5JKYM37",
           kobo: "https://www.kobo.com/ca/en/ebook/spectrum-of-reality-11",
           apple: "http://books.apple.com/us/book/id6449234865",
@@ -105,6 +114,9 @@ export const sufismBooks: Book[] = [
         publishedDate: new Date('2023-04-19'),
         purchaseLinks: {
           amazon: "1928329438",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B0C511DWNX",
           kobo: "https://www.kobo.com/ca/en/ebook/teachings-from-a-classical-sufi-master",
           apple: "http://books.apple.com/us/book/id6448954863",
@@ -128,6 +140,9 @@ export const sufismBooks: Book[] = [
         publishedDate: new Date('2021-12-19'),
         purchaseLinks: {
           amazon: "1919897232",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B01J85V8V2",
           kobo: "http://store.kobobooks.com/en-CA/ebook/witnessing-perfection",
           apple: "http://itunes.apple.com/us/book/id1145054429",
@@ -162,6 +177,9 @@ export const sufismBooks: Book[] = [
         publishedDate: new Date('2020-04-19'),
         purchaseLinks: {
           amazon: "1928329225",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B01ITGN5HQ",
           kobo: "http://store.kobobooks.com/en-CA/ebook/beginning-s-end",
           apple: "http://itunes.apple.com/us/book/id1144690196",
@@ -195,6 +213,9 @@ export const sufismBooks: Book[] = [
         publishedDate: new Date('2021-06-19'),
         purchaseLinks: {
           amazon: "0958417652",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B01J4LOCKO",
           kobo: "http://store.kobobooks.com/en-CA/ebook/cosmology-of-the-self",
           apple: "http://itunes.apple.com/us/book/id1144709005",
@@ -270,6 +291,9 @@ export const sufismBooks: Book[] = [
         publishedDate: new Date('2022-05-19'),
         purchaseLinks: {
           amazon: "1928329233",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B01J81DSWI",
           kobo: "http://store.kobobooks.com/en-CA/ebook/happiness-in-life-and-after-death",
           apple: "http://itunes.apple.com/us/book/id1144957454",
@@ -344,6 +368,9 @@ export const sufismBooks: Book[] = [
         publishedDate: new Date('2019-10-19'),
         purchaseLinks: {
           amazon: "1919897062",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B01J81DSUA",
           kobo: "http://store.kobobooks.com/en-CA/ebook/the-elements-of-sufism",
           apple: "http://itunes.apple.com/us/book/id1144990885",
@@ -377,6 +404,9 @@ export const sufismBooks: Book[] = [
         publishedDate: new Date('2019-11-09'),
         purchaseLinks: {
           amazon: "1919826564",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B089WHVKPN",
           kobo: "https://www.kobo.com/ca/en/ebook/the-garden-of-meaning",
           apple: "http://books.apple.com/us/book/id1517629677",
@@ -411,6 +441,9 @@ export const sufismBooks: Book[] = [
         publishedDate: new Date('2019-11-09'),
         purchaseLinks: {
           amazon: "1928329063",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B01JBIYTPI",
           kobo: "http://store.kobobooks.com/en-CA/ebook/the-hikam-the-wisdom-of-ibn-ata-allah",
           apple: "http://itunes.apple.com/us/book/id1145019417",
@@ -476,6 +509,9 @@ export const sufismBooks: Book[] = [
         publishedDate: new Date('2022-03-19'),
         purchaseLinks: {
           amazon: "1928329241",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B01JEJCIIY",
           kobo: "http://store.kobobooks.com/en-CA/ebook/son-of-karbala",
           apple: "http://itunes.apple.com/us/book/id1144975494",

@@ -228,6 +228,9 @@ export const quranBooks: Book[] = [
         publishedDate: new Date('2025-02-19'),
         purchaseLinks: {
           amazon: "B0F4M3PSW7",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B0F5QYQDT1",
           other: [
             {
@@ -310,6 +313,9 @@ export const quranBooks: Book[] = [
         publishedDate: new Date('2018-02-19'),
         purchaseLinks: {
           amazon: "1919826688",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           other: [
             {
               name: "Barnes & Noble",
@@ -340,6 +346,9 @@ export const quranBooks: Book[] = [
         publishedDate: new Date('2021-04-19'),
         purchaseLinks: {
           amazon: "1928329217",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B0C5JSSJF1",
           kobo: "https://www.kobo.com/ca/en/ebook/universal-qur-an-1",
           apple: "http://books.apple.com/us/book/id6449255752",
@@ -373,6 +382,9 @@ export const quranBooks: Book[] = [
         purchaseLinks: {
           amazon: "1928329470",
           kindle: "B0CQXRJ3SJ",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kobo: "https://www.kobo.com/ca/en/ebook/a-courteous-approach-to-qur-an",
           apple: "http://books.apple.com/us/book/id6474973710",
           other: [
@@ -395,6 +407,9 @@ export const quranBooks: Book[] = [
         publishedDate: new Date('2018-02-27'),
         purchaseLinks: {
           amazon: "1928329004",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B01IY92LH8",
           kobo: "http://store.kobobooks.com/en-CA/ebook/commentaries-on-chapters-one-and-two-of-the-qur-an",
           apple: "http://itunes.apple.com/us/book/id1144700040",
@@ -428,6 +443,9 @@ export const quranBooks: Book[] = [
         publishedDate: new Date('2018-02-27'),
         purchaseLinks: {
           amazon: "1928329012",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B01IZY9RQ0",
           kobo: "http://store.kobobooks.com/en-CA/ebook/the-family-of-imran",
           apple: "http://itunes.apple.com/us/book/id1145002464",
@@ -461,6 +479,9 @@ export const quranBooks: Book[] = [
         publishedDate: new Date('2018-02-27'),
         purchaseLinks: {
           amazon: "1928329020",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B01IZXV4S0",
           kobo: "http://store.kobobooks.com/en-CA/ebook/the-heart-of-the-qur-an",
           apple: "http://itunes.apple.com/us/book/id1145016709",
@@ -494,6 +515,9 @@ export const quranBooks: Book[] = [
         publishedDate: new Date('2018-02-27'),
         purchaseLinks: {
           amazon: "1928329039",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B01IYVWPKO",
           kobo: "http://store.kobobooks.com/en-CA/ebook/commentaries-on-four-selected-chapters-of-the-qur-an",
           apple: "http://itunes.apple.com/us/book/id1144703533",
@@ -527,6 +551,9 @@ export const quranBooks: Book[] = [
         publishedDate: new Date('2018-02-27'),
         purchaseLinks: {
           amazon: "1928329047",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B01ITGN3A0",
           kobo: "http://store.kobobooks.com/en-CA/ebook/beams-of-illumination-from-the-divine-revelation",
           apple: "http://itunes.apple.com/us/book/id1144197186",
@@ -560,6 +587,9 @@ export const quranBooks: Book[] = [
         publishedDate: new Date('2017-09-19'),
         purchaseLinks: {
           amazon: "0620711825",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           other: [
             {
               name: "Waterstones",
@@ -579,6 +609,9 @@ export const quranBooks: Book[] = [
         publishedDate: new Date('2019-11-19'),
         purchaseLinks: {
           amazon: "1919826971",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B0C5JLBJ7G",
           kobo: "https://www.kobo.com/ca/en/ebook/quran-9",
           apple: "http://books.apple.com/us/book/id6449252276",
@@ -606,6 +639,9 @@ export const quranBooks: Book[] = [
         publishedDate: new Date('2022-04-19'),
         purchaseLinks: {
           amazon: "1928329195",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B01IYM63O2",
           kobo: "http://store.kobobooks.com/en-CA/ebook/the-essential-message-of-the-qur-an",
           apple: "http://itunes.apple.com/us/book/id1145000400",
@@ -640,6 +676,9 @@ export const quranBooks: Book[] = [
         publishedDate: new Date('2019-11-19'),
         purchaseLinks: {
           amazon: "1919826904",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B01J284G50",
           kobo: "http://store.kobobooks.com/en-CA/ebook/the-qur-anic-prescription-for-life",
           apple: "http://itunes.apple.com/us/book/id1145040986",
@@ -700,6 +739,9 @@ export const quranBooks: Book[] = [
         publishedDate: new Date('2020-06-19'),
         purchaseLinks: {
           amazon: "1928329136",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B01IYM63MY",
           kobo: "http://store.kobobooks.com/en-CA/ebook/journey-of-the-universe-as-expounded-in-the-qur-an",
           apple: "http://itunes.apple.com/us/book/id1144962534",
@@ -729,6 +771,9 @@ export const quranBooks: Book[] = [
         publishedDate: new Date('2024-11-19'),
         purchaseLinks: {
           amazon: "B0DQM32SWW",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B01IZXV7UK",
           kobo: "http://store.kobobooks.com/en-CA/ebook/the-qur-an-in-islam",
           apple: "http://itunes.apple.com/us/book/id1144655429",

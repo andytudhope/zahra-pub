@@ -41,6 +41,9 @@ export const islamBooks: Book[] = [
         publishedDate: new Date('2019-02-01'),
         purchaseLinks: {
           amazon: "1928329098",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B01JCZY4TG",
           kobo: "http://store.kobobooks.com/en-CA/ebook/the-lantern-of-the-path",
           apple: "http://itunes.apple.com/us/book/id1144665817",
@@ -74,6 +77,9 @@ export const islamBooks: Book[] = [
         publishedDate: new Date('2020-04-19'),
         purchaseLinks: {
           amazon: "192832908X",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B01ITJ5J1I",
           kobo: "http://store.kobobooks.com/en-CA/ebook/calling-allah-by-his-most-beautiful-names",
           apple: "http://itunes.apple.com/us/book/id1144695091",
@@ -109,6 +115,9 @@ export const islamBooks: Book[] = [
         publishedDate: new Date('2018-12-10'),
         purchaseLinks: {
           amazon: "1928329071",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B01JCZY6OE",
           kobo: "http://store.kobobooks.com/en-CA/ebook/the-sayings-wisdom-of-imam-ali",
           apple: "http://itunes.apple.com/us/book/id1145043352",
@@ -142,6 +151,9 @@ export const islamBooks: Book[] = [
         publishedDate: new Date('2020-04-19'),
         purchaseLinks: {
           amazon: "1919897054",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B01IVTK8WG",
           kobo: "http://store.kobobooks.com/en-CA/ebook/the-elements-of-islam",
           apple: "http://itunes.apple.com/us/book/id1144988283",
@@ -176,6 +188,9 @@ export const islamBooks: Book[] = [
         publishedDate: new Date('2016-02-19'),
         purchaseLinks: {
           amazon: "1919826920",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B01IVVIRGS",
           kobo: "http://store.kobobooks.com/en-CA/ebook/prophetic-traditions-in-islam",
           apple: "http://itunes.apple.com/us/book/id1144972467",
@@ -225,6 +240,9 @@ export const islamBooks: Book[] = [
         publishedDate: new Date('2018-12-10'),
         purchaseLinks: {
           amazon: "1919897224",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B01IYFUS1I",
           kobo: "http://store.kobobooks.com/en-CA/ebook/fasting-in-islam",
           apple: "http://itunes.apple.com/us/book/id1144930435",
@@ -269,6 +287,9 @@ export const islamBooks: Book[] = [
         publishedDate: new Date('1991-11-03'),
         purchaseLinks: {
           amazon: "1852300655",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B01IVTK8T4",
           kobo: "http://store.kobobooks.com/en-CA/ebook/living-islam",
           apple: "http://itunes.apple.com/us/book/id1144968591",
