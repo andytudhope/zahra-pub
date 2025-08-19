@@ -1,11 +1,11 @@
-type AmazonDomain = 'com' | 'co.uk' | 'fr' | 'de' | 'it' | 'es' | 'com.mx' | 'com.br' | 'jp' | 'se' | 'com.au' | 'nl' | 'in' | 'ca';
+type AmazonDomain = 'com' | 'co.uk' | 'fr' | 'de' | 'it' | 'es' | 'com.mx' | 'com.br' | 'jp' | 'se' | 'com.au' | 'nl' | 'in' | 'ca' | 'co.za';
 
 const countryToDomain: Record<string, AmazonDomain> = {
   US: 'com',
   CA: 'ca',
   MX: 'com.mx',
   BR: 'com.br',
-  ZA: 'com',
+  ZA: 'com',      // default stays .com unless a per-book override says otherwise
   GB: 'co.uk',
   IE: 'co.uk',
   FR: 'fr',
@@ -21,9 +21,23 @@ const countryToDomain: Record<string, AmazonDomain> = {
   AU: 'com.au'
 };
 
-export function getAmazonUrl(asin: string | undefined, userCountry: string): string | null {
-  if (!asin) return null;
+export type AmazonRegionalOverrides = Partial<
+  Record<string, { asin?: string; domain?: AmazonDomain }>
+>;
 
-  const domain = countryToDomain[userCountry] || 'com';
-  return `https://amazon.${domain}/dp/${asin}`;
+export function getAmazonUrl(
+  asin: string | undefined,
+  userCountry: string,
+  regional?: AmazonRegionalOverrides
+): string | null {
+  const baseAsin = asin;
+  const override = regional?.[userCountry];
+
+  const chosenAsin = override?.asin ?? baseAsin;
+  if (!chosenAsin) return null;
+
+  const chosenDomain =
+    override?.domain ?? countryToDomain[userCountry] ?? 'com';
+
+  return `https://amazon.${chosenDomain}/dp/${chosenAsin}`;
 }

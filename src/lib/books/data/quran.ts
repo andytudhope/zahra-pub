@@ -11,6 +11,9 @@ export const quranBooks: Book[] = [
         featured: true, 
         purchaseLinks: {
           amazon: "1928329209",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
           kindle: "B0CW1JQCQ2",
           kobo: 'https://www.kobo.com/ca/en/ebook/the-qur-an-47',
           apple: 'http://books.apple.com/us/book/id6478554730',

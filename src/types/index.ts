@@ -11,6 +11,12 @@ export interface Book {
   publishedDate?: Date;
   purchaseLinks: {
     amazon?: string;
+    amazonRegional?: {
+      [country: string]: {
+        domain?: string;
+        asin?: string;
+      };
+    }
     kindle?: string;
     kobo?: string;
     apple?: string;
