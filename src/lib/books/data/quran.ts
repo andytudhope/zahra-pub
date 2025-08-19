@@ -21,12 +21,52 @@ export const quranBooks: Book[] = [
             {
               name: "Amazon Paperback Version",
               url: "http://www.amazon.com/dp/1928329489",
-              geography: "all"
+              geography: "US"
             },
             {
               name: "Amazon Travel Version",
               url: "http://www.amazon.com/dp/1776490118",
-              geography: "all"
+              geography: "US"
+            },
+            {
+              name: "Amazon Paperback Version",
+              url: "http://www.amazon.com/dp/1928329489",
+              geography: "UK"
+            },
+            {
+              name: "Amazon Travel Version",
+              url: "http://www.amazon.com/dp/1776490118",
+              geography: "UK"
+            },
+            {
+              name: "Amazon Paperback Version",
+              url: "http://www.amazon.com/dp/1928329489",
+              geography: "SE"
+            },
+            {
+              name: "Amazon Travel Version",
+              url: "http://www.amazon.com/dp/1776490118",
+              geography: "SE"
+            },
+            {
+              name: "Amazon Paperback Version",
+              url: "http://www.amazon.com/dp/1928329489",
+              geography: "AU"
+            },
+            {
+              name: "Amazon Travel Version",
+              url: "http://www.amazon.com/dp/1776490118",
+              geography: "AU"
+            },
+            {
+              name: "Amazon Paperback Version",
+              url: "http://www.amazon.co.za/dp/1928329489",
+              geography: "ZA"
+            },
+            {
+              name: "Amazon Travel Version",
+              url: "http://www.amazon.co.za/dp/1776490118",
+              geography: "ZA"
             },
             {
               name: "Adilbris",

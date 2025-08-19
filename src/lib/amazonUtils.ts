@@ -39,5 +39,7 @@ export function getAmazonUrl(
   const chosenDomain =
     override?.domain ?? countryToDomain[userCountry] ?? 'com';
 
+  console.log(`Using ASIN: ${chosenAsin} for domain: ${chosenDomain} in country: ${userCountry}`);
+
   return `https://amazon.${chosenDomain}/dp/${chosenAsin}`;
 }
