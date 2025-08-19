@@ -11,7 +11,7 @@ interface BookContentProps {
 
 export default function BookContent({ book }: BookContentProps) {
   const userCountry = useGeography();
-  const amazonUrl = getAmazonUrl(book.purchaseLinks.amazon, userCountry);
+  const amazonUrl = getAmazonUrl(book.purchaseLinks.amazon, userCountry, book.purchaseLinks.amazonRegional as any);
   const kindleUrl = getAmazonUrl(book.purchaseLinks.kindle, userCountry);
   
   const localShops = book.purchaseLinks.other?.filter(link =>
