@@ -13,7 +13,7 @@ export default function BookContent({ book }: BookContentProps) {
   const userCountry = useGeography();
   const amazonUrl = getAmazonUrl(book.purchaseLinks.amazon, userCountry, book.purchaseLinks.amazonRegional);
   const kindleUrl = getAmazonUrl(book.purchaseLinks.kindle, userCountry);
-  
+
   const localShops = book.purchaseLinks.other?.filter(link =>
     link.geography === 'all' || link.geography === userCountry
   );
@@ -36,108 +36,112 @@ export default function BookContent({ book }: BookContentProps) {
             />
           </div>
         </div>
+
         <div>
           <h1 className="text-3xl font-bold mb-4">{book.title}</h1>
           <p className="text-gray-400 italic mb-6">{book.author || 'Shaykh Fadhlalla Haeri'}</p>
           <RichText content={book.description} />
-          
-          <div className="mt-8 space-y-2">
-            {/* Sample PDF */}
-            {book.samplePdfUrl && (
-              <a
-                href={book.samplePdfUrl}
-                className="block w-[calc(50%-20px)] md:w-full md:max-w-md text-center border-2 border-black text-black py-3 rounded-lg hover:bg-gray-50 transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Download Sample PDF
-              </a>
-            )}
 
-            {/* Amazon button */}
-            {amazonUrl && (
-              <a
-                href={amazonUrl}
-                className="block w-[calc(50%-20px)] md:w-full md:max-w-md text-center bg-black text-white py-3 rounded-lg hover:bg-black/80 transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Amazon
-              </a>
-            )}
+          {book.coming ? (
+            <h2 className="text-2xl font-semibold mt-8 text-gray-600">
+              Purchase links available soon
+            </h2>
+          ) : (
+            <div className="mt-8 space-y-2">
+              {/* Sample PDF */}
+              {book.samplePdfUrl && (
+                <a
+                  href={book.samplePdfUrl}
+                  className="block w-[calc(50%-20px)] md:w-full md:max-w-md text-center border-2 border-black text-black py-3 rounded-lg hover:bg-gray-50 transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Download Sample PDF
+                </a>
+              )}
 
-            {/* Purchase Options Grid */}
-            {(hasEbooks || hasLocalShops) && (
-              <div className="grid grid-cols-2 md:grid-cols-1 gap-8 py-8">
-                {/* E-books Column */}
-                {hasEbooks && (
-                  <div>
-                    <p className="font-bold text-xl mb-4">E-Books</p>
-                    <div className="space-y-3">
-                      {kindleUrl && (
-                        <a
-                          href={kindleUrl}
-                          className="block w-full text-center border border-gray-300 text-gray-700 py-3 rounded-lg hover:border-black transition-colors"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Kindle
-                        </a>
-                      )}
-                      {book.purchaseLinks.kobo && (
-                        <a
-                          href={book.purchaseLinks.kobo}
-                          className="block w-full text-center border border-gray-300 text-gray-700 py-3 rounded-lg hover:border-black transition-colors"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Kobo
-                        </a>
-                      )}
-                      {book.purchaseLinks.apple && (
-                        <a
-                          href={book.purchaseLinks.apple}
-                          className="block w-full text-center border border-gray-300 text-gray-700 py-3 rounded-lg hover:border-black transition-colors"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Apple Books
-                        </a>
-                      )}
+              {/* Amazon button */}
+              {amazonUrl && (
+                <a
+                  href={amazonUrl}
+                  className="block w-[calc(50%-20px)] md:w-full md:max-w-md text-center bg-black text-white py-3 rounded-lg hover:bg-black/80 transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Amazon
+                </a>
+              )}
+
+              {/* Purchase Options Grid */}
+              {(hasEbooks || hasLocalShops) && (
+                <div className="grid grid-cols-2 md:grid-cols-1 gap-8 py-8">
+                  {hasEbooks && (
+                    <div>
+                      <p className="font-bold text-xl mb-4">E-Books</p>
+                      <div className="space-y-3">
+                        {kindleUrl && (
+                          <a
+                            href={kindleUrl}
+                            className="block w-full text-center border border-gray-300 text-gray-700 py-3 rounded-lg hover:border-black transition-colors"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            Kindle
+                          </a>
+                        )}
+                        {book.purchaseLinks.kobo && (
+                          <a
+                            href={book.purchaseLinks.kobo}
+                            className="block w-full text-center border border-gray-300 text-gray-700 py-3 rounded-lg hover:border-black transition-colors"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            Kobo
+                          </a>
+                        )}
+                        {book.purchaseLinks.apple && (
+                          <a
+                            href={book.purchaseLinks.apple}
+                            className="block w-full text-center border border-gray-300 text-gray-700 py-3 rounded-lg hover:border-black transition-colors"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            Apple Books
+                          </a>
+                        )}
+                      </div>
                     </div>
-                  </div>
-                )}
+                  )}
 
-                {/* Local Bookshops Column */}
-                {hasLocalShops && (
-                  <div>
-                    <p className="font-bold text-xl mb-4">Book Shops Relevant to You</p>
-                    <div className="space-y-3">
-                      {localShops.map((link, index) => (
-                        <a
-                          key={index}
-                          href={link.url}
-                          className="block w-full text-center border border-gray-300 text-gray-700 py-3 rounded-lg hover:border-black transition-colors"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          {link.name}
-                        </a>
-                      ))}
+                  {hasLocalShops && (
+                    <div>
+                      <p className="font-bold text-xl mb-4">Book Shops Relevant to You</p>
+                      <div className="space-y-3">
+                        {localShops.map((link, index) => (
+                          <a
+                            key={index}
+                            href={link.url}
+                            className="block w-full text-center border border-gray-300 text-gray-700 py-3 rounded-lg hover:border-black transition-colors"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {link.name}
+                          </a>
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                )}
-              </div>
-            )}
+                  )}
+                </div>
+              )}
+            </div>
+          )}
 
-            {/* Reader Reviews */}
-            {book.reviews && (
-              <div>
-                <p className='text-xl font-bold my-2 underline'>Reader Reviews</p>
-                <RichText content={book.reviews} />
-              </div>
-            )}
-          </div>
+          {book.reviews && (
+            <div>
+              <p className="text-xl font-bold my-2 underline">Reader Reviews</p>
+              <RichText content={book.reviews} />
+            </div>
+          )}
         </div>
       </div>
     </div>

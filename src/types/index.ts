@@ -10,6 +10,7 @@ export interface Book {
   order?: number;
   featured?: boolean;
   latest?: boolean;
+  coming?: boolean;
   publishedDate?: Date;
   purchaseLinks: {
     amazon?: string;

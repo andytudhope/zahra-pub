@@ -2,6 +2,61 @@ import { Book } from '@/types';
 
 export const islamBooks: Book[] = [ 
     {
+        id: 'life-character-imam-ali',
+        title: "The Life and Character of Imam `Ali",
+        author: "Shaykh Fadhlalla Haeri, translated by Mohammed Al Salman",
+        description: "<b><i>The Life and Character of Imam `Ali</b></i> is a vivid portrayal of one of the most outstanding personalities in Islamic history. The cousin and son-in-law of the Prophet Muhammad (may the peace and blessings of Allah be upon him and his family), Imam `Ali was the first man to accept Islam, when he was still a young boy, and for the next twenty-three years he was one of the Prophet's closest companions. Imam `Ali was constantly at the side of the Prophet, learnt from him, and also married his daughter Fatima. The Prophet said of Imam `Ali: 'I am the city of knowledge, and `Ali is the gate'.\n\nAlthough a great many of Imam `Ali's sayings and letters were accurately remembered and recorded during his lifetime, they have until now remained virtually inaccessible to the English-speaking world.",
+        coverImage: "/images/book-covers/LifeAndCharacterImanAli.jpg",
+        category: 'islam',
+        order: 0,
+        publishedDate: new Date('2025-10-09'),
+        coming: true,
+        purchaseLinks: {
+          other: [
+            {
+              name: "eBay",
+              url: "https://www.ebay.com/itm/365904937251",
+              geography: "US"
+            },
+            {
+              name: "Morawa",
+              url: "https://www.morawa.com/en/the-life-and-character-of-imam-ali.html",
+              geography: "DE"
+            },
+            {
+              name: "Bokus",
+              url: "https://www.bokus.com/bok/9781919897325/the-life-and-character-of-imam-ali/",
+              geography: "SE"
+            },
+            {
+              name: "Patogu Pirkti",
+              url: "https://www.patogupirkti.lt/lt/knygos/the-life-and-character-of-imam-ali-shaykh-fadhlalla-haeri-9781919897325",
+              geography: "LT"
+            },
+            {
+              name: "Akademibokhandeln",
+              url: "https://www.akademibokhandeln.se/bok/the-life-and-character-of-imam-ali/9781919897325/",
+              geography: "SE"
+            },
+            {
+              name: "Kyobo Books",
+              url: "https://product.kyobobook.co.kr/detail/S000217582443",
+              geography: "KR"
+            },
+            {
+              name: "Yes24",
+              url: "https://m.yes24.com/goods/detail/154137089",
+              geography: "KR"
+            },
+            {
+              name: "Books.com",
+              url: "https://www.books.com.tw/products/F01b495823",
+              geography: "TW"
+            }
+          ]
+        }
+    },
+    {
         id: 'transformative-worship-islam',
         title: "Transformative Worship in Islam: Experiencing Perfection",
         author: "Shaykh Fadhlalla Haeri with Muna H. Bilgrami",

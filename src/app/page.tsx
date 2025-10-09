@@ -3,12 +3,17 @@ import { categories, books } from '@/lib/books';
 import { getFeaturedBooks, getLatestBooks } from '@/lib/bookUtils';
 import WorldMapWithPartners from '@/components/ui/PrintPartnersMap';
 import BookCard from '@/components/books/BookCard';
+import ComingSoon from '@/components/sections/ComingSoon';
 import FeaturedBooks from '@/components/sections/FeaturedBooks';
 import LatestBooks from '@/components/sections/LatestBooks';
 
 export default function Home() {
   return (
     <div className="min-h-screen">
+
+      <div className="mt-10">
+        <ComingSoon books={books} />
+      </div>
 
       {/* Featured and Latest Section */}
       <div className="max-w-6xl mt-10 mx-auto px-4 mb-16">
