@@ -13,6 +13,18 @@ export const islamBooks: Book[] = [
       coming: true,
       purchaseLinks: {
         amazon: "B0FVCDDP5C",
+        other: [
+          {
+            name: "Booktopia",
+            url: "https://www.booktopia.com.au/reflections-of-the-awakened-sayyid-hasan-askari/book/9781776490172.html",
+            geography: "AU"
+          },
+          {
+            name: "yes24",
+            url: "https://www.yes24.com/product/goods/158896164",
+            geography: "KR"
+          }
+        ]
       }
     },
     // {
