@@ -2,60 +2,74 @@ import { Book } from '@/types';
 
 export const islamBooks: Book[] = [ 
     {
-        id: 'life-character-imam-ali',
-        title: "The Life and Character of Imam `Ali",
-        author: "Shaykh Fadhlalla Haeri, translated by Mohammed Al Salman",
-        description: "<b><i>The Life and Character of Imam `Ali</b></i> is a vivid portrayal of one of the most outstanding personalities in Islamic history. The cousin and son-in-law of the Prophet Muhammad (may the peace and blessings of Allah be upon him and his family), Imam `Ali was the first man to accept Islam, when he was still a young boy, and for the next twenty-three years he was one of the Prophet's closest companions. Imam `Ali was constantly at the side of the Prophet, learnt from him, and also married his daughter Fatima. The Prophet said of Imam `Ali: 'I am the city of knowledge, and `Ali is the gate'.\n\nAlthough a great many of Imam `Ali's sayings and letters were accurately remembered and recorded during his lifetime, they have until now remained virtually inaccessible to the English-speaking world.",
-        coverImage: "/images/book-covers/LifeAndCharacterImanAli.jpg",
-        category: 'islam',
-        order: 0,
-        publishedDate: new Date('2025-10-09'),
-        coming: true,
-        purchaseLinks: {
-          other: [
-            {
-              name: "eBay",
-              url: "https://www.ebay.com/itm/365904937251",
-              geography: "US"
-            },
-            {
-              name: "Morawa",
-              url: "https://www.morawa.com/en/the-life-and-character-of-imam-ali.html",
-              geography: "DE"
-            },
-            {
-              name: "Bokus",
-              url: "https://www.bokus.com/bok/9781919897325/the-life-and-character-of-imam-ali/",
-              geography: "SE"
-            },
-            {
-              name: "Patogu Pirkti",
-              url: "https://www.patogupirkti.lt/lt/knygos/the-life-and-character-of-imam-ali-shaykh-fadhlalla-haeri-9781919897325",
-              geography: "LT"
-            },
-            {
-              name: "Akademibokhandeln",
-              url: "https://www.akademibokhandeln.se/bok/the-life-and-character-of-imam-ali/9781919897325/",
-              geography: "SE"
-            },
-            {
-              name: "Kyobo Books",
-              url: "https://product.kyobobook.co.kr/detail/S000217582443",
-              geography: "KR"
-            },
-            {
-              name: "Yes24",
-              url: "https://m.yes24.com/goods/detail/154137089",
-              geography: "KR"
-            },
-            {
-              name: "Books.com",
-              url: "https://www.books.com.tw/products/F01b495823",
-              geography: "TW"
-            }
-          ]
-        }
+      id: 'reflections-of-the-awakened',
+      title: "Reflections of the Awakened: Commentary of Surah Fatiha attributed to Imam Al Hussain (AS)",
+      author: "Sadraddin Al-Qunawi. Notes by Sayyid Hasan Askari.",
+      description: "<b><i>Reflections of Awakened (Mirat'l-Arifin)</b></i> is a treatise of great importance which sets forth in a compact and systematic manner, the central concerns of the mystical dimension of Islam. Some attribute it to Sadraddin al-Qunawi, and others regard it as a work of Imam Husayn (AS). <i>Mirat'l-Arifin</i> itself contains the explicit reference to its theme of inquiry into the Opening of the Book. The inquiry starts with the reference to the well-known formulation: what is in the entire Quran is in its Opening. What is elaborated in the Quran is epitomized in the Opening (fatiha). The Opening is in fact a summation, and hence the Point under the letter, Ba, is the final symbol of the epitome of all knowledge. To call the Opening of the Book as the Source of the Book is to define the latter after the principle of summation and totality. The <i>Mirat'l-Arifin</i> revolutionizes the concept of 'kitab' (book) by saying that this world is in fact two-fold, the world of command (amnr) and the world of creation (khalq), and each is a book from the books of God; and for each is a fatiha. In other words, for each there is a 'umm'l-kitab' and a 'kitab'l-mubin'. Real knowledge consists in knowing the 'umm'l-kitab' of each realm, but Man, as we are told, is a comprehensive book among the books of God, and a 'barzakh' for both the Divine and the Cosmic Realities. Hence, to know both the worlds is to know Man. Self-Knowledge is the knowledge of all things of all places and all times, for Man is the summation of all things; and within man is the secret (sirr) of His Lord-\"whoever knows his self knows His Lord\".\n\nSayyid Hasan Askari was widely known as one of the few Muslim scholars in the field of Comparative Religion. He taught at Osmania, Aligarh, American University of Beirut and the Free University of Amsterdam. He was on the staff of the Centre of Islam and Christian-Muslim Relations and Professor at the Faculty of Comparative Religion at the University of Antwerp. He has lectured at the universities of Heidelberg, Gottingen, Hamburg, Oxford, Cambridge, Harvard and Princeton. His works include 'Society and State in Islam' and 'Inter-Religion'; The Experience of Religious Diversity among others. He has worked on Islamic Theory of Knowledge and also on an extensive volume about Ali ibn abi Talib and Sufi Orders.",
+      coverImage: "/images/book-covers/ReflectionsAwakened.jpg",
+      category: 'islam',
+      order: 0,
+      publishedDate: new Date('2025-10-15'),
+      coming: true,
+      purchaseLinks: {
+        amazon: "B0FVCDDP5C",
+      }
     },
+    // {
+    //     id: 'life-character-imam-ali',
+    //     title: "The Life and Character of Imam `Ali",
+    //     author: "Shaykh Fadhlalla Haeri, translated by Mohammed Al Salman",
+    //     description: "<b><i>The Life and Character of Imam `Ali</b></i> is a vivid portrayal of one of the most outstanding personalities in Islamic history. The cousin and son-in-law of the Prophet Muhammad (may the peace and blessings of Allah be upon him and his family), Imam `Ali was the first man to accept Islam, when he was still a young boy, and for the next twenty-three years he was one of the Prophet's closest companions. Imam `Ali was constantly at the side of the Prophet, learnt from him, and also married his daughter Fatima. The Prophet said of Imam `Ali: 'I am the city of knowledge, and `Ali is the gate'.\n\nAlthough a great many of Imam `Ali's sayings and letters were accurately remembered and recorded during his lifetime, they have until now remained virtually inaccessible to the English-speaking world.",
+    //     coverImage: "/images/book-covers/LifeAndCharacterImanAli.jpg",
+    //     category: 'islam',
+    //     order: 0,
+    //     publishedDate: new Date('2025-10-09'),
+    //     coming: true,
+    //     purchaseLinks: {
+    //       other: [
+    //         {
+    //           name: "eBay",
+    //           url: "https://www.ebay.com/itm/365904937251",
+    //           geography: "US"
+    //         },
+    //         {
+    //           name: "Morawa",
+    //           url: "https://www.morawa.com/en/the-life-and-character-of-imam-ali.html",
+    //           geography: "DE"
+    //         },
+    //         {
+    //           name: "Bokus",
+    //           url: "https://www.bokus.com/bok/9781919897325/the-life-and-character-of-imam-ali/",
+    //           geography: "SE"
+    //         },
+    //         {
+    //           name: "Patogu Pirkti",
+    //           url: "https://www.patogupirkti.lt/lt/knygos/the-life-and-character-of-imam-ali-shaykh-fadhlalla-haeri-9781919897325",
+    //           geography: "LT"
+    //         },
+    //         {
+    //           name: "Akademibokhandeln",
+    //           url: "https://www.akademibokhandeln.se/bok/the-life-and-character-of-imam-ali/9781919897325/",
+    //           geography: "SE"
+    //         },
+    //         {
+    //           name: "Kyobo Books",
+    //           url: "https://product.kyobobook.co.kr/detail/S000217582443",
+    //           geography: "KR"
+    //         },
+    //         {
+    //           name: "Yes24",
+    //           url: "https://m.yes24.com/goods/detail/154137089",
+    //           geography: "KR"
+    //         },
+    //         {
+    //           name: "Books.com",
+    //           url: "https://www.books.com.tw/products/F01b495823",
+    //           geography: "TW"
+    //         }
+    //       ]
+    //     }
+    // },
     {
         id: 'transformative-worship-islam',
         title: "Transformative Worship in Islam: Experiencing Perfection",
