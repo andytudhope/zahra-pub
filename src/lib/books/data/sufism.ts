@@ -2,12 +2,35 @@ import { Book } from '@/types';
 
 export const sufismBooks: Book[] = [
     {
-        id: "pathways-to-the-garden",
-        title: "Pathways to the Garden: Contemporary Insights on the Sufi Path",
-        description: " It is a natural human drive to discover and develop the perfect Garden. We long for a state where we have no concerns, anxieties or needs, just living in the Garden in the eternal drift of time. Only a few reach a point of bewilderment when they are not certain whether the Garden is in them or they are in the Garden. Truth is beyond space and time; therefore, its apparent confusion is a big grace when the ‘you’ is lost and the cosmic Oneness illuminates all.\n\nCosmic Light is boundless and eternal. Throughout human history, irrespective of religious orientation or culture, people have reflected on the eternal truth of this reality. Some of these sages, like Shaykh Sa`d ud-Dīn Mahmūd Shabistārī, were able to convey this in a universal light. In my experience and understanding, the conditioned consciousness of human beings has within it a drive towards higher consciousness and intelligence. Throughout our history, this appears in diverse ways and forms, cloaked within the culture of the time. With the rise in intelligence and education, today’s people can easily understand duality and the quest for unity without it being too esoteric. Young people today can also easily appreciate the truth that our existence has emerged from a mysterious unific source and will return to it after the end of time. Every one of us is challenged by the mystery of now, which is ever-changing and constant, and the unique gift of life.\n\nAll quests and teachings lead to the realization that the soul, or essence of life, is eternal and that the moment radiates from timelessness. We are obsessed with that which is eternal and ever-present. In my lifelong search to uncover and share the dazzling lights of Truth, I have been propelled to make more accessible translations of specific seminal texts from the Sufi tradition available, as I have done with <i>‘The Secret Garden’</i>. This book, <i>‘Pathways to the Garden’</i> is presented as an update to key questions for today’s time.\n\n- Shaykh Fadhlalla Haeri",
-        coverImage: "/images/book-covers/PathwaysToTheGarden.jpg",
+        id: "abadi",
+        title: "Abadi: Preparing for Eternal Life",
+        description: "Human beings always seek a situation where they are fully content, feeling happy and present in the moment. The nature of every human is such that we are a combination of life that had evolved over billions of years into where it is now as a fully evolved homo-sapien, and the mysterious power of the spirit, soul or ruh that gives life itself. That is the first radiation of the Divine.\n\nEach one of us has the two extreme ends of the spectrum of consciousness. On one end is the basic, selfish creature and the other end is the pure light of the soul. We are on earth to practice, by conscious effort and grace, to be more attuned and recalibrated by the highest within us- the pure soul. In between, we make mistakes, we fall back but it is all in preparation for the next phase of life where there is no longer the limitation of space and time on earth. It is a participative destiny in that we need to do the best we can, trusting as well as we can and being in the moment - a manifestation of timelessness.\n\nAbadi is a symbol for that state that enables a human being to live as a divine soul or spirit on earth.",
+        coverImage: "/images/book-covers/Abadi.jpg",
+        category: "sufism",
+        order: 0,
+        coming: true,
+        publishedDate: new Date('2025-10-28'),
+        purchaseLinks: {}
+    },
+    {
+        id: "inner-secrets-of-the-path",
+        title: "Inner Secrets of the Path",
+        author: "Sayyid Haydar Amuli, with a preface by Shaykh Fadhlalla Haeri",
+        description: "<i>The outer law is my word the spiritual path my actions, and the inner reality my inner states.</i> - Saying of The Prophet Muhammad\n\nSayyid Haydar Amuli was a14th Century spiritual master and scholar,and an interpreter of the Sufi master Ibn Arabi. A key figure in the Persian Gnostic Tradition, he wrote over 30 books.\n\nHis Inner Secrets of the Path presents an integrated view of the inner and outer aspects of the principles of Islam. Following the three levels of meaning outlined by the Prophet, the author examines the nature of unity, jusice, prophecy and the next life. He also presents highly symbolic interpretations of the Qur'an.\n\nInner Secrets of the Path is the much-awaited first complete English translation of a remarkable work reprinted by Zahra Publications from the original edition in 2025.",
+        coverImage: "/images/book-covers/InnerSecretsOfThePath2.jpg",
         category: "sufism",
         order: 1,
+        coming: true,
+        publishedDate: new Date('2025-10-28'),
+        purchaseLinks: {}
+    },
+    {
+        id: "pathways-to-the-garden",
+        title: "Pathways to the Garden: Contemporary Insights on the Sufi Path",
+        description: "It is a natural human drive to discover and develop the perfect Garden. We long for a state where we have no concerns, anxieties or needs, just living in the Garden in the eternal drift of time. Only a few reach a point of bewilderment when they are not certain whether the Garden is in them or they are in the Garden. Truth is beyond space and time; therefore, its apparent confusion is a big grace when the ‘you’ is lost and the cosmic Oneness illuminates all.\n\nCosmic Light is boundless and eternal. Throughout human history, irrespective of religious orientation or culture, people have reflected on the eternal truth of this reality. Some of these sages, like Shaykh Sa`d ud-Dīn Mahmūd Shabistārī, were able to convey this in a universal light. In my experience and understanding, the conditioned consciousness of human beings has within it a drive towards higher consciousness and intelligence. Throughout our history, this appears in diverse ways and forms, cloaked within the culture of the time. With the rise in intelligence and education, today’s people can easily understand duality and the quest for unity without it being too esoteric. Young people today can also easily appreciate the truth that our existence has emerged from a mysterious unific source and will return to it after the end of time. Every one of us is challenged by the mystery of now, which is ever-changing and constant, and the unique gift of life.\n\nAll quests and teachings lead to the realization that the soul, or essence of life, is eternal and that the moment radiates from timelessness. We are obsessed with that which is eternal and ever-present. In my lifelong search to uncover and share the dazzling lights of Truth, I have been propelled to make more accessible translations of specific seminal texts from the Sufi tradition available, as I have done with <i>‘The Secret Garden’</i>. This book, <i>‘Pathways to the Garden’</i> is presented as an update to key questions for today’s time.\n\n- Shaykh Fadhlalla Haeri",
+        coverImage: "/images/book-covers/PathwaysToTheGarden.jpg",
+        category: "sufism",
+        order: 2,
         latest: true,
         publishedDate: new Date('2024-06-19'),
         purchaseLinks: {
@@ -27,7 +50,7 @@ export const sufismBooks: Book[] = [
         description: "<b><i>With Muneera Haeri</b></i>\n\nAn unparalleled exploration of Sufism as it is practised around the world, describing meetings with today's enlightened teachers as well as including wonderfully inspiring translations of the great Sufi masters of the past. Ultimately, this book acts as a guide to the Sufi path and offers wise insight into the meaning and purpose of life.\n\nA compelling view of Sufi history together with vivid personal remembrances of living mystics.\n\n\"This is an inspiring and at the same time beautifully subtle book, with light-filled insights on every page.\" - Saadi Shakur Chishti, author of <i><a href=\"https://www.amazon.com/dp/0142196355\" target=\"_blank\">The Sufi Book of Life</a></i>. The Sufi path described in this book leads the seeker past ordinary states of consciousness towards a new experience of infinitude that is the source of the universe. In this stage there is no duality or otherness, but instead infinitude, the Original Oneness, from which all dualities and attributes emanate.\n\nThe book is at once an autobiography, a didactic treatise and a literary opus full of wonderful translations of the words of earlier Sufis, as well as the author's own poetry. It describes Shaykh Fadhlalla Haeri's life quest to connect today's world with classical times, especially through his meetings with enlightened Sufis all over the globe. Shaykh Fadhlalla Haeri also addresses profound Sufi teachings concerning the nature of humankind, the cosmos and God, using clear and simple language to address difficult doctrinal issues as only a master who has digested fully such knowledge could do. The book also reveals much about the present-day Islamic world where, despite the tragedies that are to be seen everywhere, tradition and spirituality survive. This is a metaphysical and spiritual guide to the Sufi path that ultimately offers insight into the meaning and purpose of life.",
         coverImage: "/images/book-covers/SufiEncounters.jpg",
         category: "sufism",
-        order: 2,
+        order: 3,
         featured: true,
         publishedDate: new Date('2018-09-18'),
         purchaseLinks: {
@@ -72,7 +95,7 @@ export const sufismBooks: Book[] = [
         description: "Spectrum of Reality synthesizes a comprehensive analysis of the human condition and the way we perceive reality. Shaykh Fadhlalla Haeri makes difficult concepts accessible, especially through the use of metaphors, allegories, and insights from modern science. His thesis is that human consciousness manifests in several ways across a spectrum that ranges from universal supreme consciousness to personal conditioned consciousness. It is the nature of human culture, thought and personal consciousness to continually operate in a dualistic way, so that Reality is obscured by several layers of fragmentation.\n\nThe ultimate harmony of human consciousness with universal reality is the challenge of existence. Shaykh Fadhlalla Haeri illustrates that we can heal the split between individual and the universal by recognising that each is essential to its different territory, and believes that 'spirit' is the causal factor from which all states arise. ",
         coverImage: "/images/book-covers/SpectrumOfReality.jpg",
         category: "sufism",
-        order: 3,
+        order: 4,
         featured: true,
         publishedDate: new Date('2018-09-18'),
         purchaseLinks: {
@@ -110,7 +133,7 @@ export const sufismBooks: Book[] = [
         description: "<b><i>\"Man is a copy of existence and existence is a copy of man. All opposites meet in the human being.\"</b></i>\n\nShaykh Fadhlalla Haeri and Shaykh Hosam Raouf have translated key passages from the writings of Sidi `Ali al-Jamal of Fes, Morocco (d. 1193/4 AH or 1779 CE), who was a great sage of the Shadhiliyya order.\n\nSidi `Ali later became better known through his pupil, Moulay al-`Arabi al-Darqawi, one of the most celebrated eighteenth-century Sufi masters and founder of the Darqawi-Shadhiliyya Tariqa.\n\nThe original Arabic title of this work translates as: ‘Advice to the Seeker on the Path of Asceticism’, or ‘Beautiful Rubies in Understanding the Meaning of Man’.\n\nSelected passages were chosen for this anthology to inspire, guide and make accessible eternal truths to the contemporary seeker.",
         coverImage: "/images/book-covers/TeachingsFromAClassicalSufiMaster.jpg",
         category: "sufism",
-        order: 4,
+        order: 6,
         publishedDate: new Date('2023-04-19'),
         purchaseLinks: {
           amazon: "1928329438",
@@ -173,7 +196,7 @@ export const sufismBooks: Book[] = [
         description: "Beginning's End is a contemporary outlook on the Sufi sciences of self-knowledge, intended for Muslims and non-Muslims alike. The author holds that truth has no end and is eternal, and that is why human beings will seek total freedom, of which material freedom is only a small part. The final freedom is a natural, spontaneous submission and being connected to timelessness, yet experiencing time.\n\n\"This book was written mainly to highlight the truth that if you wish to nourish the heart and nurture the light within, you need to make structural adjustments to your way of life as well as the all-consuming material drive. The book is a challenge to our modern lifestyle that is out of balance.\n\nNow it is being reprinted as the gap widens between the sustainable inner happiness and the ever-lasting outer frenzy.\"-- From the Preface to the Reprinted Edition.",
         coverImage: "/images/book-covers/BeginningsEnd.jpg",
         category: 'sufism',
-        order: 6,
+        order: 7,
         publishedDate: new Date('2020-04-19'),
         purchaseLinks: {
           amazon: "1928329225",
@@ -209,7 +232,7 @@ export const sufismBooks: Book[] = [
         description: " For the serious seeker of Reality, the way to this transcendent knowledge has been clearly indicated by the Prophet: \"<b><i>Whoever knows himself, knows his Lord</b></i>\". Coming to know the inner landscape of the human self is one of the essential foundations for progress on the path of knowledge.\n\nThis book is a practical and accessible distillation of the tawhidi (unitive) Islamic teachings and insights into the map of the human self. Shaykh Fadhlalla Haeri has sought to furnish the reader with the fundamental elements and insights into the make-up of the individual self and how the various elements of spirituality and humanity interact within us.",
         coverImage: "/images/book-covers/CosmologyOfTheSelf.jpg",
         category: 'sufism',
-        order: 7,
+        order: 8,
         publishedDate: new Date('2021-06-19'),
         purchaseLinks: {
           amazon: "0958417652",
@@ -245,7 +268,7 @@ export const sufismBooks: Book[] = [
         description: "<b>THIS IS THE REVISED VERSION OF DECREE & DESTINY</b>\n\nFree will or determinism has been the frequent topic of philosophical debate from the early civilizations right through to the present day. Shaykh Fadhlalla Haeri shows how according to Islamic thought the answers to this important question lie in understanding two inseparable spheres of consciousness: the earthly causal and the realm of the Absolute.\n\n'Shaykh Fadhlalla Haeri's book has the great advantage that it presents to the Western reader the deepest aspects of the problems of decree and destiny through the actual words of the Qur'an, the Prophet Muhammad and the Imams of his Household. Many of the Sayings translated in this work, especially those of the Imams, have not been available in such a manner before'. -- From the Foreword by Seyyed Hossein Nasr",
         coverImage: "/images/book-covers/DecreeAndDestinyRevised.jpg",
         category: 'sufism',
-        order: 8,
+        order: 9,
         publishedDate: new Date('2021-06-19'),
         purchaseLinks: {
           kindle: "B01J46EJJ8",
@@ -272,7 +295,7 @@ export const sufismBooks: Book[] = [
         description: "<b>THIS IS THE ORIGINAL VERSION OF DECREE & DESTINY</b>\n\nFree will or determinism has been the frequent topic of philosophical debate from the early civilizations right through to the present day. Shaykh Fadhlalla Haeri shows how according to Islamic thought the answers to this important question lie in understanding two inseparable spheres of consciousness: the earthly causal and the realm of the Absolute.\n\n'Shaykh Fadhlalla Haeri's book has the great advantage that it presents to the Western reader the deepest aspects of the problems of decree and destiny through the actual words of the Qur'an, the Prophet Muhammad and the Imams of his Household. Many of the Sayings translated in this work, especially those of the Imams, have not been available in such a manner before'. -- From the Foreword by Seyyed Hossein Nasr",
         coverImage: "/images/book-covers/DecreeAndDestinyOriginal.jpg",
         category: 'sufism',
-        order: 9,
+        order: 10,
         publishedDate: new Date('2021-06-19'),
         purchaseLinks: {
           kindle: "B01J6QCM4U",
@@ -287,7 +310,7 @@ export const sufismBooks: Book[] = [
         description: "In <b><i>Happiness in Life and After Death -- An Islamic Sufi View</b></i>, Shaykh Fadhlalla Haeri provides a lucid and inspiring account of life, death and the hereafter, according to an Islamic Sufi perspective.\n\nThe book opens with a wide-ranging sweep of death and dying as viewed in other cultures and religions -- from ancient Mesopotamian, Egyptian and Zoroastrian sources through to Judaism and Christianity.\n\nBased on the Qur'an and Prophetic message, this book offers a splendid collection of revelations and spiritual teachings that map a basic path towards a wholesome way of living without forgetting death. There is both physical and spiritual death, and death in both instances is seen as a natural bridge from the suffering and delusions of this life to a unifying and clear abode. As the reader is led from birth of the ephemeral self on earth through an unfolding progression towards higher consciousness and awakening to the eternal soul within, constant awareness of one's intimate dual nature takes away much of the fear of death and makes it seem like a familiar companion.",
         coverImage: "/images/book-covers/HappinessInLifeAndAfterDeath.jpg",
         category: "sufism",
-        order: 10,
+        order: 11,
         publishedDate: new Date('2022-05-19'),
         purchaseLinks: {
           amazon: "1928329233",
@@ -320,7 +343,7 @@ export const sufismBooks: Book[] = [
         description: "The Chishtis are one of the most beloved and enduring of the Sufi Orders, which emerged in the Indian Subcontinent in medieval times. The widespread acceptance of the teachings of Islam in the region was largely due to brotherhoods, such as the Chishtis, rather than through military conquest. The Sufis lived the message of original Islam and by the example of their lives attracted many to their way of being.\n\nThe founder of the order in the Indian Subcontinent was Shaykh Mu`in ad-Din Chishti of Ajmer, commonly known as Gharib Nawaz (Helper of the Poor), whose shrine continues to this day to be a popular place of pilgrimage for Muslim and Hindu alike. Muneera Haeri narrates the lives and teachings of Shaykh Mu`in ad-Din Chishti and five of his key successors, Shaykh Qutb ad-Din Bakhtiyar Kaki, Shaykh Hamid ad-Din Sufi Nagauri, Shaykh Farid ad-Din Mas`ud Ganj-i-Shakar, Shaykh Nizam ad-Din Awliya and Shaykh Nasir ad-Din Mahmud Chiragh-i-Delhi. All Masters from what is fondly remembered as the Golden Age of the Chishtis.\n\nThe book places the teachings of the Chishtiya in its historical perspective, but also emphasises their timeless message of love, compassion and tolerance for all. Their Masters often had dialogues with Hindu and Buddhist men of knowledge. They emphasised the importance of service and charitable acts as a means for self-purification. They fed Muslim and non-Muslim alike. Living as ascetics, they avoided contact with the sultans and their courts. Above all their qawwalis, or spiritual songs, attracted people to Islam.\n\nThe story of Amir Khusrau, the father of qawwalis and his devotion to Shaykh Nizam ad-Din Awliya is one of the many examples given of the impact the Chishti teachings had on celebrated historical personages. Through extracts from contemporary writings, the reader is transported to the gatherings of these medieval Masters and can imbibe the message of eternal Truth, through teachings that are as real and pertinent today as they were to the people of those times.\n\n<i>'The Chishtiya have at last found an articulate voice in English through the personal commitment and literary skill of Muneera Haeri.'</i> -- Bruce B. Lawrence, Professor Emeritus, Duke University.\n\n<br>ABOUT MUNEERA HAERI</b>\n\nMuneera Haeri is of Scottish origin. Born in Malaysia, educated in the U.K., she converted to Islam at the age of twenty-five. Muneera is married to Shaykh Fadhlalla Haeri, a teaching Sufi Shaykh.\n\nMuneera's family has had a long connection with India, spanning two hundred years. She has visited India and Pakistan extensively, and has a great love of both countries, their peoples and history. This is her first book.\n\nHer second book 'Sufi Encounters', which she co-authored with Shaykh Fadhlalla Haeri, was published by Watkins in 2018.",
         coverImage: "/images/book-covers/TheChishtis.jpg",
         category: 'sufism',
-        order: 11,
+        order: 12,
         purchaseLinks: {
           kindle: "B08DMXHYV4",
           kobo: "https://www.kobo.com/ca/en/ebook/the-chishtis",
@@ -335,7 +358,7 @@ export const sufismBooks: Book[] = [
         description: "<b>(Publisher: Two Bows Books)</b>\n\n'<i>Throughout the journey of my life I have been drawn to the wisdom practices and knowledges that teach us about healing, health and wholeness. For me the whole notion of healing has come to involve the physical, mental and emotional as well as spiritual. In this book I hope to explore with you essential elements of the process of healing from my perspective as a believer in the Oneness of God.</i>' – from the Introduction\n\nThe unusual journey of Inge Haeri's life has exposed her to the rich interior world of the human spirit and its wonders and delights, through Islam and Sufism. In the devotional tradition of the '<i>Kashkool</i>' (<i>Miscellanea</i>), this book is a collection of personal experiences, readings, insight and commentary on the nature of healing the human spirit and keeping it in the best of conditions. Over her lifetime the author has had many encounters with living saints of the Sufi tradition and illuminated teachers from other esoteric traditions, each of which transmitted gifts, insights and blessings. Inge Haeri shares what has touched and influenced her. ",
         coverImage: "/images/book-covers/InTheCourtyard.jpg",
         category: 'sufism',
-        order: 12,
+        order: 13,
         publishedDate: new Date('2021-06-19'),
         purchaseLinks: {
           kindle: "B015DARQT4",
@@ -349,7 +372,7 @@ export const sufismBooks: Book[] = [
         description: "<b><i>Leaves From A Sufi Journal</b></i> is a unique collection of articles presenting an outstanding introduction to the areas of Sufism and original Islamic teachings.\n\nThis ageless wisdom is set against the backcloth of a changing world in which the application of this knowledge to one's own life could scarcely be more appropriate.\n\nWritten by both classical and contemporary writers, this compilation includes commentaries on the Qur'anic revelations; the mysteries of faith; inner and outer practices; the lives of prophets and saints; the individual, the family and society and the nature of unity and existence.",
         coverImage: "/images/book-covers/LeavesFromASufiJournal.jpg",
         category: 'sufism',
-        order: 13,
+        order: 14,
         publishedDate: new Date('2021-06-19'),
         purchaseLinks: {
           kindle: "B01J82P0H8",
@@ -364,7 +387,7 @@ export const sufismBooks: Book[] = [
         description: "<b>NOTE: The print version of this book has also been published under the title, <i>The Thoughtful Guide to Sufism</i></b>\n\nSufism is the heart of Islam. This introduction to Sufism describes its origins and practices, its historical background and its spread throughout the world.\n\nThe Elements of Sufism explains:<ul><li>Where Sufism originated</li><li>The relationship between Islam and Sufism</li><li>What it means to be a Sufi</li><li>The relevance of Sufism in modern life</li>",
         coverImage: "/images/book-covers/ElementsOfSufism.jpg",
         category: "sufism",
-        order: 14,
+        order: 15,
         publishedDate: new Date('2019-10-19'),
         purchaseLinks: {
           amazon: "1919897062",
@@ -400,7 +423,7 @@ export const sufismBooks: Book[] = [
         description: "Human love of beauty, harmony and gardens simply reflects our desire to connect forms, emotions and meanings. Energy and matter are inseparable, so are all beginnings and ends. \"<i>The Garden of Meaning</i>\" expresses the truth of the ever-present Origin of all dualities, pluralities and diversities. Any reflection that elevates the human mind towards higher consciousness is a spiritual exercise. The pointers in this book are like ladders to help the serious reader transcend the limitations of the natural trap of space and time.",
         coverImage: "/images/book-covers/TheGardenOfMeaning.jpg",
         category: "sufism",
-        order: 15,
+        order: 16,
         publishedDate: new Date('2019-11-09'),
         purchaseLinks: {
           amazon: "1919826564",
@@ -437,7 +460,7 @@ export const sufismBooks: Book[] = [
         description: "The Hikam, or Wisdom, of the great Sufi Master Ibn `Ata 'Allah al-Iskandari has long been acknowledged as an essential and classic masterwork of the Islamic science of enlightenment. Ibn `Ata 'Allah exemplified the ultimate model of a Sufi master possessed of a deep foundation in the sciences of the Qur'an, the way of the Prophet and the Universal Laws of the Islamic way of life, both outer and inner.\n\nShort but immensely thought provoking, dense in their significance and insightfulness, crisp and sharp in their elucidation, the aphoristic Hikam are a true manifesto for those who are sincerely on the path of knowledge and awareness. This wisdom strips away our conventional responses to events, actions and phenomena, and encourage us to concentrate on the only true Reality.\n\nWith the publication of Shaykh Fadhlalla Haeri's new translation and with the aid of his accompanying commentary, students and adepts alike can now gain a profounder understanding of these timeless teachings from the wellspring of the heart of Islam.",
         coverImage: "/images/book-covers/Hikam.jpg",
         category: "sufism",
-        order: 16,
+        order: 17,
         publishedDate: new Date('2019-11-09'),
         purchaseLinks: {
           amazon: "1928329063",
@@ -473,7 +496,7 @@ export const sufismBooks: Book[] = [
         description: "\"<i><b>The Journey of the Self</b> provides a genuine spiritual psychology...We are invited to self-understanding in this book, to psychology and spiritual self-knowledge. Not only are we invited, we are given concrete examples and concrete help in making our way toward that goal.</i>\" -- from the Forward by Robert Frager, founder, Institute of Transpersonal Psychology.\n\nThis unique guide to spiritual psychology presents Western readers with an Islamic concept of personality -- the wellspring of the Enneagram and other Sufi theories of personality. After introducing the basic model of the self, Shaykh Haeri describes a simple yet complete outline of the self's emergence, development, sustenance, and growth toward its highest potential.",
         coverImage: "/images/book-covers/TheJourneyOfTheSelf.jpg",
         category: "sufism",
-        order: 17,
+        order: 18,
         publishedDate: new Date('2019-11-09'),
         purchaseLinks: {
           kindle: "B01J93ZHII",
@@ -488,7 +511,7 @@ export const sufismBooks: Book[] = [
         description: "\"<i>There can be no doubt that there is only one message in man's heart, to be fulfilled, to live a life that is honorable and fearless, that has within it no darkness, ignorance or abuse.</i>\"\n\nThis book is based on a collection of talks which were given in the eighties in the United States. The sixties and seventies witnessed resurgences in various spheres of mysticism, spirituality and related endeavors or topics, including the manifestation of formal prescriptive Islam in various forms. The reactions were both positive and negative, causing many people to begin to awaken to a better understanding of this ever vibrant faith, the last revealed of the world's great religions.",
         coverImage: "/images/book-covers/TheSufiWayToSelfUnfoldment.jpg",
         category: "sufism",
-        order: 18,
+        order: 19,
         publishedDate: new Date('2019-11-09'),
         purchaseLinks: {
           amazon: "1919826572",
@@ -505,7 +528,7 @@ export const sufismBooks: Book[] = [
         description: "In this autobiography the atmosphere of an Iraq in transition is brought to life with all its sights, sounds and political realities. But the author's personal concern and quest has always been spiritual rather than political, so the national and cultural upheavals are used as a backdrop for his own journey of self discovery and search for truth. For everyone interested in the events that created modern Iraq, in how Muslims view their own history and in how the message of Islam meets both individual needs and that of the world today, this is a timely and thought-provoking book.\n\n'<i>A new dawn has also appeared in spiritual travelogues with the publication of Son of Karbala. It deserves a place among the great spiritual odysseys of our time, right next to Gurdjieff's <b>Meetings with Remarkable Men</b>, which is at once resembles and exceeds in its honesty and clarity.</i>'\n\n-- Professor Bruce B. Lawrence, Duke University, Durham NC ",
         coverImage: "/images/book-covers/SonOfKarbala.jpg",
         category: "sufism",
-        order: 19,
+        order: 20,
         publishedDate: new Date('2022-03-19'),
         purchaseLinks: {
           amazon: "1928329241",

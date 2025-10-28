@@ -377,27 +377,27 @@ export const islamBooks: Book[] = [
         },
         samplePdfUrl: "/samples/LivingIslam.pdf",
       },
-      {
-        id: 'inner-secrets-of-the-path',
-        title: "Inner Secrets of The Path",
-        author: "Sayyid Haydar Amuli. Translated By: Assadullah ad-Dhaakir. Foreword By: Shaykh Fadhlalla Haeri",
-        description: "In this book, Sayyid Haydar Amuli - an ibn `Arabi scholar and Gnostic from the 14th century - discusses the nature of unity, justice and prophecy as outlined by the Prophet Muhammad (peace be upon him), and how spiritual travelers should walk on the path taking to their Lord using Shari`ah. It deals specifically with the roots and branches of Islam.\n\nShaykh Fadhlalla Haeri has written a Preface for this version of the book. ",
-        coverImage: "/images/book-covers/InnerSecretsOfThePath.jpg",
-        category: 'islam',
-        order: 11,
-        publishedDate: new Date('2021-10-18'),
-        purchaseLinks: {
-          amazon: "1928329276",
-          kindle: "B09J1KN6YT",
-          apple: "http://books.apple.com/us/book/id1589454879",
-          other: [
-            {
-                name: "Waterstones",
-                url: "https://www.waterstones.com/book/inner-secrets-of-the-path/sayyid-haydar-amuli/9781852300616",
-                geography: "UK"
-            }
-          ]
-        },
-        samplePdfUrl: "/samples/InnerSecretsOfThePath.pdf"
-      },
+      // {
+      //   id: 'inner-secrets-of-the-path',
+      //   title: "Inner Secrets of The Path",
+      //   author: "Sayyid Haydar Amuli. Translated By: Assadullah ad-Dhaakir. Foreword By: Shaykh Fadhlalla Haeri",
+      //   description: "In this book, Sayyid Haydar Amuli - an ibn `Arabi scholar and Gnostic from the 14th century - discusses the nature of unity, justice and prophecy as outlined by the Prophet Muhammad (peace be upon him), and how spiritual travelers should walk on the path taking to their Lord using Shari`ah. It deals specifically with the roots and branches of Islam.\n\nShaykh Fadhlalla Haeri has written a Preface for this version of the book. ",
+      //   coverImage: "/images/book-covers/InnerSecretsOfThePath.jpg",
+      //   category: 'islam',
+      //   order: 11,
+      //   publishedDate: new Date('2021-10-18'),
+      //   purchaseLinks: {
+      //     amazon: "1928329276",
+      //     kindle: "B09J1KN6YT",
+      //     apple: "http://books.apple.com/us/book/id1589454879",
+      //     other: [
+      //       {
+      //           name: "Waterstones",
+      //           url: "https://www.waterstones.com/book/inner-secrets-of-the-path/sayyid-haydar-amuli/9781852300616",
+      //           geography: "UK"
+      //       }
+      //     ]
+      //   },
+      //   samplePdfUrl: "/samples/InnerSecretsOfThePath.pdf"
+      // },
 ]
