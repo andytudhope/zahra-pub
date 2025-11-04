@@ -22,7 +22,29 @@ export const sufismBooks: Book[] = [
         order: 1,
         coming: true,
         publishedDate: new Date('2025-10-28'),
-        purchaseLinks: {}
+        purchaseLinks: {
+          amazon: "1776490193",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
+          other: [
+            {
+              name: "Barnes & Noble",
+              url: "https://www.barnesandnoble.com/w/inner-secrets-of-the-path-sayyid-haydar-amuli/1100595129",
+              geography: "US"
+            },
+            {
+              name: "Takealot",
+              url: "https://www.takealot.com/inner-secrets-of-the-path/PLID99969402",
+              geography: "ZA"
+            },
+            {
+              name: "Bokus",
+              url: "https://www.bokus.com/bok/9781776490196/inner-secrets-of-the-path/",
+              geography: "SE"
+            }
+          ]
+        }
     },
     {
         id: "pathways-to-the-garden",

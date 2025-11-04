@@ -21,6 +21,8 @@ export default function BookContent({ book }: BookContentProps) {
   const hasEbooks = book.purchaseLinks.kindle || book.purchaseLinks.kobo || book.purchaseLinks.apple;
   const hasLocalShops = localShops && localShops.length > 0;
 
+  const hasAnyPurchaseLinks = Boolean(amazonUrl || hasEbooks || hasLocalShops);
+
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
       <div className="grid grid-cols-1 gap-8">
@@ -42,7 +44,7 @@ export default function BookContent({ book }: BookContentProps) {
           <p className="text-gray-400 italic mb-6">{book.author || 'Shaykh Fadhlalla Haeri'}</p>
           <RichText content={book.description} />
 
-          {book.coming ? (
+          {book.coming && !hasAnyPurchaseLinks ? (
             <h2 className="text-2xl font-semibold mt-8 text-gray-600">
               Purchase links available soon
             </h2>

@@ -23,6 +23,56 @@ export const islamBooks: Book[] = [
             name: "yes24",
             url: "https://www.yes24.com/product/goods/158896164",
             geography: "KR"
+          },
+          {
+            name: "Waterstones",
+            url: "https://www.waterstones.com/book/reflections-of-the-awakened/sayyid-hasan-askari/sadraddin-al-qunawi/9781776490172",
+            geography: "UK"
+          },
+          {
+            name: "Bokus",
+            url: "https://www.bokus.com/bok/9781776490172/reflections-of-the-awakened/",
+            geography: "SE"
+          },
+          {
+            name: "Beucher",
+            url: "https://www.buecher.de/artikel/buch/reflections-of-the-awakened/75687640/",
+            geography: "DE"
+          },
+          {
+            name: "Books.com",
+            url: "https://www.books.com.tw/products/F01b524710",
+            geography: "TW"
+          },
+          {
+            name: "Barnes & Noble",
+            url: "https://www.barnesandnoble.com/w/reflections-of-the-awakened-sayyid-hasan-askari/1148482258?ean=9781776490172",
+            geography: "US"
+          },
+          {
+            name: "Alibris",
+            url: "https://www.alibris.com/booksearch?mtype=B&keyword=9781776490172&hs.x=0&hs.y=0",
+            geography: "US"
+          },
+          {
+            name: "eBay",
+            url: "https://www.ebay.com/itm/157419847635",
+            geography: "US"
+          },
+          {
+            name: "eBay Australia",
+            url: "https://www.ebay.com.au/itm/157419847635",
+            geography: "AU"
+          },
+          {
+            name: "Adlibris",
+            url: "https://www.adlibris.com/fi/kirja/reflections-of-the-awakened-commentary-of-surah-fatiha-attributed-to-imam-al-hussain-as-9781776490172",
+            geography: "FI"
+          },
+          {
+            name: "Akademibokhandeln",
+            url: "https://www.akademibokhandeln.se/bok/reflections-of-the-awakened/9781776490172",
+            geography: "SE"
           }
         ]
       }

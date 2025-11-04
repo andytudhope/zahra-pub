@@ -9,7 +9,15 @@ export const quranBooks: Book[] = [
         category: 'quran',
         order: 0,
         coming: true,
-        purchaseLinks: {},
+        purchaseLinks: {
+          other: [
+            {
+              name: "Bookscape",
+              url: "https://bookscape.com/product-details/the-quran-selected-surahs-9781776490202",
+              geography: "IN"
+            },
+          ]
+        },
     },
     {
         id: 'quran-path-eternal-life',
