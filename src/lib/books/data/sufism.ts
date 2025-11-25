@@ -63,6 +63,13 @@ export const sufismBooks: Book[] = [
           kindle: "B0DDTRNFQW",
           kobo: "https://www.kobo.com/ca/en/ebook/pathways-to-the-garden",
           apple: "http://books.apple.com/us/book/id6651860673",
+          other: [
+            {
+              name: "Exclusive Books",
+              url: "https://exclusivebooks.co.za/products/9781928329442",
+              geography: "ZA",
+            }
+          ]
         },
         samplePdfUrl: "/samples/PathwaysToTheGarden.pdf",
       },
@@ -144,6 +151,16 @@ export const sufismBooks: Book[] = [
               url: "https://www.waterstones.com/book/spectrum-of-reality/shaykh-fadhlalla-haeri/neil-douglas-klotz/9781919826950",
               geography: "UK",
             },
+            {
+              name: "Loot",
+              url: "https://www.loot.co.za/product/spectrum-of-reality/fxgn-6240-g210",
+              geography: "ZA",
+            },
+            {
+              name: "Exclusive Books",
+              url: "https://exclusivebooks.co.za/products/9781919826950",
+              geography: "ZA",
+            }
           ]
         },
         reviews: "<b>Dr Adnan al Adnani, author of <i>Lights of Consciousness: A Sufi view of Science and Spirituality</i>:</b>\n\n\"The aphorisms, precepts and commentaries presented by Shaykh Fadhlallah Haeri in his new work, Spectrum of Reality, are immensely rewarding. They provide the reader an extraordinarly insightful access into the realm of subtle meanings that underpin the outer realities; and provide not only spiritual nourishment but also an understanding of the vaster, hidden, worlds which enfold the human condition.\"\n\n<b>Dr. Ali Allawi, visiting professor at the National University of Singapore and Kennedy School of Government, Harvard University, Professor, Oxford University and former Minister of Finance, Iraq, Author of The Crisis of <i>Islamic Civilzation</i> and <i>The Occupation of Iraq: Winning the War, Losing the Peace</i>:</b>\n\n\"Spectrum of Reality is a true masterpiece, a life long work, and a very well written book, which is sure to satisfy all those who earnestly yearn to know and understand the actual Meaning of Life, What is the Nature of Reality? and How to Awaken to the Divine Self, that is lying latent in each human being, and waiting to be Realised. I highly recommend this significant and priceless publication for all earnest seekers who wish to understand the Real Truth of the World in which we live.\""
@@ -207,6 +224,11 @@ export const sufismBooks: Book[] = [
               url: "https://www.waterstones.com/book/witnessing-perfection/shaykh-fadhlalla-haeri/9781919897233",
               geography: "UK",
             },
+            {
+              name: "Loot",
+              url: "https://www.loot.co.za/product/witnessing-perfection/jrwz-7623-g370",
+              geography: "ZA",
+            }
           ]
         },
         samplePdfUrl: "/samples/WitnessingPerfection.pdf",
@@ -243,6 +265,11 @@ export const sufismBooks: Book[] = [
                 name: "Waterstones",
                 url: "https://www.waterstones.com/book/beginnings-end/shaykh-fadhlalla-haeri/9781928329220",
                 geography: "UK"
+            },
+            {
+                name: "Loot",
+                url: "https://www.loot.co.za/product/beginnings-end/jtkr-7465-g280",
+                geography: "ZA"
             }
           ]
         },
@@ -279,6 +306,16 @@ export const sufismBooks: Book[] = [
                 name: "Waterstones",
                 url: "https://www.waterstones.com/book/cosmology-of-the-self/shaykh-fadhlalla-haeri/9780958417655",
                 geography: "UK"
+            },
+            {
+              name: "Loot",
+              url: "https://www.loot.co.za/product/cosmology-of-the-self/mdcr-7453-g340",
+              geography: "ZA"
+            },
+            {
+              name: "Exclusive Books",
+              url: "https://exclusivebooks.co.za/products/9780958417655",
+              geography: "ZA"
             }
           ]
         },
@@ -306,6 +343,11 @@ export const sufismBooks: Book[] = [
                 name: "Takealot",
                 url: "https://www.takealot.com/decree-destiny/PLID33055980",
                 geography: "ZA"
+            },
+            {
+              name: "Exclusive Books",
+              url: "https://exclusivebooks.co.za/products/9781919826783",
+              geography: "ZA"
             }
           ]
         },
@@ -352,6 +394,11 @@ export const sufismBooks: Book[] = [
                 name: "Takealot",
                 url: "https://www.takealot.com/happiness-in-life-after-death-an-islamic-sufi-view/PLID91065382",
                 geography: "ZA"
+            },
+            {
+              name: "Loot",
+              url: "https://www.loot.co.za/product/happiness-in-life--after-death/kjnn-7715-g520",
+              geography: "ZA"
             }
           ]
         },
@@ -435,6 +482,16 @@ export const sufismBooks: Book[] = [
               url: "https://www.waterstones.com/book/the-elements-of-sufism/shaykh-fadhlalla-haeri/9781919897066",
               geography: "UK",
             },
+            {
+              name: "Loot",
+              url: "https://www.loot.co.za/product/the-elements-of-sufism/vmcd-6545-g950",
+              geography: "ZA",
+            },
+            {
+              name: "Exclusive Books",
+              url: "https://exclusivebooks.co.za/products/9781919897066",
+              geography: "ZA",
+            }
           ]
         },
         samplePdfUrl: "/samples/TheElementsOfSufism.pdf",
@@ -471,6 +528,16 @@ export const sufismBooks: Book[] = [
               url: "https://www.waterstones.com/book/the-garden-of-meaning/shaykh-fadhlalla-haeri/9781919826561",
               geography: "UK",
             },
+            {
+              name: "Loot",
+              url: "https://www.loot.co.za/product/the-garden-of-meaning/dflw-6553-g670",
+              geography: "ZA",
+            },
+            {
+              name: "Exclusive Books",
+              url: "https://exclusivebooks.co.za/products/9781919826561",
+              geography: "ZA",
+            }
           ]
         },
         samplePdfUrl: "/samples/TheGardenOfMeaning.pdf",
@@ -508,6 +575,11 @@ export const sufismBooks: Book[] = [
               url: "https://www.waterstones.com/book/the-hikam-the-wisdom-of-ibn-ata-allah/shaykh-fadhlalla-haeri/shaykh-ibn-ataallah-al-iskandari/9781928329060",
               geography: "UK",
             },
+            {
+              name: "Loot",
+              url: "https://www.loot.co.za/product/the-hikam--the-wisdom-of-ibn-ata-allah/nhbg-5893-g980",
+              geography: "ZA",
+            }
           ]
         },
         samplePdfUrl: "/samples/TheHikam.pdf",
@@ -576,6 +648,11 @@ export const sufismBooks: Book[] = [
                 url: "https://www.waterstones.com/book/son-of-karbala/shaykh-fadhlalla-haeri/9781928329244",
                 geography: "UK",
               },
+              {
+                name: "Loot",
+                url: "https://www.loot.co.za/product/son-of-karbala/kmsr-7658-g870",
+                geography: "ZA",
+              }
           ]
         },
         samplePdfUrl: "/samples/SonOfKarbala.pdf",

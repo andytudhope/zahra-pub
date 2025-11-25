@@ -87,6 +87,11 @@ export const talksCoursesBooks: Book[] = [
               url: "https://www.waterstones.com/book/the-prophetic-way-of-life/shaykh-fadhlalla-haeri/9781919826295",
               geography: "UK",
             },
+            {
+              name: "Loot",
+              url: "https://www.loot.co.za/product/the-prophetic-way-of-life/bbht-7535-g000",
+              geography: "ZA",
+            }
           ]
         },
         samplePdfUrl: "/samples/ThePropheticWayOfLife.pdf",
@@ -148,6 +153,16 @@ export const talksCoursesBooks: Book[] = [
                 name: "Waterstones",
                 url: "https://www.waterstones.com/book/refinement-of-character/shaykh-fadhlalla-haeri/97819283290537",
                 geography: "UK"
+            },
+            {
+              name: "Loot",
+              url: "https://www.loot.co.za/product/refinement-of-character/hjpy-5449-g450",
+              geography: "ZA",
+            },
+            {
+              name: "Exclusive Books",
+              url: "https://exclusivebooks.co.za/products/9781928329053",
+              geography: "ZA",
             }
           ]
         },
@@ -228,6 +243,16 @@ export const talksCoursesBooks: Book[] = [
                 name: "Waterstones",
                 url: "https://www.waterstones.com/book/the-connection-between-the-absolute-and-the-relative/shaykh-fadhlalla-haeri/9781928329121",
                 geography: "UK"
+            },
+            {
+              name: "Loot",
+              url: "https://www.loot.co.za/product/the-connection-between-the-absolute-and-the-relative/mglp-6956-g4a0",
+              geography: "ZA",
+            },
+            {
+              name: "Exclusive Books",
+              url: "https://exclusivebooks.co.za/products/9781928329121",
+              geography: "ZA",
             }
           ]
         },
@@ -265,6 +290,16 @@ export const talksCoursesBooks: Book[] = [
                 name: "Waterstones",
                 url: "https://www.waterstones.com/book/the-spiritual-path/shaykh-fadhlalla-haeri/anjum-jaleel/9781928329114",
                 geography: "UK"
+            },
+            {
+              name: "Loot",
+              url: "https://www.loot.co.za/product/the-spiritual-path/bcbw-6982-g080",
+              geography: "ZA",
+            },
+            {
+              name: "Exclusive Books",
+              url: "https://exclusivebooks.co.za/products/9781928329114",
+              geography: "ZA",
             }
           ]
         },

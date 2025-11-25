@@ -10,12 +10,33 @@ export const quranBooks: Book[] = [
         order: 0,
         coming: true,
         purchaseLinks: {
+          amazon: "B0FXYSLXSZ",
           other: [
             {
               name: "Bookscape",
               url: "https://bookscape.com/product-details/the-quran-selected-surahs-9781776490202",
               geography: "IN"
             },
+            {
+              name: "Barnes & Noble",
+              url: "https://www.barnesandnoble.com/w/the-quran-selected-surahs-shaykh-fadhlalla-haeri/1148609870",
+              geography: "US"
+            },
+            {
+              name: "Alibris",
+              url: "https://www.alibris.com/search/books/isbn/9781776490202",
+              geography: "US"
+            },
+            {
+              name: "Adilbris",
+              url: "https://www.adlibris.com/sv/bok/the-quran-selected-surahs-9781776490202",
+              geography: "SE"
+            },
+            {
+              name: "Books.com",
+              url: "https://www.books.com.tw/products/F01b546613",
+              geography: "TW"
+            }
           ]
         },
     },
@@ -315,6 +336,11 @@ export const quranBooks: Book[] = [
               name: "Thrift Books",
               url: "https://www.thriftbooks.com/w/quran-discourses-a-collection-of-jumuah-talks-by-shaykh-fadhlalla-haeri/55299790/",
               geography: "US"
+            },
+            {
+              name: "Exclusive Books",
+              url: "https://exclusivebooks.co.za/products/9781776490158",
+              geography: "ZA",
             }
           ]
         },
@@ -350,6 +376,16 @@ export const quranBooks: Book[] = [
               url: "https://www.waterstones.com/book/keys-to-the-quran/shaykh-fadhlalla-haeri/9781919826684",
               geography: "UK",
             },
+            {
+              name: "Loot",
+              url: "https://www.loot.co.za/product/keys-to-the-quran/wxyk-5436-g790",
+              geography: "ZA",
+            },
+            {
+              name: "Exclusive Books",
+              url: "https://exclusivebooks.co.za/products/9781919826684",
+              geography: "ZA",
+            }
           ]
         }
       },
@@ -386,6 +422,16 @@ export const quranBooks: Book[] = [
               url: "https://www.waterstones.com/book/universal-quran/shaykh-fadhlalla-haeri/9781928329213",
               geography: "UK",
             },
+            {
+              name: "Loot",
+              url: "https://www.loot.co.za/product/universal-quran/crbj-7244-g860",
+              geography: "ZA",
+            },
+            {
+              name: "Exclusive Books",
+              url: "https://exclusivebooks.co.za/products/9781928329213",
+              geography: "ZA",
+            }
           ]
         },
       },
@@ -447,6 +493,16 @@ export const quranBooks: Book[] = [
               url: "https://www.waterstones.com/book/keys-to-the-quran/shaykh-fadhlalla-haeri/9781928329008",
               geography: "UK",
             },
+            {
+              name: "Loot",
+              url: "https://www.loot.co.za/product/keys-to-the-quran/jvyc-5439-g0a0",
+              geography: "ZA",
+            },
+            {
+              name: "Exclusive Books",
+              url: "https://exclusivebooks.co.za/products/9781928329008",
+              geography: "ZA",
+            }
           ]
         },
         samplePdfUrl: "/samples/KeysVolume1.pdf",
@@ -483,6 +539,16 @@ export const quranBooks: Book[] = [
               url: "https://www.waterstones.com/book/keys-to-the-quran/shaykh-fadhlalla-haeri/9781928329015",
               geography: "UK",
             },
+            {
+              name: "Loot",
+              url: "https://www.loot.co.za/product/keys-to-the-quran/khlp-5439-g270",
+              geography: "ZA",
+            },
+            {
+              name: "Exclusive Books",
+              url: "https://exclusivebooks.co.za/products/9781928329015",
+              geography: "ZA",
+            }
           ]
         },
         samplePdfUrl: "/samples/Keys2.pdf",
@@ -519,6 +585,16 @@ export const quranBooks: Book[] = [
               url: "https://www.waterstones.com/book/keys-to-the-quran/shaykh-fadhlalla-haeri/9781928329022",
               geography: "UK",
             },
+            {
+              name: "Loot",
+              url: "https://www.loot.co.za/product/keys-to-the-quran/yvyc-5439-g440",
+              geography: "ZA",
+            },
+            {
+              name: "Exclusive Books",
+              url: "https://exclusivebooks.co.za/products/9781928329022",
+              geography: "ZA",
+            }
           ]
         },
         samplePdfUrl: "/samples/Keys3.pdf",
@@ -555,6 +631,16 @@ export const quranBooks: Book[] = [
               url: "https://www.waterstones.com/book/keys-to-the-quran/shaykh-fadhlalla-haeri/9781928329039",
               geography: "UK",
             },
+            {
+              name: "Loot",
+              url: "https://www.loot.co.za/product/keys-to-the-quran/mhlp-5439-g610",
+              geography: "ZA",
+            },
+            {
+              name: "Exclusive Books",
+              url: "https://exclusivebooks.co.za/products/9781928329039",
+              geography: "ZA",
+            }
           ]
         },
         samplePdfUrl: "/samples/Keys4.pdf",
@@ -591,6 +677,16 @@ export const quranBooks: Book[] = [
               url: "https://www.waterstones.com/book/keys-to-the-quran/shaykh-fadhlalla-haeri/9781928329046",
               geography: "UK",
             },
+            {
+              name: "Loot",
+              url: "https://www.loot.co.za/product/keys-to-the-quran/tkcz-5443-g770",
+              geography: "ZA",
+            },
+            {
+              name: "Exclusive Books",
+              url: "https://exclusivebooks.co.za/products/9781928329046",
+              geography: "ZA",
+            }
           ]
         },
         samplePdfUrl: "/samples/Keys5.pdf",
@@ -614,6 +710,16 @@ export const quranBooks: Book[] = [
               url: "https://www.waterstones.com/book/sacred-alchemy/leyya-kalla/shaykh-fadhlalla-haeri/9780620711821",
               geography: "UK",
             },
+            {
+              name: "Loot",
+              url: "https://www.loot.co.za/product/sacred-alchemy/ctjh-5306-g730",
+              geography: "ZA",
+            },
+            {
+              name: "Exclusive Books",
+              url: "https://exclusivebooks.co.za/products/9780620711821",
+              geography: "ZA",
+            }
           ]
         }
       },
@@ -644,6 +750,16 @@ export const quranBooks: Book[] = [
               url: "https://www.waterstones.com/book/quran/shaykh-fadhlalla-haeri/9781919826974",
               geography: "UK",
             },
+            {
+              name: "Loot",
+              url: "https://www.loot.co.za/product/quran/hkgk-6565-ga70",
+              geography: "ZA",
+            },
+            {
+              name: "Exclusive Books",
+              url: "https://exclusivebooks.co.za/products/9781919826974?_pos=25&_sid=ec8524df9&_ss=r&_fid=ba01fbb19",
+              geography: "ZA",
+            }
           ]
         }
       },
@@ -716,6 +832,16 @@ export const quranBooks: Book[] = [
               url: "https://www.waterstones.com/book/qurans-prescription-for-life/shaykh-fadhlalla-haeri/9781919826905",
               geography: "UK",
             },
+            {
+              name: "Loot",
+              url: "https://www.loot.co.za/product/qurans-prescription-for-life/jvkm-3476-g690",
+              geography: "ZA",
+            },
+            {
+              name: "Exclusive Books",
+              url: "https://exclusivebooks.co.za/products/9781919826905",
+              geography: "ZA",
+            }
           ]
         },
         samplePdfUrl: "/samples/TheQuranicPrescriptionForLife.pdf"
@@ -743,6 +869,11 @@ export const quranBooks: Book[] = [
               url: "https://www.takealot.com/the-story-of-creation-in-the-qur-an/PLID33055984",
               geography: "ZA",
             },
+            {
+              name: "Exclusive Books",
+              url: "https://exclusivebooks.co.za/products/9781919826738",
+              geography: "ZA",
+            }
           ]
         },
         samplePdfUrl: "/samples/StoryOfCreationInTheQuran.pdf"
@@ -774,6 +905,16 @@ export const quranBooks: Book[] = [
               url: "https://www.waterstones.com/book/journey-of-the-universe-as-expounded-in-the-quran/shaykh-fadhlalla-haeri/9781928329138",
               geography: "UK",
             },
+            {
+              name: "Loot",
+              url: "https://www.loot.co.za/product/journey-of-the-universe-as-expounded-in-the-quran/fwwh-7059-g910",
+              geography: "ZA",
+            },
+            {
+              name: "Exclusive Books",
+              url: "https://exclusivebooks.co.za/products/9781928329138",
+              geography: "ZA",
+            }
           ]
         },
         samplePdfUrl: "/samples/JourneyOfTheUniverse.pdf"

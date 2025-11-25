@@ -57,9 +57,15 @@ export const inspirationalBooks: Book[] = [
                 url: "https://www.bokus.com/bok/9781776490141/shades-of-reality/",
                 geography: "SE"
             },
-            { name: "eBay",
-              url: "https://www.ebay.com/itm/387986364101",
-              geography: "US"
+            { 
+                name: "eBay",
+                url: "https://www.ebay.com/itm/387986364101",
+                geography: "US"
+            },
+            {
+              name: "Exclusive Books",
+              url: "https://exclusivebooks.co.za/products/9781776490141",
+              geography: "ZA"
             }
           ]
         },
@@ -96,6 +102,11 @@ export const inspirationalBooks: Book[] = [
                 name: "Bokus",
                 url: "https://www.bokus.com/bok/9781776490141/shades-of-reality/",
                 geography: "SE"
+            },
+            {
+              name: "Exclusive Books",
+              url: "https://exclusivebooks.co.za/products/9781776490103",
+              geography: "ZA"
             }
           ]
         },
@@ -133,6 +144,11 @@ export const inspirationalBooks: Book[] = [
               url: "https://www.waterstones.com/book/the-four-journeys/shaykh-fadhlalla-haeri/9781919826813",
               geography: "UK",
             },
+            {
+              name: "Loot",
+              url: "https://www.loot.co.za/product/the-four-journeys/lxfm-7352-g160",
+              geography: "ZA",
+            }
           ]
         },
       },
@@ -168,6 +184,16 @@ export const inspirationalBooks: Book[] = [
               url: "https://www.waterstones.com/book/differentiated-sameness/shaykh-fadhlalla-haeri/9781928329183",
               geography: "UK",
             },
+            {
+              name: "Loot",
+              url: "https://www.loot.co.za/product/differentiated-sameness/xgbg-6964-g000",
+              geography: "ZA",
+            },
+            {
+              name: "Exclusive Books",
+              url: "https://exclusivebooks.co.za/products/9781928329183",
+              geography: "ZA"
+            }
           ]
         },
         samplePdfUrl: "/samples/DifferentiatedSameness",
@@ -204,6 +230,11 @@ export const inspirationalBooks: Book[] = [
               url: "https://www.waterstones.com/book/the-wisdom-of-ramana-maharshi/shaykh-fadhlalla-haeri/9781928329336",
               geography: "UK",
             },
+            {
+              name: "Loot",
+              url: "https://www.loot.co.za/product/the-wisdom-of-ramana-maharshi/wpbn-7557-g180",
+              geography: "ZA",
+            }
           ]
         },
         samplePdfUrl: "samples/WisdomOfRamanaMaharshi.pdf",
@@ -240,6 +271,16 @@ export const inspirationalBooks: Book[] = [
               url: "https://www.waterstones.com/book/look-again/shaykh-fadhlalla-haeri/9781919826981",
               geography: "UK",
             },
+            {
+              name: "Loot",
+              url: "https://www.loot.co.za/product/look-again/vbpz-5281-gaa0",
+              geography: "ZA",
+            },
+            {
+              name: "Exclusive Books",
+              url: "https://exclusivebooks.co.za/products/9781919826981",
+              geography: "ZA"
+            }
           ]
         },
       },
@@ -338,6 +379,16 @@ export const inspirationalBooks: Book[] = [
               url: "https://www.takealot.com/pointers-to-presence/PLID33055982",
               geography: "ZA",
             },
+            {
+              name: "Loot",
+              url: "https://www.loot.co.za/product/pointers-to-reality/kjbf-6929-g360",
+              geography: "ZA",
+            },
+            {
+              name: "Exclusive Books",
+              url: "https://exclusivebooks.co.za/products/9781928329176",
+              geography: "ZA"
+            }
           ]
         },
         samplePdfUrl: "/samples/PointersToPresence.pdf",

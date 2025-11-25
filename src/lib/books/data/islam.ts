@@ -46,7 +46,7 @@ export const islamBooks: Book[] = [
           },
           {
             name: "Barnes & Noble",
-            url: "https://www.barnesandnoble.com/w/reflections-of-the-awakened-sayyid-hasan-askari/1148482258?ean=9781776490172",
+            url: "https://www.barnesandnoble.com/w/reflections-of-the-awakened-sayyid-hasan-askari/1148482258",
             geography: "US"
           },
           {
@@ -58,6 +58,11 @@ export const islamBooks: Book[] = [
             name: "eBay",
             url: "https://www.ebay.com/itm/157419847635",
             geography: "US"
+          },
+          {
+            name: "eBay UK",
+            url: "https://www.ebay.co.uk/itm/389205650227",
+            geography: "UK"
           },
           {
             name: "eBay Australia",
@@ -73,6 +78,11 @@ export const islamBooks: Book[] = [
             name: "Akademibokhandeln",
             url: "https://www.akademibokhandeln.se/bok/reflections-of-the-awakened/9781776490172",
             geography: "SE"
+          },
+          {
+            name: "walmart",
+            url: "https://www.walmart.com/ip/Ahl-Bayt-Reflections-of-the-Awakened-Commentary-of-Surah-Fatiha-attributed-to-Imam-Al-Hussain-AS-Paperback-9781776490172/18089215551",
+            geography: "US"
           }
         ]
       }
@@ -155,6 +165,11 @@ export const islamBooks: Book[] = [
                 name: "Takealot",
                 url: "https://www.takealot.com/transformative-worship-in-islam/PLID33055985",
                 geography: "ZA"
+            },
+            {
+              name: "Exclusive Books",
+              url: "https://exclusivebooks.co.za/products/9781919826769",
+              geography: "ZA",
             }
           ]
         },
@@ -193,6 +208,11 @@ export const islamBooks: Book[] = [
                 name: "Waterstones",
                 url: "https://www.waterstones.com/book/the-lantern-of-the-path/imam-ja-far-al-sadiq/shaykh-fadhlalla-haeri/9781928329091",
                 geography: "UK"
+            },
+            {
+              name: "Loot",
+              url: "https://www.loot.co.za/product/the-lantern-of-the-path/dlms-6029-g750",
+              geography: "ZA",
             }
           ]
         },
@@ -229,6 +249,16 @@ export const islamBooks: Book[] = [
                 name: "Waterstones",
                 url: "https://www.waterstones.com/book/calling-allah-by-his-most-beautiful-names/shaykh-fadhlalla-haeri/9781928329084",
                 geography: "UK"
+            },
+            {
+              name: "Loot",
+              url: "https://www.loot.co.za/product/calling-allah-by-his-most-beautiful-names/blcc-5932-g000",
+              geography: "ZA",
+            },
+            {
+              name: "Exclusive Books",
+              url: "https://exclusivebooks.co.za/products/9781928329084",
+              geography: "ZA",
             }
           ]
         },
@@ -267,6 +297,16 @@ export const islamBooks: Book[] = [
                 name: "Waterstones",
                 url: "https://www.waterstones.com/book/the-sayings-and-wisdom-of-imam-ali/shaykh-fadhlalla-haeri/asadullah-ad-dhakir-yate/9781928329077",
                 geography: "UK"
+            },
+            {
+              name: "Loot",
+              url: "https://www.loot.co.za/product/the-sayings-and-wisdom-of-imam-ali/bjcs-5942-g0a0",
+              geography: "ZA",
+            },
+            {
+              name: "Exclusive Books",
+              url: "https://exclusivebooks.co.za/products/9781928329077",
+              geography: "ZA",
             }
           ]
         },
@@ -303,6 +343,16 @@ export const islamBooks: Book[] = [
                 name: "Waterstones",
                 url: "https://www.waterstones.com/book/the-elements-of-islam/shaykh-fadhlalla-haeri/9781919897059",
                 geography: "UK"
+            },
+            {
+              name: "Loot",
+              url: "https://www.loot.co.za/product/the-elements-of-islam/dlny-6896-g310",
+              geography: "ZA",
+            },
+            {
+              name: "Exclusive Books",
+              url: "https://exclusivebooks.co.za/products/9781919897059",
+              geography: "ZA",
             }
           ]
         },
@@ -340,6 +390,16 @@ export const islamBooks: Book[] = [
                 name: "Waterstones",
                 url: "https://www.waterstones.com/book/prophetic-traditions-in-islam/shaykh-fadhlalla-haeri/9781919826929",
                 geography: "UK"
+            },
+            {
+              name: "Loot",
+              url: "https://www.loot.co.za/product/prophetic-traditions-in-islam/frkz-3588-g7a0",
+              geography: "ZA",
+            },
+            {
+              name: "Exclusive Books",
+              url: "https://exclusivebooks.co.za/products/9781919826929",
+              geography: "ZA",
             }
           ]
         },
@@ -387,6 +447,16 @@ export const islamBooks: Book[] = [
                 name: "Waterstones",
                 url: "https://www.waterstones.com/book/fasting-in-islam/shaykh-fadhlalla-haeri/9781919897226",
                 geography: "UK"
+            },
+            {
+              name: "Loot",
+              url: "https://www.loot.co.za/product/fasting-in-islam/jvjf-7291-g930",
+              geography: "ZA",
+            },
+            {
+              name: "Exclusive Books",
+              url: "https://exclusivebooks.co.za/products/9781919897226",
+              geography: "ZA",
             }
           ]
         },
