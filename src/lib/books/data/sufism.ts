@@ -10,7 +10,46 @@ export const sufismBooks: Book[] = [
         order: 0,
         coming: true,
         publishedDate: new Date('2025-10-28'),
-        purchaseLinks: {}
+        purchaseLinks: {
+          amazon: "B0G2Z4JKYK",
+          other: [
+            {
+              name: "Yes24",
+              url: "https://www.yes24.com/product/goods/167448367",
+              geography: "KR"
+            },
+            {
+              name: "Magers & Quinn",
+              url: "https://www.magersandquinn.com/product/ABADI/287721150",
+              geography: "US"
+            },
+            {
+              name: "Adilbris",
+              url: "https://www.adlibris.com/nb/bok/abadi-9781776490189",
+              geography: "SE"
+            },
+            {
+              name: "Kyobo",
+              url: "https://product.kyobobook.co.kr/detail/S000218661049",
+              geography: "KR"
+            },
+            {
+              name: "Books.com",
+              url: "https://www.books.com.tw/products/F01b566549",
+              geography: "TW"
+            },
+            {
+              name: "Bokus",
+              url: "https://www.bokus.com/bok/9781776490189/abadi/",
+              geography: "SE"
+            },
+            {
+              name: "Barnes & Noble",
+              url: "https://www.barnesandnoble.com/w/abadi-shaykh-fadhlalla-haeri/1148774782",
+              geography: "US"
+            }
+          ]
+        }
     },
     {
         id: "inner-secrets-of-the-path",
