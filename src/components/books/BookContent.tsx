@@ -33,46 +33,25 @@ export default function BookContent({ book }: BookContentProps) {
     [book.purchaseLinks.other, userCountry]
   );
 
+  // All extra shops, ordered: Barnes & Noble, eBay, Waterstones, then the rest in JSON order
   const extraShops = useMemo(() => {
     if (!nonLocalShops.length) return [];
+    const preferredOrder = ['Barnes & Noble', 'eBay', 'Waterstones'];
 
-    const preferredNames = new Set(['eBay', 'Barnes & Noble', 'Waterstones']);
+    const preferred = preferredOrder.flatMap((name) =>
+      nonLocalShops.filter((l) => l.name === name)
+    );
+    const rest = nonLocalShops.filter((l) => !preferredOrder.includes(l.name));
 
-    const preferred = nonLocalShops.filter((link) => preferredNames.has(link.name));
-    const others = nonLocalShops.filter((link) => !preferredNames.has(link.name));
-
-    const shuffle = <T,>(arr: T[]): T[] => {
-      const copy = [...arr];
-      for (let i = copy.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [copy[i], copy[j]] = [copy[j], copy[i]];
-      }
-      return copy;
-    };
-
-    // If we have all three preferred, just show them
-    if (preferred.length === 3) {
-      return preferred;
-    }
-
-    // If we have 0, 1 or 2 preferred, fill up to 3 total with random others.
-    const result = [...preferred];
-    const shuffledOthers = shuffle(others);
-
-    if (preferred.length === 0) {
-      // No preferred shops: show up to 3 random others
-      return shuffledOthers.slice(0, Math.min(3, shuffledOthers.length));
-    }
-
-    const needed = Math.max(0, 4 - result.length);
-    result.push(...shuffledOthers.slice(0, needed));
-    return result;
+    return [...preferred, ...rest];
   }, [nonLocalShops]);
 
   const hasEbooks =
     book.purchaseLinks.kindle || book.purchaseLinks.kobo || book.purchaseLinks.apple;
-  const hasLocalShops = localShops && localShops.length > 0;
-  const hasAnyPurchaseLinks = Boolean(amazonUrl || hasEbooks || hasLocalShops);
+  const hasLocalShops = !!(localShops && localShops.length > 0);
+  const hasAnyPurchaseLinks = Boolean(
+    amazonUrl || hasEbooks || hasLocalShops || extraShops.length > 0
+  );
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
@@ -119,7 +98,7 @@ export default function BookContent({ book }: BookContentProps) {
               {amazonUrl && (
                 <a
                   href={amazonUrl}
-                  className="block w-[calc(50%-20px)] md:w-full md.max-w-md text-center bg-black text-white py-3 rounded-lg hover:bg-black/80 transition-colors"
+                  className="block w-[calc(50%-20px)] md:w-full md:max-w-md text-center bg-black text-white py-3 rounded-lg hover:bg-black/80 transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -128,7 +107,7 @@ export default function BookContent({ book }: BookContentProps) {
               )}
 
               {/* Purchase Options Grid */}
-              {(hasEbooks || hasLocalShops) && (
+              {(hasEbooks || hasLocalShops || extraShops.length > 0) && (
                 <div className="grid grid-cols-2 md:grid-cols-1 gap-8 py-8">
                   {hasEbooks && (
                     <div>
@@ -168,30 +147,38 @@ export default function BookContent({ book }: BookContentProps) {
                     </div>
                   )}
 
-                  {hasLocalShops && (
+                  {(hasLocalShops || extraShops.length > 0) && (
                     <div>
                       <p className="font-bold text-xl mb-4">
                         Book Shops Relevant to You
                       </p>
-                      <div className="space-y-3">
-                        {localShops!.map((link, index) => (
-                          <a
-                            key={index}
-                            href={link.url}
-                            className="block w-full text-center border border-gray-300 text-gray-700 py-3 rounded-lg hover:border-black transition-colors"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            {link.name}
-                          </a>
-                        ))}
-                      </div>
+
+                      {hasLocalShops ? (
+                        <div className="space-y-3">
+                          {localShops!.map((link, index) => (
+                            <a
+                              key={index}
+                              href={link.url}
+                              className="block w-full text-center border border-gray-300 text-gray-700 py-3 rounded-lg hover:border-black transition-colors"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              {link.name}
+                            </a>
+                          ))}
+                        </div>
+                      ) : (
+                        <p className="text-sm text-gray-600">
+                          Sorry, there are no local bookshops stocking this book currently.
+                          Please use the toggle to see international options for purchase.
+                        </p>
+                      )}
 
                       {extraShops.length > 0 && (
                         <>
                           <div className="flex items-center gap-3 mt-4">
                             <button
-                              onClick={() => setShowMoreShops(prev => !prev)}
+                              onClick={() => setShowMoreShops((prev) => !prev)}
                               className={`relative w-12 h-6 rounded-full transition-colors duration-300 ${
                                 showMoreShops ? 'bg-green-500' : 'bg-gray-300'
                               }`}
@@ -208,7 +195,7 @@ export default function BookContent({ book }: BookContentProps) {
                             <span className="text-gray-700 text-sm select-none">
                               {showMoreShops
                                 ? 'Hide bookshops outside your geography'
-                                : 'Show bookshops outside your geography'}
+                                : 'Show all bookshops outside your geography'}
                             </span>
                           </div>
 
