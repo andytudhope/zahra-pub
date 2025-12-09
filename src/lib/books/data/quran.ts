@@ -43,7 +43,7 @@ export const quranBooks: Book[] = [
     {
         id: 'quran-path-eternal-life',
         title: "The Qur'an: Path to Eternal Life",
-        description: "\"<i>There are numerous challenges and quests in human life. The most powerful drive, however, is to understand and connect with that which is timeless and boundless. Our keen interest in the beginning of creation and its end is part of this quest. The Qur’an is the voice of truth which involves what is considered to be rational and shareable consciousness. The majesty of the Qur’an is that it addresses most of the human situation and day to day realities whilst connecting it with the Absolute and Boundless. At a normal, conditioned, human consciousness, the Qur’an can help to reduce suffering and discord, but a point is reached where spiritual insights go beyond the mind and into the realm of the soul where discernment and differentiations melt away into a zone where energy and matter are not distinguishable. For this reason, most classical scholars of Qur’an refer to this higher level as the Divine Domain and refrain from commenting or discussing it.</i>\"\n – <b>From the Foreword by Shaykh Fadhlalla Haeri</b>\n\nThe <i>Irfani</i> reflections and commentaries presented by Shaykh Fadhlalla Haeri in this book provide a bridge between rational understanding and spiritual insights of the Qur’an. This production urges the reader to travel deeper and higher in their consciousness to achieve their ultimate destiny – awareness of awareness of the Ultimate Oneness of our existence.\n\nThis edition contains a Foreword by Shaykh Fadhlalla Haeri, an introduction by the editor Shaykh Saadi Douglas Klotz, and an introduction by the translator of the Qur’anic verses Dr Adnan Al Adnani. The text contains the Qur’anic translation followed by commentaries by Shaykh Fadhlalla Haeri relevant to each set of verses.\n\n<h2>Different Options Available</h2>\n\nWhen you navigate to the book shop of your choice below, please be aware that there are different options available for this unique work.\n\n<ul><li>A Hardcover and a Paperback version which includes a Foreword by Shaykh Fadhlalla Haeri, an Introduction by the editor Shaykh Saadi Douglas Klotz, an Introduction by the translator Dr Adnan Al Adnani. The text contains the Arabic of the Qur'an, a translation alongside it completed by Dr Adnan Al Adnani, commentaries by Shaykh Fadhlalla Haeri relevant to each page, as well as two additional sets of commentaries on the side of each page of the Qur'an, one of which describes the meaning of the key verse/s per page (identified by their verse numbers underlined) and the other which presents a prescription.</li><li>A Travel version in Paperback, which contains a Foreword by Shaykh Fadhlalla Haeri. The text contains the English translation of the Qur'an by Dr Adnan Al Adnani, along with commentaries and prescription by Shaykh Fadhlalla Haeri relevant to each page. It does not include the Arabic script</li><li>An E-Book version which contains a Foreword by Shaykh Fadhlalla Haeri, an Introduction by the editor Shaykh Saadi Douglas Klotz, and an Introduction by the translator of the Qur’anic verses Dr Adnan Al Adnani. The text contains the Qur'anic translation followed by commentaries and prescription by Shaykh Fadhlalla Haeri relevant to each set of verses. It does not include the Arabic script</li></ul>",
+        description: "\"<i>There are numerous challenges and quests in human life. The most powerful drive, however, is to understand and connect with that which is timeless and boundless. Our keen interest in the beginning of creation and its end is part of this quest. The Qur’an is the voice of truth which involves what is considered to be rational and shareable consciousness. The majesty of the Qur’an is that it addresses most of the human situation and day to day realities whilst connecting it with the Absolute and Boundless. At a normal, conditioned, human consciousness, the Qur’an can help to reduce suffering and discord, but a point is reached where spiritual insights go beyond the mind and into the realm of the soul where discernment and differentiations melt away into a zone where energy and matter are not distinguishable. For this reason, most classical scholars of Qur’an refer to this higher level as the Divine Domain and refrain from commenting or discussing it.</i>\"\n – <b>From the Foreword by Shaykh Fadhlalla Haeri</b>\n\nThe <i>Irfani</i> reflections and commentaries presented by Shaykh Fadhlalla Haeri in this book provide a bridge between rational understanding and spiritual insights of the Qur’an. This production urges the reader to travel deeper and higher in their consciousness to achieve their ultimate destiny – awareness of awareness of the Ultimate Oneness of our existence.\n\nThis edition contains a Foreword by Shaykh Fadhlalla Haeri, an introduction by the editor Shaykh Saadi Douglas Klotz, and an introduction by the translator of the Qur’anic verses Dr Adnan Al Adnani. The text contains the Qur’anic translation followed by commentaries by Shaykh Fadhlalla Haeri relevant to each set of verses.\n\n<h2>Different Options Available</h2>\n\nWhen you navigate to the book shop of your choice below, please be aware that there are different options available for this unique work.\n\n<ul><li>A Hardcover and a Paperback version (listed on this page) which includes a Foreword by Shaykh Fadhlalla Haeri, an Introduction by the editor Shaykh Saadi Douglas Klotz, an Introduction by the translator Dr Adnan Al Adnani. The text contains the Arabic of the Qur'an, a translation alongside it completed by Dr Adnan Al Adnani, commentaries by Shaykh Fadhlalla Haeri relevant to each page, as well as two additional sets of commentaries on the side of each page of the Qur'an, one of which describes the meaning of the key verse/s per page (identified by their verse numbers underlined) and the other which presents a prescription. <b>This version comes in two editions. The second edition has a larger font and includes root words.</b></li><li><a href=\"/book/quran-path-eternal-life-travel\">A Travel version in Paperback</a>, which contains a Foreword by Shaykh Fadhlalla Haeri. The text contains the English translation of the Qur'an by Dr Adnan Al Adnani, along with commentaries and prescription by Shaykh Fadhlalla Haeri relevant to each page. It does not include the Arabic script</li><li>An E-Book version which contains a Foreword by Shaykh Fadhlalla Haeri, an Introduction by the editor Shaykh Saadi Douglas Klotz, and an Introduction by the translator of the Qur’anic verses Dr Adnan Al Adnani. The text contains the Qur'anic translation followed by commentaries and prescription by Shaykh Fadhlalla Haeri relevant to each set of verses. It does not include the Arabic script</li></ul>",
         coverImage: "/images/book-covers/QuranPathToEternalLife.jpg",
         category: 'quran',
         order: 1,
@@ -57,59 +57,159 @@ export const quranBooks: Book[] = [
           kobo: 'https://www.kobo.com/ca/en/ebook/the-qur-an-47',
           apple: 'http://books.apple.com/us/book/id6478554730',
           other: [
+            // {
+            //   name: "Amazon Paperback Version",
+            //   url: "http://www.amazon.com/dp/1928329489",
+            //   geography: "US"
+            // },
             {
-              name: "Amazon Paperback Version",
-              url: "http://www.amazon.com/dp/1928329489",
+              name: "Abe Books",
+              url: "https://www.abebooks.com/9781928329206/Quran-Path-Eternal-Life-Zp-1928329209/plp",
               geography: "US"
-            },
-            {
-              name: "Amazon Travel Version",
-              url: "http://www.amazon.com/dp/1776490118",
-              geography: "US"
-            },
-            {
-              name: "Amazon Paperback Version",
-              url: "http://www.amazon.com/dp/1928329489",
-              geography: "UK"
-            },
-            {
-              name: "Amazon Travel Version",
-              url: "http://www.amazon.com/dp/1776490118",
-              geography: "UK"
-            },
-            {
-              name: "Amazon Paperback Version",
-              url: "http://www.amazon.com/dp/1928329489",
-              geography: "SE"
-            },
-            {
-              name: "Amazon Travel Version",
-              url: "http://www.amazon.com/dp/1776490118",
-              geography: "SE"
-            },
-            {
-              name: "Amazon Paperback Version",
-              url: "http://www.amazon.com/dp/1928329489",
-              geography: "AU"
-            },
-            {
-              name: "Amazon Travel Version",
-              url: "http://www.amazon.com/dp/1776490118",
-              geography: "AU"
-            },
-            {
-              name: "Amazon Paperback Version",
-              url: "http://www.amazon.co.za/dp/1928329489",
-              geography: "ZA"
-            },
-            {
-              name: "Amazon Travel Version",
-              url: "http://www.amazon.co.za/dp/1776490118",
-              geography: "ZA"
             },
             {
               name: "Adilbris",
-              url: "https://www.adlibris.com/se/bok/the-quran-9781928329480",
+              url: "https://www.adlibris.com/sv/bok/the-quran-9781928329206",
+              geography: "SE"
+            },
+            {
+                name: "Angus and Robertson",
+                url: "https://www.angusrobertson.com.au/books/the-quran-shaykh-fadhlalla-haeri/p/9781928329206",
+                geography: "AU"
+            },
+            {
+              name: "Barnes & Noble",
+              url: "https://www.barnesandnoble.com/w/the-quran-shaykh-fadhlalla-haeri/1144971602?ean=9781928329206",
+              geography: "US"
+            },
+            {
+              name: "Biblio",
+              url: "https://biblio.ie/9781928329206",
+              geography: "IE"
+            },
+            {
+              name: "Bokus",
+              url: "https://www.bokus.com/bok/9781928329206/quran/",
+              geography: "SE"
+            },
+            {
+                name: "Bol",
+                url: "https://www.bol.com/be/nl/p/zp-qur-an-the-qur-an/9300000174428653",
+                geography: "NL"
+            },
+            {
+                name: "Bookshop",
+                url: "https://bookshop.org/p/books/the-qur-an-path-to-eternal-life-shaykh-fadhlalla-haeri/14e717be6005993c",
+                geography: "US"
+            },
+            {
+                name: "Book Bug",
+                url: "https://bookbugkalamazoo.com/book/9781928329206",
+                geography: "US"
+            },
+            {
+                name: "Booktopia",
+                url: "https://www.booktopia.com.au/the-qur-an-shaykh-fadhlalla-haeri/book/9781928329206.html",
+                geography: "AU"
+            },
+            {
+              name: "Copperfields",
+              url: "https://www.copperfieldsbooks.com/book/9781928329206",
+              geography: "US"
+            },
+            {
+                name: "eBay",
+                url: "https://www.ebay.co.uk/itm/357810918782",
+                geography: "UK"
+            },
+            {
+                name: "Hickory Stick Bookshop",
+                url: "https://hickorystickbookshop.com/book/9781928329206",
+                geography: "US"
+            },
+            {
+                name: "The Intellectual Bookshop",
+                url: "https://www.intellectualbookshop.com/book/9781928329206",
+                geography: "US"
+            },
+            {
+              name: "Magers & Quinn",
+              url: "https://www.magersandquinn.com/product/The-Quran-Path-to-Eternal-Life/26479724",
+              geography: "US"
+            },
+            {
+              name: "Medimops",
+              url: "https://www.medimops.de/haeri-shaykh-fadhlalla-the-qur-an-path-to-eternal-life-zp-qur-an-taschenbuch-M01928329489.html",
+              geography: "DE"
+            },
+            {
+              name: "Penguin Books",
+              url: "https://www.penguinbookshop.com/book/9781928329480",
+              geography: "US"
+            },
+            {
+              name: "Poshmark",
+              url: "https://poshmark.com/listing/The-Quran-Path-to-Eternal-Life-Shaykh-Fadhlalla-Haeri-6603c2944ba08af7fecd1b13",
+              geography: "US"
+            },
+            {
+              name: "RJ Julia",
+              url: "https://rjjulia.com/book/9781928329206",
+              geography: "US"
+            },
+            {
+                name: "Shermans Maine Cost Book Shops",
+                url: "https://shermans.com/book/9781928329206",
+                geography: "US"
+            },
+            {
+              name: "Takealot",
+              url: "https://www.takealot.com/the-qur-an-path-to-eternal-life/PLID95219849",
+              geography: "ZA"
+            },
+            {
+                name: "The Reading Bug",
+                url: "https://www.thereadingbug.com/book/9781928329206",
+                geography: "US"
+            },
+            {
+                name: "Thrift Books",
+                url: "https://www.thriftbooks.com/w/the-quran-path-to-eternal-life-zp-quran_shaykh-fadhlalla-haeri/52448164/",
+                geography: "US"
+            },
+            {
+                name: "Yardstick",
+                url: "https://yardstickalgoma.com/book/9781928329206",
+                geography: "US"
+            },
+            {
+                name: "Waterstones",
+                url: "https://www.waterstones.com/author/shaykh-fadhlalla-haeri/9300348",
+                geography: "UK"
+            }
+          ]
+        },
+        samplePdfUrl: "/samples/TheQuranPathToEternalLife.pdf"
+      },
+      {
+        id: 'quran-path-eternal-life-travel',
+        title: "The Qur'an: Path to Eternal Life (Travel)",
+        description: "\"<i>There are numerous challenges and quests in human life. The most powerful drive, however, is to understand and connect with that which is timeless and boundless. Our keen interest in the beginning of creation and its end is part of this quest. The Qur’an is the voice of truth which involves what is considered to be rational and shareable consciousness. The majesty of the Qur’an is that it addresses most of the human situation and day to day realities whilst connecting it with the Absolute and Boundless. At a normal, conditioned, human consciousness, the Qur’an can help to reduce suffering and discord, but a point is reached where spiritual insights go beyond the mind and into the realm of the soul where discernment and differentiations melt away into a zone where energy and matter are not distinguishable. For this reason, most classical scholars of Qur’an refer to this higher level as the Divine Domain and refrain from commenting or discussing it.</i>\"\n – <b>From the Foreword by Shaykh Fadhlalla Haeri</b>\n\nThe <i>Irfani</i> reflections and commentaries presented by Shaykh Fadhlalla Haeri in this book provide a bridge between rational understanding and spiritual insights of the Qur’an. This production urges the reader to travel deeper and higher in their consciousness to achieve their ultimate destiny – awareness of awareness of the Ultimate Oneness of our existence.\n\nThis edition contains a Foreword by Shaykh Fadhlalla Haeri, an introduction by the editor Shaykh Saadi Douglas Klotz, and an introduction by the translator of the Qur’anic verses Dr Adnan Al Adnani. The text contains the Qur’anic translation followed by commentaries by Shaykh Fadhlalla Haeri relevant to each set of verses.\n\n<h2>Different Options Available</h2>\n\nWhen you navigate to the book shop of your choice below, please be aware that there are different options available for this unique work.\n\n<ul><li>A Travel version in Paperback (listed on this page), which contains a Foreword by Shaykh Fadhlalla Haeri. The text contains the English translation of the Qur'an by Dr Adnan Al Adnani, along with commentaries and prescription by Shaykh Fadhlalla Haeri relevant to each page. It does not include the Arabic script. <b>This version comes in two editions. The second edition has a larger font.</b></li><li><a href=\"/book/quran-path-eternal-life\">A Hardcover version</a> which includes a Foreword by Shaykh Fadhlalla Haeri, an Introduction by the editor Shaykh Saadi Douglas Klotz, an Introduction by the translator Dr Adnan Al Adnani. The text contains the Arabic of the Qur'an, a translation alongside it completed by Dr Adnan Al Adnani, commentaries by Shaykh Fadhlalla Haeri relevant to each page, as well as two additional sets of commentaries on the side of each page of the Qur'an, one of which describes the meaning of the key verse/s per page (identified by their verse numbers underlined) and the other which presents a prescription.</li></ul>",
+        coverImage: "/images/book-covers/QuranPathToEternalLifeTravel.jpg",
+        category: 'quran',
+        order: 2, 
+        purchaseLinks: {
+          amazon: "1776490118",
+          amazonRegional: {
+            ZA: { domain: 'co.za' } 
+          },
+          kindle: "B0CW1JQCQ2",
+          kobo: 'https://www.kobo.com/ca/en/ebook/the-qur-an-47',
+          apple: 'http://books.apple.com/us/book/id6478554730',
+          other: [
+            {
+              name: "Adilbris",
+              url: "https://www.adlibris.com/sv/bok/the-quran-9781776490110",
               geography: "SE"
             },
             {
@@ -124,13 +224,13 @@ export const quranBooks: Book[] = [
             },
             {
               name: "Bokus",
-              url: "https://www.bokus.com/bok/9781928329480/the-quran-path-to-eternal-life/",
+              url: "https://www.bokus.com/bok/9781776490110/quran/",
               geography: "SE"
             },
             {
-                name: "Bol",
-                url: "https://www.bol.com/be/nl/p/the-qur-an/9300000174603444/",
-                geography: "NL"
+              name: "Bol",
+              url: "https://www.bol.com/be/nl/p/the-qur-an/9300000174603444/",
+              geography: "NL"
             },
             {
                 name: "Bookshop",
@@ -149,13 +249,13 @@ export const quranBooks: Book[] = [
             },
             {
                 name: "eBay",
-                url: "https://www.ebay.co.uk/itm/364807514020",
+                url: "https://www.ebay.co.uk/itm/157380471018",
                 geography: "UK"
             },
             {
-              name: "Feltrinelli",
-              url: "https://www.ibs.it/qur-path-to-eternal-life-libro-inglese-shaykh-fadhlalla-haeri/e/9781928329480?queryId=76313c9d865f1487d727d6f1239265ab",
-              geography: "IT"
+                name: "IBS",
+                url: "https://www.ibs.it/qur-path-to-eternal-life-libro-inglese-shaykh-fadhlalla-haeri/e/9781776490110",
+                geography: "IT"
             },
             {
                 name: "Hickory Stick Bookshop",
@@ -173,38 +273,23 @@ export const quranBooks: Book[] = [
                 geography: "EE"
             },
             {
-                name: "Laguna Beach Books",
-                url: "https://www.lagunabeachbooks.com/book/9781776490110",
-                geography: "US"
-            },
-            {
-                name: "Lehmanns",
-                url: "https://www.lehmanns.de/shop/geisteswissenschaften/67516285-9781776490110-the-qur-an",
-                geography: "DE"
-            },
-            {
               name: "Magers & Quinn",
-              url: "https://www.magersandquinn.com/product/QURAN/26479732",
+              url: "https://www.magersandquinn.com/product/The-Quran-Path-to-Eternal-Life-(Travel-Version)/26511819",
               geography: "US"
             },
             {
-              name: "Matfel",
-              url: "https://matfel.pl/product-pol-1828976-The-Quran-Haeri-Shaykh-Fadhlalla.html",
-              geography: "PL"
-            },
-            {
               name: "Medimops",
-              url: "https://www.medimops.de/haeri-shaykh-fadhlalla-the-qur-an-path-to-eternal-life-zp-qur-an-taschenbuch-M01928329489.html",
+              url: "https://www.medimops.de/haeri-shaykh-fadhlalla-the-qur-an-path-to-eternal-life-travel-version-taschenbuch-M01776490118.html",
               geography: "DE"
             },
             {
               name: "Penguin Books",
-              url: "https://www.penguinbookshop.com/book/9781928329480",
+              url: "https://penguinbookshop.com/book/9781776490110",
               geography: "US"
             },
             {
               name: "Poshmark",
-              url: "https://poshmark.com/listing/The-Quran-Path-to-Eternal-Life-Shaykh-Fadhlalla-Haeri-6603c2944ba08af7fecd1b13",
+              url: "https://poshmark.com/listing/The-Quran-Path-to-Eternal-Life-Travel-Version-Shaykh-Fadhlalla-Haeri-6712a7386edf976c3afa3d2c",
               geography: "US"
             },
             {
@@ -218,17 +303,7 @@ export const quranBooks: Book[] = [
                 geography: "US"
             },
             {
-              name: "Takealot Hardcover Version",
-              url: "https://www.takealot.com/the-qur-an-path-to-eternal-life/PLID95219849",
-              geography: "ZA"
-            },
-            {
-                name: "Takealot Paperback Version",
-                url: "https://www.takealot.com/the-qur-an-path-to-eternal-life/PLID95219850",
-                geography: "ZA"
-            },
-            {
-              name: "Takealot Travel Version",
+              name: "Takealot",
               url: "https://www.takealot.com/the-qur-an/PLID95243226",
               geography: "ZA"
             },
@@ -262,7 +337,7 @@ export const quranBooks: Book[] = [
         description: "There is a purpose to this life. There is a beginning, and an end, and within it lies a light that has no beginning and no end. We are most fortunate to have been given the total package of truth, of haqq. We have come to this world in order to discover the qualities and attributes of the Creator of it, the Maintainer of it, the Sustainer of it; He who is within it, He who is before it, He who is after it. We have been bestowed with the ultimate purpose and meaning of our existence, along with the direction and way we must conduct ourselves to become in tune with the ever-present light of Allah.\n\nThe Qur'an affrms that there cannot be two unless I am with you, there cannot be three unless I am the fourth (58:7); and I am closer to you than your jugular vein: And certainly We created man, and We know what his mind suggests to him, and We are nearer to him than his life-vein (50:16). Where is it that His nur (light), or its trace and pattern, is not already there? We are most fortunate to have embraced the divine light of the Prophet Muhammad (S). We are truly blessed to have trust and love for the Qur'an and to have profound admiration for the conduct and all that which has to do with the perfect being of Prophet Muhammad (S). Why is it then, that this miraculous guide, this revealed knowledge, has not been in every way adored, used and internalised? The answer is simple. You may have the recipe for a meal, but if you don't put the ingredients together to cook it and eat it, you will not get nourishment from it. Similarly, simply possessing knowledge without implementing it will not illuminate you mind. And at a higher level, it will not enlighten your heart.\n\nThe Qur'an is a remarkable gift for us to use to change our attitude. The information contained within it has the power to lead to our transformation. The voice of truth from beyond time and space can be applied in our lives within time and space. In the following pages, we will dive into the Qur'an and its multi-layers of wisdom, knowledge and light. There are no ends to these horizons. As far as the Qur'an is concerned, it is the book of existence; it is the manual that any true believer in the One will find of immediate help in any situation and for any circumstance. One of the meanings of the Qur'an is that which gathers and has within it everything. The Qur'an has come with a language that surpasses the limitations of an ordinary terrestrial language. It contains terms that refer to the physical and material world, yet they also carry celestial connotations, evoking higher and subtler meanings",
         coverImage: "/images/book-covers/QuranDiscourses.png",
         category: "quran",
-        order: 2,
+        order: 3,
         publishedDate: new Date('2025-02-19'),
         purchaseLinks: {
           amazon: "B0F4M3PSW7",
@@ -351,7 +426,7 @@ export const quranBooks: Book[] = [
         description: "<b><i>This is the full, hardcover version. You can find each of the five sections separately in the <a href=\"/quran\">Qur'an</a> section.</b></i>\n\nThese commentaries on several essential chapters of the Qur'an are based on Shaykh Fadhlalla Haeri's teachings in the West. The chapters include Surahs Fatiha, Baqarah, Ale `Imran, Yaseen, Al `Ankabut, Al Rahman, Al Waq`iah, Al Mulk and the entire Juz `Amma (last section of the Qur'an). These explorations of selected chapters of the Qur'an are aimed at those seeking guidance and transformation in the modern world. Emphasising the timeless wisdom of the Qur'an, Shaykh Fadhlalla Haeri uses the linguistic roots of the key terms to offer illuminating insights into its deep inner meanings, and shows its relevance to our present day lives. As a source of understanding for both Muslims and non-Muslims, this volume of 5 parts will be greatly valued.\n\nThe Qur'an reflects the absolute truth in all respects. It guides towards knowledge of numerous realities. In it one hears the eternal song of mercy, love and the oneness of creational reality. In the Qur'an we see the laws which govern the experiential, physical word as well as the subtle hidden worlds above and below.\n\nThe Qur'an tells the story of creation from before creation to beyond the end of creation. It takes one to its source--the timeless, boundless, All-Encompassing Absolute Creator.\n\nKeys to the Qur'an is based on discourses given by Shaykh Fadhlalla Haeri in America and Europe. This volume looks to the Qur'an for existential guidance and direction in this life. It does not resemble other traditional commentaries. It seeks from the Qur'an a way of living that will enable humankind, here and now, to travel courageously, purposefully and humbly toward enlightenment and awakening.",
         coverImage: "/images/book-covers/KeysFull.jpg",
         category: "quran",
-        order: 3,
+        order: 4,
         featured: true,
         publishedDate: new Date('2018-02-19'),
         purchaseLinks: {
@@ -394,7 +469,7 @@ export const quranBooks: Book[] = [
         description: "\"In our contemporary world where race, religion, culture and other human characteristics meet, connect, fuse, overlap and clash, so many challenges regarding faith, belief and metaphysical issues present themselves. The Abrahamic traditions are the result of thousands of prophets and messengers coming to guide humankind which culminated with the Prophet Muhammad, whose gift of the Qur'an is of universal value.\n\nThe Qur'ans miracle is that its verses repeatedly reveal the seamless connection between infinite, unseen, cosmic lights with finite, relative, and limited earthly consciousness. This selection of key verses are universally useful for all times and for all people for every moment in the human journey.\n\nThis book presents Qur'anic Universal renderings that connects the absolute and the relative in a unified voice that transforms and transports the reader to the eternal reality that is both transcendent and immanent. It is an essential reference for the inner technology guiding towards transformation that echoes in the hearts of the sincere seeker.\"\n\n- Adnan al Adnani, author of <b><i>Lights of Consciousness: A Sufi view of Science</b></i> and <b><i>Spirituality</b></i>\n\n\"Shaykh Fadhlalla's wise commentary and rendering of the verses enable the reader, whether newcomer or more experienced, to clearly understand the Qur'anic map and guide to life. This little book opens a door allowing us to hear a wake-up call for all humanity, regardless of belief or philosophy of life.\"\n\n- Dr Neil Douglas-Klotz, author of <b><i>The Sufi Book of Life</b></i> and <b><i>A Little Book of Sufi Stories</b></i>.",
         coverImage: "/images/book-covers/UniversalQuran.jpg",
         category: "quran",
-        order: 4,
+        order: 5,
         featured: true,
         publishedDate: new Date('2021-04-19'),
         purchaseLinks: {
@@ -440,7 +515,7 @@ export const quranBooks: Book[] = [
         description: "<i>\"The Qur’an addresses most issues that concern human beings with constant references to the ultimate Reality and Truth. Considerable emphasis is given to relative time and human concerns on earth and the connection between the inseparability of the relative and the Absolute. The Qur'an emphasizes that anything that exists or happens is due to God and equally emphasizes human responsibility to act and live with clear accountability to God.\n\nThe main difference between other traditions and religions at the time of the Prophet Muhammad is the perplexing notion that, in truth, there is only God, and all else are shadows in this Light.\n\nTo understand the Qur’an and use it as a template, this brief background is necessary. This booklet presents extracts from talks I have given on the subject, arranged in six themes: Context and Action, the Self, Understanding, Transformation, Awakening and lastly Oneness and Balance.</i>\"\n\n- From the Introduction by Shaykh Fadhlalla Haeri ",
         coverImage: "/images/book-covers/A-Courteous-Approach-To-Quran.jpg",
         category: "quran",
-        order: 5,
+        order: 6,
         publishedDate: new Date('2023-12-12'),
         purchaseLinks: {
           amazon: "1928329470",
@@ -466,7 +541,7 @@ export const quranBooks: Book[] = [
         description: "<b><i>Surah al-Fatiha</b></i> is placed at the beginning of the Qur'an because it signifies the opening of knowledge and so the victory over ignorance. If, in the direction we are taking, there is no door, then we have reached our target - we have won. Fatiha means to open, reveal, imbue, and conquer. This surah is so named because if you follow it in your heart, you will be victorious. You will conquer and an opening will come to you./n/n<b><i>Surah al-Baqarah</b></i> scans the history of humankind from Adam to the time of the Prophet Muhammad. It contains a blueprint of how a community can live, how its members should behave as individuals, within their families, and in economic and social terms. It also gives guidance and prescriptions regarding inner and outer struggle and development.",
         coverImage: "/images/book-covers/Keys1.jpg",
         category: "quran",
-        order: 6,
+        order: 7,
         publishedDate: new Date('2018-02-27'),
         purchaseLinks: {
           amazon: "1928329004",
@@ -512,7 +587,7 @@ export const quranBooks: Book[] = [
         description: "<b><i>Surat Ale-`Imran</b></i> is one of the most comprehensive and detailed chapters of the Qur'an. It demonstrates the meaning of hypocrisy, courage and belief, using the historical setting of the Battle of Uhud, one of the early Muslim campaigns, to show how people behave in different circumstances and justify their behavior.\n\nThis chapter unveils truth and insight regarding the human self, society, this world and the Next Life.",
         coverImage: "/images/book-covers/Keys2.jpg",
         category: "quran",
-        order: 7,
+        order: 8,
         publishedDate: new Date('2018-02-27'),
         purchaseLinks: {
           amazon: "1928329012",
@@ -558,7 +633,7 @@ export const quranBooks: Book[] = [
         description: "<b><i>Surat Ya Sin</b></i> is the heart of the Qur'an (<i>qalb al-Qur'an</i>). It is the chapter (<i>surah</i>) of the Qur'an which is read over the dead; therefore it is a chapter of great importance to the living. Should one seek to know the meaning of life, one must experience death, for man has come from the non-physical realm and he is swiftly proceeding towards it again. Knowledge is based on opposites. Man's apprehension of knowledge depends upon the condition of his heart. If the condition of his heart is pure and receptive, he sees perfection in every aspect of every situation he finds himself in. The Qur'an allows one to fathom the unfathomable.",
         coverImage: "/images/book-covers/Keys3.jpg",
         category: "quran",
-        order: 8,
+        order: 9,
         publishedDate: new Date('2018-02-27'),
         purchaseLinks: {
           amazon: "1928329020",
@@ -604,7 +679,7 @@ export const quranBooks: Book[] = [
         description: "<ol><li>Chapter 29: The Spider (<b><i>Surat Al-`Ankabut</b></i>)</li><li>Chapter 55: The Beneficent (<b><i>Surat Al-Rahman</b></i>)</li><li>Chapter 56: The Great Event (<b><i>Surat Al-Waqi`ah</b></i>)</li><li>Chapter 67: The Kingdom (<b><i>Surat Al-Mulk</b></i>)</li></ol>\nThese four chapters from the Meccan period are thematically interconnected, covering the subjects of affliction, direct signs of the Creator, the Next Life and the nature of the One Supreme Deity. Through allegorical interpretation of Qur'anic language, the reader is shown the safe path of conduct in this world and the Hereafter. Its message of balance and mercy, and of Divine Unity, compels the reader to reflect on the interconnectedness of all facets of life.",
         coverImage: "/images/book-covers/Keys4.jpg",
         category: "quran",
-        order: 9,
+        order: 10,
         publishedDate: new Date('2018-02-27'),
         purchaseLinks: {
           amazon: "1928329039",
@@ -650,7 +725,7 @@ export const quranBooks: Book[] = [
         description: "<b>This is a commentary on the last section of the Qur'an.</b>\n\nThe original edition of this commentary was a result of teachings and talks with the objective of exploring the deeper meanings of the Divine revelations. The emphasis had been on the key Qur'anic terms and the subtle facets and connotations of Arabic words. The response by the readers was most encouraging.\n\nThe new millennium opens in an age of great complexities, chaos and constant change in values and the way of life. Therefore, what is needed nowadays is the re-discovery of Allah's patterns as revealed in the Qur'anic message so that we can act appropriately in this world.\n\nThe message of the Qur'an emanates from the original Divine blueprint which also lies latent in the human heart. All of us seek the path of ease, knowledge, security, love and contentment. No happiness lasts unless it is based on the knowledge of Allah and submission to His intended purpose and ways. The Qur`an is the key to this awakening.",
         coverImage: "/images/book-covers/Keys5.jpg",
         category: "quran",
-        order: 10,
+        order: 11,
         publishedDate: new Date('2018-02-27'),
         purchaseLinks: {
           amazon: "1928329047",
@@ -696,7 +771,7 @@ export const quranBooks: Book[] = [
         description: "<b>Compiled by Leyya Kalla</b>\n\n<b>Translated by Adnan Al Adnani</b>\n\n\"<i>And We send down of the Qur'an that which is a healing and a mercy to those who believe...</i>\" - Qur'an 17:82.\n\nThe alchemical effect of the Qur'an, the deep transformative impact it has upon the human soul, is such that even its most ardent of opponents have been profoundly affected by it. The pouring of the Qur'an's healing verses over spiritual wounds, and allowing it to work its miracle is what led to this compilation.\n\nThe Qur'an is the ultimate reference guide in revealing hidden and manifest truths, but to approach this sacred text with the correct courtesy and to be granted its secrets requires an open and sincere heart, a clear mind and a courage to face Reality and the truth of one's present state. This collection of Qur'anic verses represent key verses to imbibe and meditate upon in your alchemical spiritual journey.",
         coverImage: "/images/book-covers/SacredAlchemy.jpg",
         category: "quran",
-        order: 11,
+        order: 12,
         publishedDate: new Date('2017-09-19'),
         purchaseLinks: {
           amazon: "0620711825",
@@ -728,7 +803,7 @@ export const quranBooks: Book[] = [
         description: "The Qur'an is a treasure trove providing guidance and help at all times and for all people when approached the right courtesy and trust. The selected verses in this booklet are exceptionally potent when reflected upon. They lift human consciousness towards its cosmic origin and therefore complete the story and meaning of human life. Their impact becomes greater when memorised and repeated giving the genuine uplift which is the gift of true worship.",
         coverImage: "/images/book-covers/50VitalVerses.jpg",
         category: "quran",
-        order: 12,
+        order: 13,
         publishedDate: new Date('2019-11-19'),
         purchaseLinks: {
           amazon: "1919826971",
@@ -768,7 +843,7 @@ export const quranBooks: Book[] = [
         description: "This book is written for anyone interested in the basic message and purpose of the Qur'an and its historical and religious framework. It highlights the important issues and topics of the Qur'an.\n\nThe Qur'an connects life on earth to its sacred essence and heavenly source which encompasses whatever there is in the universe. ",
         coverImage: "/images/book-covers/EssentialMessageOfTheQuran.jpg",
         category: "quran",
-        order: 13,
+        order: 14,
         publishedDate: new Date('2022-04-19'),
         purchaseLinks: {
           amazon: "1928329195",
@@ -805,7 +880,7 @@ export const quranBooks: Book[] = [
         description: " The Qur'an is the foundation of the <i>Deen</i> (life-transaction), containing as it does Allah's ways, patterns, purpose and direction of creation.\n\nThe purpose of this collection is to make the Qur'an accessible, with easy reference to key issues concerning life and the path of Islam.\n\nBy emphasizing the vital and transformative teachings of the Deen, this work offers the serious student the opportunity to awaken to the timeless message of the Truth.\n\nShaykh Fadhlalla Haeri is dedicated to making available the original Islamic 'prescription for life', and hopes that this selection of the Qur'anic verses will be a useful exposure for Muslims and seekers of Allah in their journey towards illumination and the realization of the Ever-Presence of Allah.",
         coverImage: "/images/book-covers/QuransPrescriptionForLife.jpg",
         category: "quran",
-        order: 14,
+        order: 15,
         publishedDate: new Date('2019-11-19'),
         purchaseLinks: {
           amazon: "1919826904",
@@ -851,7 +926,7 @@ export const quranBooks: Book[] = [
         description: "<b><i>The Story of Creation in the Qur'an</b></i> is an exposition of the Qur'anic verses relating to the nature of physical phenomena, including the origins of the universe, the nature of light, matter, space and time, and the evolution of biological and sentient beings.\n\nIn this book Shaykh Fadhlalla Haeri demonstrates that the verses in the Qur'an relating to the outer physical phenomena are not separate from inner phenomena and states, but in fact reflect them.\n\nThe Qur'an gives us a unified view of existence drawing us from multiplicity to unity, in order to live appropriately from a unified foundation in a world of multiplicity. This is missing from other books, which only focus on matching outer phenomena to scientific discovery without inner reflection.\n\nThe Story of Creation in the Qur'an relates outer patterns and symbols to inner experiences and metaphors bringing out the gnostic elements not just the prescriptive and phenomenal descriptions. ",
         coverImage: "/images/book-covers/TheStoryOfCreationInTheQuran.jpg",
         category: "quran",
-        order: 15,
+        order: 16,
         publishedDate: new Date('2019-11-19'),
         purchaseLinks: {
           kindle: "B01J1YDJRQ",
@@ -883,7 +958,7 @@ export const quranBooks: Book[] = [
         description: "\"The Qur'an itself is the great ocean of truth that lies undiscovered before us. In 'Journey of the Universe' the Shaykh has built an island in this vast Qur'anic see of knowledge so that we on the shore can build a bridge to it from religion, or from science or from wherever we may stand. Then, when we have bridged this gap between our intellectual knowledge and what is already written in our hearts we see, on looking back to the shore we left, the whole landscape of our existence from an entirely new perspective.\n\nThe creation of the Universe is the eternal instant unfolding in time. There was the 'nothingness' and with the fiat of creation, 'kun fa-yakun', the 'nothingness' was split into the duality of existence, symbolized in the first Arabic letter 'alif', the primary mark of creation that descends from God. Viewed from the other side of time, from where we stand, there was this vast creation of immense energy that flung everything into separation, which we can liken to an explosion, or theorize as the 'Big Bang'. But everything is from its Creator and must return to its Lord.\"\n\n- From the <b><i>Foreword</b></i> by Ibrahim Stokes\n\nThe Qur'an traces the journey of all creation explicitly and implicitly, seeing the physical, biological and geological voyage of life as paralleled by the inner spiritual evolution of man. Bringing together the meanings and derivations of individual words, the author reveals vibrant images which the language of the Qur'an so subtly projects.",
         coverImage: "/images/book-covers/JourneyOfTheUniverse.jpg",
         category: "quran",
-        order: 16,
+        order: 17,
         publishedDate: new Date('2020-06-19'),
         purchaseLinks: {
           amazon: "1928329136",
@@ -925,7 +1000,7 @@ export const quranBooks: Book[] = [
         coverImage: "/images/book-covers/TheQuranInIslam.jpg",
         author: "`Allamah Sayyid M. H. Tabataba`i",
         category: "quran",
-        order: 17,
+        order: 18,
         publishedDate: new Date('2024-11-19'),
         purchaseLinks: {
           amazon: "B0DQM32SWW",
