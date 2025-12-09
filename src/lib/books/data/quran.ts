@@ -8,7 +8,7 @@ export const quranBooks: Book[] = [
         coverImage: "/images/book-covers/SelectedSurahs.jpg",
         category: 'quran',
         order: 0,
-        coming: true,
+        latest: true,
         purchaseLinks: {
           amazon: "B0FXYSLXSZ",
           other: [
@@ -263,7 +263,6 @@ export const quranBooks: Book[] = [
         coverImage: "/images/book-covers/QuranDiscourses.png",
         category: "quran",
         order: 2,
-        latest: true,
         publishedDate: new Date('2025-02-19'),
         purchaseLinks: {
           amazon: "B0F4M3PSW7",

@@ -8,7 +8,6 @@ export const inspirationalBooks: Book[] = [
         coverImage: "/images/book-covers/TheCallingHeart.jpg",
         category: "inspirations",
         order: 1,
-        latest: true,
         publishedDate: new Date('2024-05-19'),
         purchaseLinks: {
           amazon: "B0D8CPSRQZ",
@@ -31,7 +30,6 @@ export const inspirationalBooks: Book[] = [
         coverImage: "/images/book-covers/ShadesOfReality.jpg",
         category: 'inspirations',
         order: 2,
-        latest: true,
         publishedDate: new Date('2024-10-19'),
         purchaseLinks: {
           amazon: "B0DPLCXLDG",

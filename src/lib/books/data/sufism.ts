@@ -8,7 +8,7 @@ export const sufismBooks: Book[] = [
         coverImage: "/images/book-covers/Abadi.jpg",
         category: "sufism",
         order: 0,
-        coming: true,
+        latest: true,
         publishedDate: new Date('2025-10-28'),
         purchaseLinks: {
           amazon: "B0G2Z4JKYK",
@@ -47,6 +47,26 @@ export const sufismBooks: Book[] = [
               name: "Barnes & Noble",
               url: "https://www.barnesandnoble.com/w/abadi-shaykh-fadhlalla-haeri/1148774782",
               geography: "US"
+            },
+            {
+              name: "Hive",
+              url: "https://www.hive.co.uk/Product/Shaykh-Fadhlalla-Haeri/Abadi--Preparing-for-Eternal-Life/32723719",
+              geography: "UK"
+            },
+            {
+              name: "Strand Books",
+              url: "https://www.strandbooks.com/abadi-preparing-for-eternal-life-9781776490189.html",
+              geography: "US"
+            },
+            {
+              name: "IBS",
+              url: "https://www.ibs.it/abadi-preparing-for-eternal-life-libro-inglese-shaykh-fadhlalla-haeri/e/9781776490189",
+              geography: "IT"
+            },
+            {
+              name: "La Feltrinelli",
+              url: "https://www.lafeltrinelli.it/abadi-preparing-for-eternal-life-libro-inglese-shaykh-fadhlalla-haeri/e/9781776490189",
+              geography: "IT"
             }
           ]
         }
@@ -59,7 +79,7 @@ export const sufismBooks: Book[] = [
         coverImage: "/images/book-covers/InnerSecretsOfThePath2.jpg",
         category: "sufism",
         order: 1,
-        coming: true,
+        latest: true,
         publishedDate: new Date('2025-10-28'),
         purchaseLinks: {
           amazon: "1776490193",
@@ -81,6 +101,11 @@ export const sufismBooks: Book[] = [
               name: "Bokus",
               url: "https://www.bokus.com/bok/9781776490196/inner-secrets-of-the-path/",
               geography: "SE"
+            },
+            {
+              name: "Exclusive Books",
+              url: "https://exclusivebooks.co.za/products/9781776490196",
+              geography: "ZA"
             }
           ]
         }
@@ -92,7 +117,6 @@ export const sufismBooks: Book[] = [
         coverImage: "/images/book-covers/PathwaysToTheGarden.jpg",
         category: "sufism",
         order: 2,
-        latest: true,
         publishedDate: new Date('2024-06-19'),
         purchaseLinks: {
           amazon: "1928329446",

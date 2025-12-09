@@ -10,7 +10,7 @@ export const islamBooks: Book[] = [
       category: 'islam',
       order: 0,
       publishedDate: new Date('2025-10-15'),
-      coming: true,
+      latest: true,
       purchaseLinks: {
         amazon: "B0FVCDDP5C",
         other: [
@@ -96,7 +96,6 @@ export const islamBooks: Book[] = [
     //     category: 'islam',
     //     order: 0,
     //     publishedDate: new Date('2025-10-09'),
-    //     coming: true,
     //     purchaseLinks: {
     //       other: [
     //         {

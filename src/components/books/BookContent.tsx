@@ -60,11 +60,11 @@ export default function BookContent({ book }: BookContentProps) {
     const shuffledOthers = shuffle(others);
 
     if (preferred.length === 0) {
-      // No preferred shops: show up to 2 random others
-      return shuffledOthers.slice(0, Math.min(2, shuffledOthers.length));
+      // No preferred shops: show up to 3 random others
+      return shuffledOthers.slice(0, Math.min(3, shuffledOthers.length));
     }
 
-    const needed = Math.max(0, 3 - result.length);
+    const needed = Math.max(0, 4 - result.length);
     result.push(...shuffledOthers.slice(0, needed));
     return result;
   }, [nonLocalShops]);
