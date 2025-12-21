@@ -17,7 +17,7 @@ const countryToDomain: Record<string, AmazonDomain> = {
   IN: 'in',
   NL: 'nl',
   SE: 'se',
-  JP: 'jp',
+  JP: 'co.jp',
   AU: 'com.au'
 };
 

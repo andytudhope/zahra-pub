@@ -1,4 +1,4 @@
-export type Partner = { name: string; href: string }
+export type Partner = { name: string; href?: string }
 
 export const partnersByRegion: Record<string, Partner[]> = {
   'North America and Canada': [
@@ -35,10 +35,12 @@ export const partnersByRegion: Record<string, Partner[]> = {
   ],
 
   Germany: [
-    { name: "Medimops", href: 'https://www.medimops.de/produkte-C0/?fcIsSearch=1&searchparam=shaykh+fadhlalla+haeri' }
+    { name: "Medimops", href: 'https://www.medimops.de/produkte-C0/?fcIsSearch=1&searchparam=shaykh+fadhlalla+haeri' },
+    { name: 'Libri' },
   ],
 
   Italy: [
+    { name: 'Amazon.it', href: 'https://www.amazon.it/s?k=shaykh+fadhlalla+haeri' },
     { name: 'IBS.it', href: 'https://www.ibs.it/algolia-search?ts=as&query=shaykh%20fadhlalla%20haeri' },
     { name: 'La Feltrinelli', href: 'https://www.lafeltrinelli.it/algolia-search?ts=as&query=shaykh%20fadhlalla%20haeri'},
   ],
@@ -50,7 +52,10 @@ export const partnersByRegion: Record<string, Partner[]> = {
   ],
 
   Spain: [
-    { name: "Agapea", href: "https://www.agapea.com/buscar/buscador.php?texto=shaykh+fadhlalla+haeri" }
+    { name: "Amazon Spain", href: "https://www.amazon.es/s?k=shaykh+fadhlalla+haeri" },
+    { name: "Agapea", href: "https://www.agapea.com/buscar/buscador.php?texto=shaykh+fadhlalla+haeri" },
+    { name: 'Azeta Libros' },
+    { name: 'Casa del Libro' },
   ],
 
   Netherlands: [
@@ -85,6 +90,7 @@ export const partnersByRegion: Record<string, Partner[]> = {
   Brazil: [ 
     { name: 'Amazon Brazil', href: 'https://www.amazon.com.br/s?k=shaykh+fadhlalla+haeri' }, 
     { name: 'Estante Virtual', href: 'https://www.estantevirtual.com.br/busca?nsCat=Natural&q=shaykh%20fadhlalla%20haeri&searchField=titulo-autor' },
+    { name: 'Um Livro' },
 ],
 
   India: [ 
@@ -93,66 +99,96 @@ export const partnersByRegion: Record<string, Partner[]> = {
     { name: 'Bookscape', href: 'https://bookscape.com/search/shaykh%20fadhlalla%20haeri?page=1&searchKeyWord=shaykh%20fadhlalla%20haeri&searchedBy=&sort=' }
   ],
 
+  China: [
+    { name: 'JD.com' },
+    { name: 'Dangdang' }
+  ],
+
   'Africa and Middle East': [ 
-    { name: 'Akiba Dba Of Hinomaru', href: 'https://example.com' }, 
-    { name: 'Akindemy', href: 'https://example.com' }, 
-    { name: 'Al Falah Bookshop', href: 'https://example.com' }, 
-    { name: 'Al Maya', href: 'https://example.com' }, 
-    { name: 'Al Shegrey', href: 'https://example.com' }, 
-    { name: 'Al-Rowad', href: 'https://example.com' }, 
-    { name: 'All Prints Llc', href: 'https://example.com' }, 
-    { name: 'American University Of Sharjah', href: 'https://example.com' }, 
-    { name: 'Animex', href: 'https://example.com' }, 
-    { name: 'Arif Books Distribution', href: 'https://example.com' }, 
-    { name: 'Bookish Nkc', href: 'https://example.com' }, 
-    { name: 'Ciel Book', href: 'https://example.com' }, 
-    { name: 'Ciel Lebanon', href: 'https://example.com' }, 
-    { name: 'Collage Talent Center', href: 'https://example.com' }, 
-    { name: 'Curl Book & Coffee Shop', href: 'https://example.com' }, 
-    { name: 'Dar Al-Fajr', href: 'https://example.com' }, 
-    { name: 'Dar Al Hayat Bookshop', href: 'https://example.com' }, 
-    { name: 'Dar Kreidieh Publishing & Distribution', href: 'https://example.com' }, 
-    { name: 'Egyptian American Book Center', href: 'https://example.com' }, 
-    { name: 'Gopi', href: 'https://example.com' }, 
-    { name: 'House Of Wisdom', href: 'https://example.com' }, 
-    { name: 'Ingram Test Account Internal Only', href: 'https://example.com' }, 
-    { name: 'Jabal Amman Publishers', href: 'https://example.com' }, 
+    { name: 'Akiba Dba Of Hinomaru' }, 
+    { name: 'Akindemy' }, 
+    { name: 'Al Falah Bookshop' }, 
+    { name: 'Al Maya' }, 
+    { name: 'Al Shegrey' }, 
+    { name: 'Al-Rowad' }, 
+    { name: 'All Prints Llc' }, 
+    { name: 'American University Of Sharjah' }, 
+    { name: 'Animex' }, 
+    { name: 'Arif Books Distribution' }, 
+    { name: 'Bookish Nkc' }, 
+    { name: 'Ciel Book' }, 
+    { name: 'Ciel Lebanon' }, 
+    { name: 'Collage Talent Center' }, 
+    { name: 'Curl Book & Coffee Shop' }, 
+    { name: 'Dar Al-Fajr' }, 
+    { name: 'Dar Al Hayat Bookshop' }, 
+    { name: 'Dar Kreidieh Publishing & Distribution' }, 
+    { name: 'Egyptian American Book Center' }, 
+    { name: 'Gopi' }, 
+    { name: 'House Of Wisdom' }, 
+    { name: 'Ingram Test Account Internal Only' }, 
+    { name: 'Jabal Amman Publishers' }, 
     { name: 'Jarir Bookstore / Jarir Marketing Company', href: 'https://www.jarir.com' }, 
-    { name: 'Jashanmal - Bahrain', href: 'https://example.com' }, 
-    { name: 'Jashanmal - Dubai', href: 'https://example.com' }, 
-    { name: 'Jordan Distribution Agency', href: 'https://example.com' }, 
-    { name: 'Kinokuniya Dubai', href: 'https://example.com' }, 
-    { name: 'Kiss By Nature Ltd', href: 'https://example.com' }, 
-    { name: 'Lavish Livings International', href: 'https://example.com' }, 
-    { name: 'Liberty Books', href: 'https://example.com' }, 
-    { name: 'Librairie Antoine Sal (Culture & Co)', href: 'https://example.com' }, 
-    { name: 'Little Ones Bookbarn', href: 'https://example.com' }, 
-    { name: 'Magrudy Enterprises', href: 'https://example.com' }, 
-    { name: 'Manga Bound', href: 'https://example.com' }, 
-    { name: 'Neel Wafurat', href: 'https://example.com' }, 
-    { name: 'Neo Books', href: 'https://example.com' }, 
-    { name: 'Ninety Nine Books Trading', href: 'https://example.com' }, 
-    { name: 'Noor Al Samaa Bookshop', href: 'https://example.com' }, 
-    { name: 'Noveltea Bookshop', href: 'https://example.com' }, 
-    { name: 'Pak Manifesto Enterprises', href: 'https://example.com' }, 
-    { name: 'Pan World', href: 'https://example.com' }, 
-    { name: 'Paper Trails', href: 'https://example.com' }, 
-    { name: 'Perfect Purity General Trading Llc', href: 'https://example.com' }, 
-    { name: 'Progressive International Agencies', href: 'https://example.com' }, 
-    { name: 'Rewardz', href: 'https://example.com' }, 
-    { name: 'Sanad Books', href: 'https://example.com' }, 
-    { name: 'Sharjah Department Of Culture', href: 'https://example.com' }, 
-    { name: 'Sharjah House Of Archives', href: 'https://example.com' }, 
-    { name: 'Sharjah Performing Arts Academy', href: 'https://example.com' }, 
-    { name: 'Sharjah Public Libraries', href: 'https://example.com' }, 
-    { name: 'Stm Middle East', href: 'https://example.com' }, 
-    { name: 'Tanany Book Services', href: 'https://example.com' }, 
-    { name: 'The Library Division', href: 'https://example.com' }, 
-    { name: 'Totsnbabies / Lara Salem', href: 'https://example.com' }, 
-    { name: 'University Book Centers Company', href: 'https://example.com' }, 
-    { name: 'Wanli Online Publishing Fze', href: 'https://example.com' }, 
-    { name: 'White Lion General Trading', href: 'https://example.com' }, 
-    { name: 'Wisdom Books', href: 'https://example.com' }, 
-    { name: 'Zoom Books', href: 'https://example.com' } 
-]
+    { name: 'Jashanmal - Bahrain' }, 
+    { name: 'Jashanmal - Dubai' }, 
+    { name: 'Jordan Distribution Agency' }, 
+    { name: 'Kinokuniya Dubai' }, 
+    { name: 'Kiss By Nature Ltd' }, 
+    { name: 'Lavish Livings International' }, 
+    { name: 'Liberty Books' }, 
+    { name: 'Librairie Antoine Sal (Culture & Co)' }, 
+    { name: 'Little Ones Bookbarn' }, 
+    { name: 'Magrudy Enterprises' }, 
+    { name: 'Manga Bound' }, 
+    { name: 'Neel Wafurat' }, 
+    { name: 'Neo Books' }, 
+    { name: 'Ninety Nine Books Trading' }, 
+    { name: 'Noor Al Samaa Bookshop' }, 
+    { name: 'Noveltea Bookshop' }, 
+    { name: 'Pak Manifesto Enterprises' }, 
+    { name: 'Pan World' }, 
+    { name: 'Paper Trails' }, 
+    { name: 'Perfect Purity General Trading Llc' }, 
+    { name: 'Progressive International Agencies' }, 
+    { name: 'Rewardz' }, 
+    { name: 'Sanad Books' }, 
+    { name: 'Sharjah Department Of Culture' }, 
+    { name: 'Sharjah House Of Archives' }, 
+    { name: 'Sharjah Performing Arts Academy' }, 
+    { name: 'Sharjah Public Libraries' }, 
+    { name: 'Stm Middle East' }, 
+    { name: 'Tanany Book Services' }, 
+    { name: 'The Library Division' }, 
+    { name: 'Totsnbabies / Lara Salem' }, 
+    { name: 'University Book Centers Company' }, 
+    { name: 'Wanli Online Publishing Fze' }, 
+    { name: 'White Lion General Trading' }, 
+    { name: 'Wisdom Books' }, 
+    { name: 'Zoom Books' } 
+  ],
+
+  Poland: [ 
+    { name: 'Bernardinum', href: 'https://ksiegarnia.bernardinum.com.pl/' }, 
+    { name: 'Copernicus Center Press', href: 'https://ccpress.pl' }, 
+    { name: 'Czytam.pl', href: 'https://czytam.pl/' }, 
+    { name: 'Edra Urban & Partner', href: 'https://edraurban.pl/' }, 
+    { name: 'Empik.com', href: 'https://www.empik.com' }, 
+    { name: 'Gigant.pl', href: 'https://gigant.pl' }, 
+    { name: 'Krainaksiazek.pl', href: 'https://krainaksiazek.pl' }, 
+    { name: 'Pascal', href: 'https://ksiegarniainternetowa.co.uk/' }, 
+    { name: 'PWN.pl' }, 
+    { name: 'Zwierciadło', href: 'https://zwierciadlo.pl/' } 
+  ],
+
+  Japan: [
+    { name: 'Amazon Japan', href: 'https://www.amazon.co.jp/s?k=shaykh+fadhlalla+haeri' },
+    { name: 'Maruzen Junkundo' }
+  ],
+
+  Singapore: [
+    { name: 'Amazon Singapore', href: 'https://www.amazon.sg/s?k=shaykh+fadhlalla+haeri' },
+    { name: 'Booksmart.store', href: 'https://booksmart.store/books/search/?text=shaykh+fadhlalla+haeri' },
+    { name: 'Kinokuniya Singapore', href: 'https://kinokuniya.com.sg/' },
+    { name: 'MPH Bookstores' },
+  ]
 }

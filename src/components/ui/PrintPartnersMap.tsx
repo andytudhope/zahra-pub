@@ -5,30 +5,40 @@ import WorldMap from 'react-svg-worldmap'
 import Dialog from '@/components/ui/Dialog'
 import { partnersByRegion, Partner } from '@/lib/printPartners'
 
-const PartnerLink = ({ partner }: { partner: Partner }) => (
-  <a
-    href={partner.href}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-black underline"
-  >
-    {partner.name}
-  </a>
-)
+const PartnerLink = ({ partner }: { partner: Partner }) => {
+  if (!partner.href) {
+    return <span className="text-black">{partner.name}</span>
+  }
+
+  return (
+    <a
+      href={partner.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-black underline"
+    >
+      {partner.name}
+    </a>
+  )
+}
 
 const regionColors = [
   '#1f77b4', // North America
   '#5370f0ff', // Australia / NZ
   '#f4da17ff', // Brazil
   '#dd850aff', // India
+  '#f73c03ff', // China
   '#9467bd', // UK
   '#8c564b', // Germany
   '#e377c2', // Italy
   '#7f7f7f', // Sweden
   '#bcbd22', // Netherlands
   '#e64412ff', // Spain
+  '#3c17f4ff', // Poland
   '#17becf', // Taiwan
-  '#2f9b1a', // South Korea
+  '#894005ff', // South Korea
+  '#0a9e40ff',  // Japan
+  '#b927d6ff', // Singapore
   '#2f1763', // South Africa
   '#219909'  // Africa & Middle East
 ]
@@ -51,22 +61,26 @@ const regionData = [
 
   { country: 'BR', value: 2 },
   { country: 'IN', value: 3 },
+  { country: 'CN', value: 4 },
 
-  { country: 'GB', value: 4 },
-  { country: 'DE', value: 5 },
-  { country: 'IT', value: 6 },
-  { country: 'SE', value: 7 },
-  { country: 'NL', value: 8 },
-  { country: 'ES', value: 9 },
+  { country: 'GB', value: 5 },
+  { country: 'DE', value: 6 },
+  { country: 'IT', value: 7 },
+  { country: 'SE', value: 8 },
+  { country: 'NL', value: 9 },
+  { country: 'ES', value: 10 },
+  { country: 'PL', value: 11 },
 
-  { country: 'TW', value: 10 },
-  { country: 'KO', value: 11 },
+  { country: 'TW', value: 12 },
+  { country: 'KR', value: 13 },
+  { country: 'JP', value: 14 },
+  { country: 'SG', value: 15 },
 
-  { country: 'ZA', value: 12 },
+  { country: 'ZA', value: 16 },
 
   ...africaAndMiddleEastCountries
     .filter(code => code !== 'ZA')
-    .map(code => ({ country: code, value: 11 }))
+    .map(code => ({ country: code, value: 17 }))
 ]
 
 export default function PrintPartnersMap() {
@@ -99,6 +113,7 @@ export default function PrintPartnersMap() {
 
       BR: 'Brazil',
       IN: 'India',
+      CN: 'China',
 
       GB: 'UK',
       DE: 'Germany',
@@ -106,9 +121,12 @@ export default function PrintPartnersMap() {
       SE: 'Sweden',
       NL: 'Netherlands',
       ES: "Spain",
+      PL: 'Poland',
 
       TW: 'Taiwan',
-      KO: 'South Korea',
+      KR: 'South Korea',
+      JP: 'Japan',
+      SG: 'Singapore',
 
       ZA: 'South Africa',
 
