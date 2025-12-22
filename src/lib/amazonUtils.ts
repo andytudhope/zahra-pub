@@ -18,7 +18,11 @@ const countryToDomain: Record<string, AmazonDomain> = {
   NL: 'nl',
   SE: 'se',
   JP: 'co.jp',
-  AU: 'com.au'
+  AU: 'com.au',
+  AE: 'ae',
+  SG: 'sg',
+  SA: 'sa',
+  TR: 'com.tr',
 };
 
 export function getAmazonUrl(

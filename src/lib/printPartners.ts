@@ -104,7 +104,7 @@ export const partnersByRegion: Record<string, Partner[]> = {
     { name: 'Dangdang' }
   ],
 
-  'Africa and Middle East': [ 
+  Africa: [ 
     { name: 'Akiba Dba Of Hinomaru' }, 
     { name: 'Akindemy' }, 
     { name: 'Al Falah Bookshop' }, 
@@ -190,5 +190,47 @@ export const partnersByRegion: Record<string, Partner[]> = {
     { name: 'Booksmart.store', href: 'https://booksmart.store/books/search/?text=shaykh+fadhlalla+haeri' },
     { name: 'Kinokuniya Singapore', href: 'https://kinokuniya.com.sg/' },
     { name: 'MPH Bookstores' },
+  ],
+
+  'United Arab Emirates': [
+    { name: 'Amazon UAE', href: 'https://www.amazon.ae/s?k=shaykh+fadhlalla+haeri' },
+    { name: 'Magrudy.com', href: 'https://www.magrudy.com/' },
+    { name: 'White Lion General Trading', href: 'https://www.whitelion.ae/' },
+    { name: 'Al Maya Group', href: 'https://www.almaya.ae/' },
+    { name: 'Kinokuniya Dubai', href: 'https://uae.kinokuniya.com/' },
+    { name: 'Ciel Books' },
+    { name: 'Dar Al-Fajr' },
+    { name: 'Pan World' },
+
+  ],
+
+  'Saudi Arabia': [
+    { name: 'Amazon Saudi Arabia', href: 'https://www.amazon.sa/s?k=shaykh+fadhlalla+haeri' },
+    { name: 'Jarir Bookstore', href: 'https://www.jarir.com/' },
+    { name: 'Rushd Bookstore', href: 'https://rushd.sa/' },
+    { name: 'Magrudy.com', href: 'https://www.magrudy.com/' },
+    { name: 'White Lion General Trading', href: 'https://www.whitelion.ae/' },
+    { name: 'Al Maya Group', href: 'https://www.almaya.ae/' },
+    { name: 'Kinokuniya Dubai', href: 'https://uae.kinokuniya.com/' },
+    { name: 'Ciel Books' },
+    { name: 'Dar Al-Fajr' },
+    { name: 'Pan World' },
+  ],
+
+  Turkey: [
+    { name: 'Amazon Turkey', href: 'https://www.amazon.com.tr/s?k=shaykh+fadhlalla+haeri' },
+  ],
+
+  'Middle East': [
+    { name: 'Amazon UAE', href: 'https://www.amazon.ae/s?k=shaykh+fadhlalla+haeri' },
+    { name: 'Jarir Bookstore', href: 'https://www.jarir.com/' },
+    { name: 'Rushd Bookstore', href: 'https://rushd.sa/' },
+    { name: 'Magrudy.com', href: 'https://www.magrudy.com/' },
+    { name: 'White Lion General Trading', href: 'https://www.whitelion.ae/' },
+    { name: 'Al Maya Group', href: 'https://www.almaya.ae/' },
+    { name: 'Kinokuniya Dubai', href: 'https://uae.kinokuniya.com/' },
+    { name: 'Ciel Books' },
+    { name: 'Dar Al-Fajr' },
+    { name: 'Pan World' },
   ]
 }

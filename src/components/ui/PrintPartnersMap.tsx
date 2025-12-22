@@ -39,17 +39,15 @@ const regionColors = [
   '#894005ff', // South Korea
   '#0a9e40ff',  // Japan
   '#b927d6ff', // Singapore
-  '#2f1763', // South Africa
+  '#640c07ff', // UAE
+  '#045015ff', // Saudi Arabia
+  '#d62728', // Turkey
+  '#2f1763', // South Africa  
   '#219909'  // Africa & Middle East
 ]
 
-const africaAndMiddleEastCountries = [
-  'DZ','EG','LY','MA','SD','TN','EH','AO','BJ','BW','BF','BI','CM','CV',
-  'CF','TD','KM','CG','CD','CI','DJ','GQ','ER','ET','GA','GM','GH','GN',
-  'GW','KE','LS','LR','MG','MW','ML','MR','MU','YT','MZ','NA','NE','NG',
-  'RW','RE','SH','ST','SN','SC','SL','SO','ZA','SS','SZ','TZ','TG','TN',
-  'UG','ZM','ZW','AE','SA','IR','IQ','IL','JO','KW','LB','OM','QA','SY',
-  'TR','YE','BH'
+const middleEastCountries = [
+  'BH', 'EG', 'LB', 'OM', 'QA', 'KW', 'JO', 'IL', 'PK', 'PS'
 ]
 
 const regionData = [
@@ -76,11 +74,14 @@ const regionData = [
   { country: 'JP', value: 14 },
   { country: 'SG', value: 15 },
 
-  { country: 'ZA', value: 16 },
+  { country: 'AE', value: 16 },
+  { country: 'SA', value: 17 },
+  { country: 'TR', value: 18 },
 
-  ...africaAndMiddleEastCountries
-    .filter(code => code !== 'ZA')
-    .map(code => ({ country: code, value: 17 }))
+  { country: 'ZA', value: 19 },
+
+  ...middleEastCountries
+    .map(code => ({ country: code, value: 20 }))
 ]
 
 export default function PrintPartnersMap() {
@@ -128,12 +129,15 @@ export default function PrintPartnersMap() {
       JP: 'Japan',
       SG: 'Singapore',
 
+      AE: 'United Arab Emirates',
+      SA: 'Saudi Arabia',
+      TR: 'Turkey',
+
       ZA: 'South Africa',
 
       ...Object.fromEntries(
-        africaAndMiddleEastCountries
-          .filter(code => code !== 'ZA')
-          .map(code => [code, 'Africa and Middle East'])
+        middleEastCountries
+          .map(code => [code, 'Middle East'])
       )
     }
 
