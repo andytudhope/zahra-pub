@@ -13,6 +13,9 @@ export const islamBooks: Book[] = [
       latest: true,
       purchaseLinks: {
         amazon: "B0FVCDDP5C",
+        amazonRegional: {
+          ZA: { domain: 'co.za' } 
+        },
         other: [
           {
             name: "Booktopia",

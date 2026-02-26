@@ -12,6 +12,9 @@ export const sufismBooks: Book[] = [
         publishedDate: new Date('2025-10-28'),
         purchaseLinks: {
           amazon: "B0G2Z4JKYK",
+          kindle: "B0GHPX7N5Y",
+          kobo: "https://www.kobo.com/ca/en/ebook/abadi",
+          apple: "https://books.apple.com/us/book/abadi/id6758024242",
           other: [
             {
               name: "Yes24",
