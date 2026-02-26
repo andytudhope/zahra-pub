@@ -1,9 +1,11 @@
 'use client'
 
-import { useState, useEffect } from 'react'
-import WorldMap from 'react-svg-worldmap'
+import { useState } from 'react'
+import { ComposableMap, Geographies, Geography } from 'react-simple-maps'
 import Dialog from '@/components/ui/Dialog'
 import { partnersByRegion, Partner } from '@/lib/printPartners'
+
+const GEO_URL = 'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json'
 
 const PartnerLink = ({ partner }: { partner: Partner }) => {
   if (!partner.href) {
@@ -23,31 +25,31 @@ const PartnerLink = ({ partner }: { partner: Partner }) => {
 }
 
 const regionColors = [
-  '#1f77b4', // North America
-  '#5370f0ff', // Australia / NZ
-  '#f4da17ff', // Brazil
-  '#dd850aff', // India
-  '#f73c03ff', // China
-  '#9467bd', // UK
-  '#8c564b', // Germany
-  '#e377c2', // Italy
-  '#7f7f7f', // Sweden
-  '#bcbd22', // Netherlands
-  '#e64412ff', // Spain
-  '#3c17f4ff', // Poland
-  '#17becf', // Taiwan
-  '#894005ff', // South Korea
-  '#0a9e40ff',  // Japan
-  '#b927d6ff', // Singapore
-  '#640c07ff', // UAE
-  '#045015ff', // Saudi Arabia
-  '#d62728', // Turkey
-  '#2f1763', // South Africa  
-  '#219909'  // Africa & Middle East
+  '#1f77b4',   // 0  North America
+  '#5370f0ff', // 1  Australia / NZ
+  '#f4da17ff', // 2  Brazil
+  '#dd850aff', // 3  India
+  '#f73c03ff', // 4  China
+  '#9467bd',   // 5  UK
+  '#8c564b',   // 6  Germany
+  '#e377c2',   // 7  Italy
+  '#64b5f6',   // 8  Sweden
+  '#bcbd22',   // 9  Netherlands
+  '#e64412ff', // 10 Spain
+  '#3c17f4ff', // 11 Poland
+  '#17becf',   // 12 Taiwan
+  '#894005ff', // 13 South Korea
+  '#0a9e40ff', // 14 Japan
+  '#b927d6ff', // 15 Singapore
+  '#640c07ff', // 16 UAE
+  '#045015ff', // 17 Saudi Arabia
+  '#d62728',   // 18 Turkey
+  '#2f1763',   // 19 South Africa
+  '#219909',   // 20 Middle East
 ]
 
 const middleEastCountries = [
-  'BH', 'EG', 'LB', 'OM', 'QA', 'KW', 'JO', 'IL', 'PK', 'PS'
+  'BH', 'EG', 'LB', 'OM', 'QA', 'KW', 'JO', 'IL', 'PK', 'PS',
 ]
 
 const regionData = [
@@ -80,70 +82,52 @@ const regionData = [
 
   { country: 'ZA', value: 19 },
 
-  ...middleEastCountries
-    .map(code => ({ country: code, value: 20 }))
+  ...middleEastCountries.map(code => ({ country: code, value: 20 })),
 ]
+
+// ISO 3166-1 numeric (used by world-atlas) → alpha-2, for all countries in regionData
+const numericToAlpha2: Record<string, string> = {
+  '840': 'US', '124': 'CA',
+  '036': 'AU', '554': 'NZ',
+  '076': 'BR', '356': 'IN', '156': 'CN',
+  '826': 'GB', '276': 'DE',  '380': 'IT',
+  '752': 'SE', '528': 'NL',  '724': 'ES', '616': 'PL',
+  '158': 'TW', '410': 'KR',  '392': 'JP', '702': 'SG',
+  '784': 'AE', '682': 'SA',  '792': 'TR',
+  '710': 'ZA',
+  '048': 'BH', '818': 'EG',  '422': 'LB', '512': 'OM',
+  '634': 'QA', '414': 'KW',  '400': 'JO', '376': 'IL',
+  '586': 'PK', '275': 'PS',
+}
+
+const countryToRegionMap: Record<string, string> = {
+  US: 'North America and Canada',
+  CA: 'North America and Canada',
+  AU: 'Australia',
+  NZ: 'Australia',
+  BR: 'Brazil',
+  IN: 'India',
+  CN: 'China',
+  GB: 'UK',
+  DE: 'Germany',
+  IT: 'Italy',
+  SE: 'Sweden',
+  NL: 'Netherlands',
+  ES: 'Spain',
+  PL: 'Poland',
+  TW: 'Taiwan',
+  KR: 'South Korea',
+  JP: 'Japan',
+  SG: 'Singapore',
+  AE: 'United Arab Emirates',
+  SA: 'Saudi Arabia',
+  TR: 'Turkey',
+  ZA: 'South Africa',
+  ...Object.fromEntries(middleEastCountries.map(code => [code, 'Middle East'])),
+}
 
 export default function PrintPartnersMap() {
   const [selectedRegion, setSelectedRegion] = useState<string | null>(null)
-  const [dimensions, setDimensions] = useState({ width: 640, height: 480 })
-
-  useEffect(() => {
-    const updateDimensions = () => {
-      if (window.innerWidth < 640) {
-        setDimensions({ width: 270, height: 202.5 })
-      } else if (window.innerWidth < 768) {
-        setDimensions({ width: 620.25, height: 465.1875 })
-      } else {
-        setDimensions({ width: 640, height: 480 })
-      }
-    }
-
-    updateDimensions()
-    window.addEventListener('resize', updateDimensions)
-    return () => window.removeEventListener('resize', updateDimensions)
-  }, [])
-
-  const handleClick = (event: { countryCode: string }) => {
-    const countryToRegionMap: Record<string, string> = {
-      US: 'North America and Canada',
-      CA: 'North America and Canada',
-
-      AU: 'Australia',
-      NZ: 'Australia',
-
-      BR: 'Brazil',
-      IN: 'India',
-      CN: 'China',
-
-      GB: 'UK',
-      DE: 'Germany',
-      IT: 'Italy',
-      SE: 'Sweden',
-      NL: 'Netherlands',
-      ES: "Spain",
-      PL: 'Poland',
-
-      TW: 'Taiwan',
-      KR: 'South Korea',
-      JP: 'Japan',
-      SG: 'Singapore',
-
-      AE: 'United Arab Emirates',
-      SA: 'Saudi Arabia',
-      TR: 'Turkey',
-
-      ZA: 'South Africa',
-
-      ...Object.fromEntries(
-        middleEastCountries
-          .map(code => [code, 'Middle East'])
-      )
-    }
-
-    const region = countryToRegionMap[event.countryCode]
-    if (region) setSelectedRegion(region)
-  }
 
   return (
     <div className="max-w-4xl mx-auto pl-[12%]">
@@ -151,25 +135,37 @@ export default function PrintPartnersMap() {
         Our Print Partners Worldwide
       </h2>
 
-      <WorldMap
-        size={dimensions.width}
-        data={regionData}
-        color="#ccc"
-        tooltipTextFunction={() => ''}
-        onClickFunction={handleClick}
-        backgroundColor="transparent"
-        valuePrefix=""
-        valueSuffix=""
-        styleFunction={({ countryCode }: { countryCode: string }) => {
-          const region = regionData.find(d => d.country === countryCode)
-          return {
-            fill: regionColors[region?.value ?? -1] || '#ccc',
-            stroke: 'white',
-            strokeWidth: 0.5,
-            cursor: 'pointer'
+      <ComposableMap
+        projection="geoEqualEarth"
+        projectionConfig={{ scale: 153 }}
+        style={{ width: '100%', height: 'auto' }}
+      >
+        <Geographies geography={GEO_URL}>
+          {({ geographies }) =>
+            geographies.map((geo) => {
+              const alpha2 = numericToAlpha2[String(geo.id)]
+              const entry = alpha2 ? regionData.find(d => d.country === alpha2) : undefined
+              const fill = entry !== undefined ? regionColors[entry.value] : '#ccc'
+
+              return (
+                <Geography
+                  key={geo.rsmKey}
+                  geography={geo}
+                  fill={fill}
+                  stroke="white"
+                  strokeWidth={0.5}
+                  className={alpha2 ? 'cursor-pointer' : 'cursor-default'}
+                  onClick={() => {
+                    if (!alpha2) return
+                    const region = countryToRegionMap[alpha2]
+                    if (region) setSelectedRegion(region)
+                  }}
+                />
+              )
+            })
           }
-        }}
-      />
+        </Geographies>
+      </ComposableMap>
 
       {selectedRegion && (
         <Dialog open onClose={() => setSelectedRegion(null)}>
