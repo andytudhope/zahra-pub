@@ -315,6 +315,16 @@ export const islamBooks: Book[] = [
         samplePdfUrl: "/samples/TheSayingsAndWisdomOfImamAli.pdf"
       },
       {
+        id: 'simplified-fiqh',
+        title: 'Simplified Fiqh: Prophetic Teachings for Worship and Conduct',
+        description: "'The book that I am presenting to you today, is like one of those practical manuscripts which had been derived from 2 current and popular books. Its author the enlightened brother Shaykh Fadhlalla Haeri had spent considerable effort to make accessible the treatese of Imam Khomeini and Sayed Khoe as well as some of the oldest, classical books on fiqh and some modern ones, to make all these points accessible to today's reader. His purpose in all of this is to present the foundations of fiqh to those who have embraced Islam recently and may not be familiar with the old traditional presentations as well as to discuss the issues in a modern way of subjects and their divisions as being taught in secular education. All of this to encourage people to understand the pattern that the muslim needs in his day to day life and his conduct in that respect.'\n- From the Introduction by Sayed Bahr Ulum\n\n'The path of Islam is based on two foundations, one of which is a description of truth and divine governance and most of the early ayahs revealed in Mecca relate to that. The other half of the path is to do with human relationships and boundaries which help to bring about a balanced way of life for individuals and communities. It is the balance between Mecca and Medina metaphorically as well as in practice. Truth is boundless and encompasses the entire cosmos, whereas human experience is limited within space and time and is subject to change. All aspects of Islamic law, jurisprudence and other related issues is generally placed under the umbrella of Shariah, the root word implying a pathway, avenue, boundaries as well as water spring. Any book on Shariah must connect with the people, time and place and therefore relating to a living, acknowledged master of the path, as there many situations in which the ordinary person can be misled and mislead without having the reference of a living master.'\n- From the Foreword by Shaykh Fadhlalla Haeri\n\n<b>This book is available via private order request to the publisher. Please email <a href=\"mailto:info@shaykhfadhlallahaeri.com\">info@shaykhfadhlallahaeri.com</a> to request a copy.</b>",
+        coverImage: "/images/book-covers/simplified-fiqh.jpg",
+        category: 'islam',
+        order: 5,
+        publishedDate: new Date('2026-04-08'),
+        purchaseLinks: {}
+      },
+      {
         id: 'elements-of-islam',
         title: "The Elements Of Islam",
         description: "At a time when communities increasingly tend to view each other with suspicion, <i>The Elements of Islam</i> cuts through the morass of misunderstanding and misinformation to give a true and timely overview of the universality and light of the prophetic message of Islam.\n\n<i>The Elements of Islam</i> explains:\n\n<ol><li>The unifying path of Islam</li><li>The history and development of Islam as a religion</li><li>The distinction between original Islam and the traditions of Muslims</li><li>The life that Muslims lead today</li><li>The future of Islam</li></ol>",
