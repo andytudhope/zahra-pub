@@ -90,60 +90,124 @@ export const islamBooks: Book[] = [
         ]
       }
     },
-    // {
-    //     id: 'life-character-imam-ali',
-    //     title: "The Life and Character of Imam `Ali",
-    //     author: "Shaykh Fadhlalla Haeri, translated by Mohammed Al Salman",
-    //     description: "<b><i>The Life and Character of Imam `Ali</b></i> is a vivid portrayal of one of the most outstanding personalities in Islamic history. The cousin and son-in-law of the Prophet Muhammad (may the peace and blessings of Allah be upon him and his family), Imam `Ali was the first man to accept Islam, when he was still a young boy, and for the next twenty-three years he was one of the Prophet's closest companions. Imam `Ali was constantly at the side of the Prophet, learnt from him, and also married his daughter Fatima. The Prophet said of Imam `Ali: 'I am the city of knowledge, and `Ali is the gate'.\n\nAlthough a great many of Imam `Ali's sayings and letters were accurately remembered and recorded during his lifetime, they have until now remained virtually inaccessible to the English-speaking world.",
-    //     coverImage: "/images/book-covers/LifeAndCharacterImanAli.jpg",
-    //     category: 'islam',
-    //     order: 0,
-    //     publishedDate: new Date('2025-10-09'),
-    //     purchaseLinks: {
-    //       other: [
-    //         {
-    //           name: "eBay",
-    //           url: "https://www.ebay.com/itm/365904937251",
-    //           geography: "US"
-    //         },
-    //         {
-    //           name: "Morawa",
-    //           url: "https://www.morawa.com/en/the-life-and-character-of-imam-ali.html",
-    //           geography: "DE"
-    //         },
-    //         {
-    //           name: "Bokus",
-    //           url: "https://www.bokus.com/bok/9781919897325/the-life-and-character-of-imam-ali/",
-    //           geography: "SE"
-    //         },
-    //         {
-    //           name: "Patogu Pirkti",
-    //           url: "https://www.patogupirkti.lt/lt/knygos/the-life-and-character-of-imam-ali-shaykh-fadhlalla-haeri-9781919897325",
-    //           geography: "LT"
-    //         },
-    //         {
-    //           name: "Akademibokhandeln",
-    //           url: "https://www.akademibokhandeln.se/bok/the-life-and-character-of-imam-ali/9781919897325/",
-    //           geography: "SE"
-    //         },
-    //         {
-    //           name: "Kyobo Books",
-    //           url: "https://product.kyobobook.co.kr/detail/S000217582443",
-    //           geography: "KR"
-    //         },
-    //         {
-    //           name: "Yes24",
-    //           url: "https://m.yes24.com/goods/detail/154137089",
-    //           geography: "KR"
-    //         },
-    //         {
-    //           name: "Books.com",
-    //           url: "https://www.books.com.tw/products/F01b495823",
-    //           geography: "TW"
-    //         }
-    //       ]
-    //     }
-    // },
+    {
+        id: 'life-character-imam-ali',
+        title: "The Life and Character of Imam `Ali",
+        author: "Shaykh Fadhlalla Haeri, translated by Mohammed Al Salman",
+        description: "What has been said about his virtues, qualities, knowledge, bravery, generosity, forbearance, good character, asceticism, worship, and eloquence surpasses what has been said about any other human, except for the Prophet (SAW) who said about Ali: \"This is my brother, my successor, and my deputy among you.\" After the Prophet, Imam Ali (AS) is considered the most significant figure in Islam and the greatest in terms of encompassing apprehension, faith, belief, knowledge, and action.\n\nIn our current era, if Muslims wish to unite and converge on common ground, they have no way but to return to the words of Allah Almighty and the Sunnah of the greatest Prophet, and to apply and embody those teachings based on a guiding human standard and to follow that. Imam Ali is the highest and best example of applying the divine program and elevating the human soul to the status of vicegerency and proximity. Following Ali and emulating him is essential if we truly love Allah and His Messenger. Proper emulation is connected to proper knowledge, and that's why we must first get to know the Commander of the Faithful.\n\nThis book presents various aspects of the Imam's biography in a concise and simplified manner, focusing on certain historical, moral, and educational facets. This is to clarify the features of the comprehensive Islamic character that was embodied in Ali. He is the loyal seeker, the true brother, the brave man, the husband, the father, the minister, the caliph, the successor, the warrior, the politician, the economist, the president, the leader, and every role imposed by society and life on a person interacting with the temporal natural factors.\n\nFrom the Foreword by Shaykh Fadhlalla Haeri",
+        coverImage: "/images/book-covers/LifeAndCharacterImamAli.jpg",
+        category: 'islam',
+        order: 1,
+        publishedDate: new Date('2025-10-09'),
+        purchaseLinks: {
+          amazon: "1928329497",
+          amazonRegional: {
+            ZA: { domain: 'co.za' }
+          },
+          other: [
+            {
+              name: "eBay",
+              url: "https://www.ebay.com/p/11086325714",
+              geography: "US"
+            },
+            {
+              name: "Barnes & Noble",
+              url: "https://www.barnesandnoble.com/w/the-life-conduct-of-imam-ali-shaykh-fadhlalla-haeri/1148432221",
+              geography: "US"
+            },
+            {
+              name: "Bookshop.org",
+              url: "https://bookshop.org/p/books/the-life-conduct-of-imam-ali-shaykh-fadhlalla-haeri/472eff345a895f27",
+              geography: "US"
+            },
+            {
+              name: "Waterstones",
+              url: "https://www.waterstones.com/book/the-life-and-conduct-of-imam-ali/shaykh-fadhlalla-haeri/mohammed-alsalman/9781928329497",
+              geography: "UK"
+            },
+            {
+              name: "ThriftBooks",
+              url: "https://www.thriftbooks.com/w/the-life--character-of-imam-ali_shaykh-fadhlalla-haeri/56868517/",
+              geography: "US"
+            },
+            {
+              name: "Browns Books",
+              url: "https://www.brownsbfs.co.uk/Product/Haeri-Shaykh-Fadhlalla/The-Life--Conduct-of-Imam-Ali/9781928329497",
+              geography: "UK"
+            },
+            {
+              name: "Paper Plus",
+              url: "https://www.paperplus.co.nz/shop/books/non-fiction/religion-spirituality/islam/the-life-conduct-of-imam-ali",
+              geography: "NZ"
+            },
+            {
+              name: "Target",
+              url: "https://www.target.com/p/the-life-conduct-of-imam-ali-ahl-bayt-by-shaykh-fadhlalla-haeri-paperback/-/A-1011631055",
+              geography: "US"
+            },
+            {
+              name: "Libris",
+              url: "https://www.libris.ro/carte-engleza/the-life-conduct-of-imam-ali-shaykh-fadhlalla-haeri/44782353",
+              geography: "RO"
+            },
+            {
+              name: "Faltershop",
+              url: "https://shop.falter.at/detail/9781928329497/the-life-conduct-of-imam-ali",
+              geography: "AT"
+            },
+            {
+              name: "Strand Book Store",
+              url: "https://www.strandbooks.com/the-life-character-of-imam-ali-9781928329497.html",
+              geography: "US"
+            },
+            {
+              name: "Bokus",
+              url: "https://www.bokus.com/bok/9781919897325/the-life-and-character-of-imam-ali/",
+              geography: "SE"
+            },
+            {
+              name: "Kyobo Books",
+              url: "https://product.kyobobook.co.kr/detail/S000217582443",
+              geography: "KR"
+            },
+            {
+              name: "Fnac",
+              url: "https://www.fnac.pt/Life-et-conduct-of-imam-ali-Haeri-Shaykh-Fadhlalla/a14302461",
+              geography: "PT"
+            },
+            {
+              name: "Boekenportaal",
+              url: "https://www.boekenportaal.sr/boek/?authortitle=shaykh-fadhlalla-haeri/the-life-conduct-of-imam-ali--9781928329497",
+              geography: "SR"
+            },
+            {
+              name: "Adlibris",
+              url: "https://www.adlibris.com/sv/bok/the-life-och-conduct-of-imam-ali-9781928329497",
+              geography: "SE"
+            },
+            {
+              name: "Bookdelivery",
+              url: "https://www.bookdelivery.co.za/book-the-life-conduct-of-imam-ali/9781928329497/p/66691688",
+              geography: "ZA"
+            },
+            {
+              name: "Exclusive Books",
+              url: "https://exclusivebooks.co.za/products/9781928329497",
+              geography: "ZA"
+            },
+            {
+              name: "Yes24",
+              url: "https://m.yes24.com/goods/detail/154137089",
+              geography: "KR"
+            },
+            {
+              name: "Books.com",
+              url: "https://www.books.com.tw/products/F01b495823",
+              geography: "TW"
+            }
+          ]
+        }
+    },
     {
         id: 'transformative-worship-islam',
         title: "Transformative Worship in Islam: Experiencing Perfection",
@@ -151,7 +215,7 @@ export const islamBooks: Book[] = [
         description: "<b><i>Transformative Worship in Islam - Experiencing Perfection</b></i> uniquely bridges the traditional practices and beliefs, culture and language of Islam with the transformative spiritual states described by the Sufis and Gnostics. In this collection of teachings on how the worship of Islam can transform insight and perception of Reality, Shaykh Fadhlalla Haeri presents profound guidance for those who journey through the path of Islamic belief and practice. He draws from the Noble Qur'an, the Prophet's traditions, narrations from the Ahl al-Bayt and seminal works from Sufi masters and scholars.\n\n<b><i>Transformative Worship in Islam - Experiencing Perfection</b></i> will inspire the serious seeker of spiritual knowledge to make the connections between intention, attention and direction. Describing in detail the stages of spiritual evolvement, the author highlights the need for grooming the self, refining its lower tendencies, practicing self-accountability, and guiding it towards the higher virtues of the soul, through the regular discipline of a worship which brings one into Divine Presence.\n\nThe seeker will be taken to the stages of self-realization where all dualities meet and unify within the human soul. The purified heart is a precondition for this awakening, while enlightenment is the natural outcome after dispelling all causes of egotistic confusion and concern for personal survival. This book reveals how the soul is forever embedded in sustainable joy and contentment and awakening to this condition is not only our birth-right but the very purpose of our existence. ",
         coverImage: "/images/book-covers/TransformativeWorship.jpg",
         category: 'islam',
-        order: 1,
+        order: 2,
         publishedDate: new Date('2020-04-19'),
         purchaseLinks: {
           kindle: "B01JAGGN0K",
@@ -185,7 +249,7 @@ export const islamBooks: Book[] = [
         description: " Imam `Ali, who was a cousin of the Prophet Muhammad (pbuh), was the first man to accept Islam, when he was still a young boy, and for the next twenty-three years he was one of the Prophet's closest companions. Imam `Ali was constantly at the side of the Prophet, learnt from him, and also married his daughter Fatima. The Prophet said of Imam `Ali: 'I am the city of knowledge, and `Ali is the gate'.\n\nAlthough a great many of Imam `Ali's sayings and letters were accurately remembered and recorded during his lifetime, they have until now remained virtually inaccessible to the English-speaking world. <b><i>The Sayings and Wisdom of Imam `Ali</b></i> is a selection of this great man's recorded sayings -- gathered together from authentic and reliable sources and arranged in easily accessible sections in Arabic by Shaykh Fadhlalla Haeri. These have been carefully translated into modern English, a great effort having been made to remain true to the intended meaning of the original Arabic text. ",
         coverImage: "/images/book-covers/ImamAli.jpg",
         category: 'islam',
-        order: 2,
+        order: 3,
         publishedDate: new Date('2018-12-10'),
         purchaseLinks: {
           amazon: "1928329071",
@@ -232,7 +296,7 @@ export const islamBooks: Book[] = [
         description: "<b>IMAM JA`FAR AL-SADIQ</b> uThe sixth Imam in the line of the Twelve Imams descended from the Prophet Muhammad, Imam Ja`far ibn Muhammad al-Sadiq (702-765 C.E. or 17th Rabi` al-Awwal 83 AH - 15th Shawwal 148 AH) was the founder of the Ja`fari School of Islamic Law and a renowned scholar of his age. His father was the Imam Muhammad al-Baqir and his mother, Farwa, was a great-granddaughter of Abu Bakr. He lived in Arabia in the eighth century. He devoted his attention to interpreting divine utterances and applied himself to such controversial subjects as iraadah (free will) and qadr (the power to direct one's own actions). He is regarded as one of the greatest of the imams and is also revered by the Naqshbandi Sunni Sufi chain.\n\n<b>THE LANTERN OF THE PATH</b>\n\n<b><i>The Lantern of The Path</b></i> comprises ninety-nine chapters. Each one is a threshold to the next, guiding the reader through the broad spectrum of ageless wisdom, like a lantern along the path of reality. The author illuminates the inner meanings of outer practices which range from practical everyday acts of behavior, to the practices of worship, morals and ethics, and the pillars of religion.\n\n<b> ABOUT THIS TRANSLATION</b>This small and simple book was most difficult and complex to translate. The translation was begun four years ago by my father, Shaykh Fadhlalla Haeri, when he translated 'The Lantern of The Path' during some discourses.\n\nThough the task then fell to me to coordinate and execute the final translation, it was not without the considerable help of several scholars that the final version was achieved. A formal translation was first done by Aisha Abdar-Rahman Al-Tarjumana.\n\nBoth hers and Shaykh Fadhlalla's versions were used in translating it anew, throughout which Muhsin Muzaffar helped in unearthing the meanings of obscure words and phrases.\n\nThis translation was subsequently reviewed and edited by both Asadullah adh-Dhakir Yate and Christopher Flint. I am deeply grateful to all of them, not least for all that I learnt in the process, especially from my father. I sincerely hope that for those who read 'The Lantern of The Path', it will open up inner delights, as it has done for me.\n\nMuna H. Bilgrami",
         coverImage: "/images/book-covers/LanternOfThePath.jpg",
         category: 'islam',
-        order: 3,
+        order: 4,
         publishedDate: new Date('2019-02-01'),
         purchaseLinks: {
           amazon: "1928329098",
@@ -273,7 +337,7 @@ export const islamBooks: Book[] = [
         description: "'The book that I am presenting to you today, is like one of those practical manuscripts which had been derived from 2 current and popular books. Its author the enlightened brother Shaykh Fadhlalla Haeri had spent considerable effort to make accessible the treatese of Imam Khomeini and Sayed Khoe as well as some of the oldest, classical books on fiqh and some modern ones, to make all these points accessible to today's reader. His purpose in all of this is to present the foundations of fiqh to those who have embraced Islam recently and may not be familiar with the old traditional presentations as well as to discuss the issues in a modern way of subjects and their divisions as being taught in secular education. All of this to encourage people to understand the pattern that the muslim needs in his day to day life and his conduct in that respect.'\n- From the Introduction by Sayed Bahr Ulum\n\n'The path of Islam is based on two foundations, one of which is a description of truth and divine governance and most of the early ayahs revealed in Mecca relate to that. The other half of the path is to do with human relationships and boundaries which help to bring about a balanced way of life for individuals and communities. It is the balance between Mecca and Medina metaphorically as well as in practice. Truth is boundless and encompasses the entire cosmos, whereas human experience is limited within space and time and is subject to change. All aspects of Islamic law, jurisprudence and other related issues is generally placed under the umbrella of Shariah, the root word implying a pathway, avenue, boundaries as well as water spring. Any book on Shariah must connect with the people, time and place and therefore relating to a living, acknowledged master of the path, as there many situations in which the ordinary person can be misled and mislead without having the reference of a living master.'\n- From the Foreword by Shaykh Fadhlalla Haeri\n\n<b>This book is available via private order request to the publisher. Please email <a href=\"mailto:info@shaykhfadhlallahaeri.com\">info@shaykhfadhlallahaeri.com</a> to request a copy.</b>",
         coverImage: "/images/book-covers/simplified-fiqh.jpg",
         category: 'islam',
-        order: 4,
+        order: 5,
         publishedDate: new Date('2026-04-08'),
         purchaseLinks: {}
       },
@@ -283,7 +347,7 @@ export const islamBooks: Book[] = [
         description: "The primal design of human beings is based on an intrinsic knowledge of perfection and its yearning and journeying towards it. Life's experience is based on polarities and opposites, all of which is founded on a zone of constancy that does not change. All needs and desires are drives toward the perfection of the highest. The intelligent human being has no choice other than calling on Allah, whose Most Beautiful Names and Attributes are perfect at all times. It is by that calling and worship that we achieve the fruits of existence.\n\n\"<i>In this book, we have presented a brief discourse on the doors of entry into the vast, boundless divine light created through supplication and calling upon Allah. Our hope is to facilitate its use, benefit and transformation for the traveller along the path. Thus, the repeated reading and use of this book by the seeker is recommended to open up the numerous horizons and subtleties of Allah's ways of grace.</i>\"\n\n- from the Introduction by Shaykh Fadhlalla Haeri",
         coverImage: "/images/book-covers/CallingAllah.jpg",
         category: 'islam',
-        order: 5,
+        order: 6,
         publishedDate: new Date('2020-04-19'),
         purchaseLinks: {
           amazon: "192832908X",
@@ -330,7 +394,7 @@ export const islamBooks: Book[] = [
         description: "At a time when communities increasingly tend to view each other with suspicion, <i>The Elements of Islam</i> cuts through the morass of misunderstanding and misinformation to give a true and timely overview of the universality and light of the prophetic message of Islam.\n\n<i>The Elements of Islam</i> explains:\n\n<ol><li>The unifying path of Islam</li><li>The history and development of Islam as a religion</li><li>The distinction between original Islam and the traditions of Muslims</li><li>The life that Muslims lead today</li><li>The future of Islam</li></ol>",
         coverImage: "/images/book-covers/elements-of-islam.jpg",
         category: 'islam',
-        order: 6,
+        order: 7,
         publishedDate: new Date('2020-04-19'),
         purchaseLinks: {
           amazon: "1919897054",
@@ -377,7 +441,7 @@ export const islamBooks: Book[] = [
         description: " This collection of verses from the Qur'an and traditions from the Prophet Muhammad (may the peace and blessings of Allah be upon him and his family) and the Imams is unique for it makes available for the first time in English a comprehensive selection of Islamic teachings arranged according to topics that deal with belief and worship as well as the social and spiritual values which Islam upholds.\n\n<b><i>Prophetic Traditions in Islam -- On the Authority of the Family</i></b> of the Prophet contains a wealth of wisdom, knowledge and inspiration for all who seek to know more about Islam and the process of refining one's character and conduct. Taking as its source the gnosis and science transmitted by Allah on the tongue of the Prophet Muhammad, it presents fundamentals of the legal parameters and spiritual truths of Islam. ",
         coverImage: "/images/book-covers/PropheticTraditionsInIslam.jpg",
         category: 'islam',
-        order: 7,
+        order: 8,
         publishedDate: new Date('2016-02-19'),
         purchaseLinks: {
           amazon: "1919826920",
@@ -424,7 +488,7 @@ export const islamBooks: Book[] = [
         description: "In this collection of teachings on the inner meanings of worship in Islam, Shaykh Fadhlalla Haeri brings together the most profound guidance for those who journey along this path -- from the Qur'an, the Prophet's traditions, narrations from the <i>Ahl al-Bayt</i>, and seminal works from the <i>Ahl al-Tasawwuf</i> of all schools.\n\nThe essential elements of belief and practice are presented according to three levels of meaning: Shari`ah (the revealed law), tariqah (the path of discipline) and haqiqah (the transcendent truth), following the timeless habit of the Prophet (S) of combining the outer practice with the inner meaning.\n\nThe Inner Meanings of Worship in Islam will inspire the serious seeker of enlightenment to progress along the path, to purify themselves, their intentions, and their expectations at all stages of the journey. Ultimately all aspects and practices of the Shari`ah impact upon the process of grooming and refining the character of the practitioner.\n\nBy sharing these most transformative teachings from the world of Islam, the author hopes to make available the spiritual nourishment that has sustained and propelled him personally in his own quest for sublime knowledge and true freedom.",
         coverImage: "/images/book-covers/TheInnerMeaningsOfWorshipInIslam.jpg",
         category: 'islam',
-        order: 8,
+        order: 9,
         publishedDate: new Date('2016-02-19'),
         purchaseLinks: {
           kindle: "B01JADSJS2",
@@ -439,7 +503,7 @@ export const islamBooks: Book[] = [
         description: "<b><i>Fasting in Islam</i></b> is a comprehensive treatment of an essential practice of ritual worship in Islam. Starting from an overview of fasting in other religious traditions, Shaykh Fadhlalla Haeri takes us through the health benefits of fasting, the Qur'anic injunctions to fast, Prophetic hadith, the legal regulations according to both Sunni and Shi'ite schools of law, focusing finally on the transcendental aspects of this ancient practice. ",
         coverImage: "/images/book-covers/FastingInIslam.jpg",
         category: 'islam',
-        order: 9,
+        order: 10,
         publishedDate: new Date('2018-12-10'),
         purchaseLinks: {
           amazon: "1919897224",
@@ -480,7 +544,7 @@ export const islamBooks: Book[] = [
         description: "Note: This book was formerly titled, <i>The Pilgrimage of Islam</i>.\n\nThe rite of pilgrimage has played a central role in spiritual traditions since earliest times. For fourteen centuries, Muslims have undertaken the pilgrimage and today it is the world's largest annual spiritual gathering. <b><i>Pilgrimage in Islam</i></b> is a lucid exposition of the Hajj, the journey to the House of God, the <i>Ka`bah</i>, which is situated in the heart of the sacred city of Mecca. One of the five pillars of the Islamic faith, the Hajj is obligatory on all Muslims who are able to undertake the journey at least once in a lifetime. The Prophet Muhammad's original Hajj is described, upon which the present-day pilgrimage is based, and a step by step account offers the reader a rare insight into the inner meaning of the outer rites of the Hajj, for ultimately, the physical journey to Mecca is also a spiritual pilgrimage to the knowledge of God.",
         coverImage: "/images/book-covers/PilgrimageInIslam.jpeg",
         category: 'islam',
-        order: 10,
+        order: 11,
         publishedDate: new Date('2018-12-10'),
         purchaseLinks: {
           amazon: "9839569384",
@@ -496,7 +560,7 @@ export const islamBooks: Book[] = [
         description: "This is the journal of a contemporary Sufi master's travels through many lands in the East and West. From Japan to India, to Britain and America, he speaks to contemporary audiences about the timeless eternal reality of the path of dynamic submission and the way to self-fulfillment.\n\nIn <b><i>Living Islam</b></i>, Shaykh Fadhlalla Haeri shows how it is possible to apply the eternal teachings of Islam to one's own life in this modern age. Portraying ageless wisdom against the backdrop of a changing world, this vivid, and captivating work is essential for all sincere seekers of the Truth.",
         coverImage: "/images/book-covers/LivingIslam.jpg",
         category: "islam",
-        order: 11,
+        order: 12,
         publishedDate: new Date('1991-11-03'),
         purchaseLinks: {
           amazon: "1852300655",
